@@ -378,7 +378,6 @@ for i in range(100):
 # Obtener los registros existentes de la tabla "Usuario"
 cursor.execute("SELECT id_usuario FROM Usuario")
 usuarios = cursor.fetchall()
-
 # Generar y insertar 10 registros de prueba para la tabla "Empleado"
 for _ in range(40):
     id_usuario = str(random.choice(usuarios)[0])  # Genera un ID de usuario de 3 dígitos aleatorio
@@ -386,11 +385,10 @@ for _ in range(40):
     fecha_inicio_cargo = generar_fecha_inicio_cargo()
     cargo = random.choice(cargos)
     horario_trabajo = generar_horario_trabajo()
-    query_empleado = "INSERT INTO Empleado (id_usuario, correo, fecha_inicio_cargo, cargo, horario_trabajo) VALUES (%s, %s, %s, %s, %s)"
+    query_empleado = "INSERT INTO Empleado (id_usuario, correo, fecha_inicio_cargo, cargo, horario_trabajo) VALUES ('%s', '%s', '%s', '%s', '%s')" % (id_usuario, correo, fecha_inicio_cargo, cargo, horario_trabajo)
 
     try:
-
-        cursor.execute(query_empleado, (id_usuario, correo, fecha_inicio_cargo, cargo, horario_trabajo))
+        cursor.execute(query_empleado)
         conexion.commit()
     except:
         pass
@@ -432,53 +430,38 @@ for i in range(40):
     except:
         pass
 
-cursor.execute("SELECT id_usuario FROM Usuario")
-usuarios = cursor.fetchall()
-
-# Obtener los registros existentes de la tabla "Editorial"
-cursor.execute("SELECT id_editorial FROM Editorial")
-editoriales = cursor.fetchall()
-
-cursor.execute("SELECT id_proveedor FROM Proveedor")
-proveedores = cursor.fetchall()
-
-cursor.execute("SELECT id_Sede FROM Sede")
-sedes = cursor.fetchall()
-
-# Obtener los registros existentes de la tabla "Seccion"
-cursor.execute("SELECT id_seccion FROM Seccion")
-secciones = cursor.fetchall()
-
-# Obtener los registros existentes de la tabla "Estanteria"
-cursor.execute("SELECT id_estanteria FROM Estanteria")
-estanterias = cursor.fetchall()
-
 # Obtener los registros existentes de la tabla "Material_bibliografico"
-cursor.execute("SELECT id_material_biblio FROM Material_bibliografico")
+cursor.execute("select id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion from Material_bibliografico")
 material_bibliograficos = cursor.fetchall()
 
-# Obtener los registros existentes de la tabla "Estanteria"
-cursor.execute("SELECT id_adquisicion FROM Adquisicion")
+# Obtener los registros existentes de la tabla "Adquisicion"
+cursor.execute("select id_usuario, id_adquisicion, id_proveedor from Adquisicion")
 adquisiciones = cursor.fetchall()
 
 # Generar 10 registros de prueba para la tabla "Ejemplar"
 for _ in range(20):
-    id_usuario = str(random.choice(usuarios)[0])
+
+    fila_adquisiciones = random.choice(adquisiciones)
+    fila_material_bibliografico = random.choice(material_bibliograficos)
+
+    id_usuario = str(fila_adquisiciones[0])
     cod_serial = str(random.randint(100, 999))
-    id_material_biblio = str(random.choice(material_bibliograficos)[0])
-    id_editorial = str(random.choice(editoriales)[0])
-    id_adquisicion = str(random.choice(adquisiciones)[0])
-    id_proveedor = str(random.choice(proveedores)[0])
-    id_Sede = str(random.choice(sedes)[0])
-    id_estanteria = str(random.choice(estanterias)[0])
-    id_seccion = str(random.choice(secciones)[0])
+    id_material_biblio = str(fila_material_bibliografico[0])
+    id_editorial = str(fila_material_bibliografico[1])
+    id_adquisicion = str(fila_adquisiciones[1])
+    id_proveedor = str(fila_adquisiciones[2])
+    id_Sede = str(fila_material_bibliografico[2])
+    id_estanteria = str(fila_material_bibliografico[3])
+    id_seccion = str(fila_material_bibliografico[4])
     numero_paginas = random.randint(1, 500)
-    
-    # Insertar el registro en la tabla Ejemplar
-    query_ejemplar = "INSERT INTO Ejemplar (id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, numero_paginas) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+
     valores = (id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, numero_paginas)
+
+    # Insertar el registro en la tabla Ejemplar
+    query_ejemplar = "INSERT INTO Ejemplar (id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, numero_paginas) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %s)" % valores   
     try:
-        cursor.execute(query_ejemplar, valores)
+
+        cursor.execute(query_ejemplar)
         conexion.commit()
     except:
         pass
@@ -593,49 +576,36 @@ for i in range(10):
         pass
 
 # Obtener los registros existentes de la tabla "Estanteria_virtual"
-cursor.execute("SELECT id_estanteria_virtual FROM Estanteria_virtual")
+cursor.execute("select id_estanteria_virtual, id_usuario from Estanteria_virtual")
 estanterias_virtuales = cursor.fetchall()
 
-# Obtener los registros existentes de la tabla "Usuario"
-cursor.execute("SELECT id_usuario FROM Usuario")
-usuarios = cursor.fetchall()
-
 # Obtener los registros existentes de la tabla "Material_bibliografico"
-cursor.execute("SELECT id_material_biblio FROM Material_bibliografico")
+cursor.execute("select id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion from Material_bibliografico")
 materiales_bibliograficos = cursor.fetchall()
-
-# Obtener los registros existentes de la tabla "Editorial"
-cursor.execute("SELECT id_editorial FROM Editorial")
-editoriales = cursor.fetchall()
-
-# Obtener los registros existentes de la tabla "Sede"
-cursor.execute("SELECT id_Sede FROM Sede")
-sedes = cursor.fetchall()
-
-# Obtener los registros existentes de la tabla "Estanteria"
-cursor.execute("SELECT id_estanteria FROM Estanteria")
-estanterias = cursor.fetchall()
-
-# Obtener los registros existentes de la tabla "Seccion"
-cursor.execute("SELECT id_seccion FROM Seccion")
-secciones = cursor.fetchall()
 
 # Generar y insertar 10 registros de prueba para la tabla "Adiciona_estanteria"
 
 for _ in range(20):
-    id_estanteria_virtual = random.choice(estanterias_virtuales)[0]
-    id_usuario = random.choice(usuarios)[0]
-    id_material_biblio = random.choice(materiales_bibliograficos)[0]
-    id_editorial = random.choice(editoriales)[0]
-    id_Sede = random.choice(sedes)[0]
-    id_estanteria = random.choice(estanterias)[0]
-    id_seccion = random.choice(secciones)[0]
 
-    query_adiciona_estanteria = "INSERT INTO Adiciona_estanteria (id_estanteria_virtual, id_usuario, id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+    estanteria_virtual = random.choice(estanterias_virtuales)
+    material_bibliografico = random.choice(materiales_bibliograficos)
+
+    id_estanteria_virtual = estanteria_virtual[0]
+    id_usuario = estanteria_virtual[1]
+    id_material_biblio = material_bibliografico[0]
+    id_editorial = material_bibliografico[1]
+    id_Sede = material_bibliografico[2]
+    id_estanteria = material_bibliografico[3]
+    id_seccion = material_bibliografico[4]
+
     valores = (id_estanteria_virtual, id_usuario, id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
 
+    query_adiciona_estanteria = "INSERT INTO Adiciona_estanteria (id_estanteria_virtual, id_usuario, id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion) VALUES (%s, %s, %s, %s, %s, %s, %s)" % valores
+    
+    #print(query_adiciona_estanteria)
+
     try:
-        cursor.execute(query_adiciona_estanteria, valores)
+        cursor.execute(query_adiciona_estanteria)
         conexion.commit()
     except:
         pass
@@ -663,18 +633,22 @@ idiomas = cursor.fetchall()
 
 # Generar 10 registros de prueba para la tabla "disponible_idioma"
 for _ in range(10):
-    id_material_biblio = str(random.choice(materiales_bibliograficos)[0])
+
+    material_bibliografico = random.choice(materiales_bibliograficos)
+
+    id_material_biblio = str(material_bibliografico[0])
     id_idioma = str(random.choice(idiomas)[0])
-    id_editorial = str(random.choice(editoriales)[0])
-    id_Sede = str(random.choice(sedes)[0])
-    id_estanteria = str(random.choice(estanterias)[0])
-    id_seccion = str(random.choice(secciones)[0])
-    
-    query_disponible_idioma = "INSERT INTO disponible_idioma (id_material_biblio, id_idioma, id_editorial, id_Sede, id_estanteria, id_seccion) VALUES (%s, %s, %s, %s, %s, %s)"
+    id_editorial = str(material_bibliografico[1])
+    id_Sede = str(material_bibliografico[2])
+    id_estanteria = str(material_bibliografico[3])
+    id_seccion = str(material_bibliografico[4])
+
     valores = (id_material_biblio, id_idioma, id_editorial, id_Sede, id_estanteria, id_seccion)
+
+    query_disponible_idioma = "INSERT INTO disponible_idioma (id_material_biblio, id_idioma, id_editorial, id_Sede, id_estanteria, id_seccion) VALUES (%s, '%s', %s, %s, %s, %s)" % valores
     
     try:
-        cursor.execute(query_disponible_idioma, valores)
+        cursor.execute(query_disponible_idioma)
         conexion.commit()
     except:
         pass
@@ -693,14 +667,20 @@ for categoria in categorias:
     except:
         pass
 
+cursor.execute("SELECT id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion FROM Material_bibliografico")
+materiales_bibliograficos = cursor.fetchall()
+
 # Generar 10 registros de prueba para la tabla "tiene_categoria"
-for _ in range(10):
-    id_material_biblio = str(random.choice(material_bibliograficos)[0])
-    id_editorial = str(random.choice(editoriales)[0])
-    id_Sede = str(random.choice(sedes)[0])
-    id_estanteria = str(random.choice(estanterias)[0])
-    id_seccion = str(random.choice(secciones)[0])
-    id_categoria = random.randint(1, 10)  # ID de categoría aleatorio
+for i in range(10):
+
+    material_bibliografico = random.choice(materiales_bibliograficos)
+
+    id_material_biblio = str(material_bibliografico[0])
+    id_editorial = str(material_bibliografico[1])
+    id_Sede = str(material_bibliografico[2])
+    id_estanteria = str(material_bibliografico[3])
+    id_seccion = str(material_bibliografico[4])
+    id_categoria = str(i + 1)  # ID de categoría aleatorio
 
     # Insertar el registro en la tabla tiene_categoria
     query_tiene_categoria = "INSERT INTO tiene_categoria (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_categoria) VALUES (%s, %s, %s, %s, %s, %s)"
@@ -722,28 +702,34 @@ for _ in range(10):
     fecha_nacimiento = generar_fecha_nacimiento()
     sexo = generar_sexo()
 
-    # Insertar el registro en la tabla Autor
-    query_autor = "INSERT INTO Autor (id_autor, `nombre(s)`, primer_apellido, segundo_apellido, nacionalidad, fecha_nacimiento, sexo) VALUES (%s, %s, %s, %s, %s, %s, %s)"
     valores = (id_autor, nombres, primer_apellido, segundo_apellido, nacionalidad, fecha_nacimiento, sexo)
 
+    # Insertar el registro en la tabla Autor
+    query_autor = "INSERT INTO Autor (id_autor, `nombre(s)`, primer_apellido, segundo_apellido, nacionalidad, fecha_nacimiento, sexo) VALUES (%s, '%s', '%s', '%s', '%s', '%s', '%s')" % valores
+
     try:
-        cursor.execute(query_autor, valores)
+        cursor.execute(query_autor)
         conexion.commit()
     except:
         pass
 
-# Obtener los registros existentes de la tabla "Idioma"
+# Obtener los registros existentes de la tabla "Autor"
 cursor.execute("SELECT id_autor FROM Autor")
 autores = cursor.fetchall()
+cursor.execute("SELECT id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion FROM Material_bibliografico")
+materiales_bibliograficos = cursor.fetchall()
 
 # Generar 10 registros de prueba para la tabla "escrito_por"
 for _ in range(10):
-    id_material_biblio = str(random.choice(material_bibliograficos)[0])
-    id_editorial = str(random.choice(editoriales)[0])
+
+    material_bibliografico = random.choice(materiales_bibliograficos)
+
+    id_material_biblio = str(material_bibliografico[0])
+    id_editorial = str(material_bibliografico[1])
     id_autor = str(random.choice(autores)[0])
-    id_Sede = str(random.choice(sedes)[0])
-    id_estanteria = str(random.choice(estanterias)[0])
-    id_seccion = str(random.choice(secciones)[0])
+    id_Sede = str(material_bibliografico[2])
+    id_estanteria = str(material_bibliografico[3])
+    id_seccion = str(material_bibliografico[4])
 
     # Insertar el registro en la tabla escrito_por
     query_escrito_por = "INSERT INTO escrito_por (id_material_biblio, id_editorial, id_autor, id_Sede, id_estanteria, id_seccion) VALUES (%s, %s, %s, %s, %s, %s)"
@@ -755,25 +741,30 @@ for _ in range(10):
     except:
         pass
 
+cursor.execute("SELECT id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion FROM Material_bibliografico")
+materiales_bibliograficos = cursor.fetchall()
+
 # Generar 10 registros de prueba para la tabla "Tipo"
 for _ in range(10):
-    tipo = generar_tipo()
-    id_material_biblio = str(random.choice(material_bibliograficos)[0])
-    id_editorial = str(random.choice(editoriales)[0])
-    id_Sede = str(random.choice(sedes)[0])
-    id_estanteria = str(random.choice(estanterias)[0])
-    id_seccion = str(random.choice(secciones)[0])
 
-    # Insertar el registro en la tabla Tipo
-    query_tipo = "INSERT INTO Tipo (tipo, id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion) VALUES (%s, %s, %s, %s, %s, %s)"
+    material_bibliografico = random.choice(materiales_bibliograficos)
+    
+    tipo = generar_tipo()
+    id_material_biblio = str(material_bibliografico[0])
+    id_editorial = str(material_bibliografico[1])
+    id_Sede = str(material_bibliografico[2])
+    id_estanteria = str(material_bibliografico[3])
+    id_seccion = str(material_bibliografico[4])
+
     valores = (tipo, id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
+    # Insertar el registro en la tabla Tipo
+    query_tipo = "INSERT INTO Tipo (tipo, id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion) VALUES ('%s', %s, %s, %s, %s, %s)" % valores
 
     try:
-        cursor.execute(query_tipo, valores)
+        cursor.execute(query_tipo)
         conexion.commit()
     except:
         pass
-
 
 # Cerrar la conexión a la base de datos
 cursor.close()
