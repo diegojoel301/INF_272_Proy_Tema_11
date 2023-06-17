@@ -68,15 +68,15 @@ NOCOMPRESS
 ;
 
 CREATE TABLE Material_bibliografico(
-    id_material_biblio                    VARCHAR2(10)     NOT NULL,
-    id_editorial                          VARCHAR2(20)     NOT NULL,
-    id_Sede                               VARCHAR2(10)     NOT NULL,
-    id_estanteria                         VARCHAR2(10)     NOT NULL,
-    id_seccion                            VARCHAR2(10)     NOT NULL,
-    fecha_publicacion                     DATE             NOT NULL,
-    descripcion_material_bibliografico    CLOB,
-    titulo_material_bibliografico         VARCHAR2(251)    NOT NULL,
-    CONSTRAINT PK4 PRIMARY KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
+    id_mat_biblio                    VARCHAR2(10)     NOT NULL,
+    id_editorial                     VARCHAR2(20)     NOT NULL,
+    id_Sede                          VARCHAR2(10)     NOT NULL,
+    id_estanteria                    VARCHAR2(10)     NOT NULL,
+    id_seccion                       VARCHAR2(10)     NOT NULL,
+    fecha_publicacion                DATE             NOT NULL,
+    descripcion_mb    CLOB,
+    titulo_mb    VARCHAR2(251)    NOT NULL,
+    CONSTRAINT PK4_MB PRIMARY KEY (id_mat_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
     USING INDEX
         LOGGING, 
     CONSTRAINT RefEstanteria31 FOREIGN KEY (id_Sede, id_estanteria, id_seccion)
@@ -90,8 +90,9 @@ NOCACHE
 NOCOMPRESS
 ;
 
+
 CREATE TABLE Resenia(
-    id_material_biblio           VARCHAR2(10)     NOT NULL,
+    id_mat_biblio           VARCHAR2(10)     NOT NULL,
     id_resenia                   VARCHAR2(20)     NOT NULL,
     id_editorial                 VARCHAR2(20)     NOT NULL,
     id_Sede                      VARCHAR2(10)     NOT NULL,
@@ -99,12 +100,12 @@ CREATE TABLE Resenia(
     id_seccion                   VARCHAR2(10)     NOT NULL,
     contenido                    CLOB,
     puntuacion                   NUMBER(38, 0)    NOT NULL,
-    fecha_publicacion_resenia    DATE             NOT NULL,
-    CONSTRAINT PK14 PRIMARY KEY (id_material_biblio, id_resenia, id_editorial, id_Sede, id_estanteria, id_seccion)
+    fecha_publicacion	         DATE             NOT NULL,
+    CONSTRAINT PK14 PRIMARY KEY (id_mat_biblio, id_resenia, id_editorial, id_Sede, id_estanteria, id_seccion)
     USING INDEX
         LOGGING, 
-    CONSTRAINT RefMaterial_bibliografico151 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
+    CONSTRAINT RefMaterial_bibliografico151 FOREIGN KEY (id_mat_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
+    REFERENCES Material_bibliografico(id_mat_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
 )
 LOGGING
 NOPARALLEL
@@ -194,7 +195,7 @@ NOCOMPRESS
 CREATE TABLE Ejemplar(
     id_usuario            VARCHAR2(10)     NOT NULL,
     cod_serial            VARCHAR2(100)    NOT NULL,
-    id_material_biblio    VARCHAR2(10)     NOT NULL,
+    id_mat_biblio    VARCHAR2(10)     NOT NULL,
     id_editorial          VARCHAR2(20)     NOT NULL,
     id_adquisicion        VARCHAR2(25)     NOT NULL,
     id_proveedor          VARCHAR2(20)     NOT NULL,
@@ -202,11 +203,11 @@ CREATE TABLE Ejemplar(
     id_estanteria         VARCHAR2(10)     NOT NULL,
     id_seccion            VARCHAR2(10)     NOT NULL,
     numero_paginas        NUMBER(38, 0),
-    CONSTRAINT PK13 PRIMARY KEY (id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion)
+    CONSTRAINT PK13 PRIMARY KEY (id_usuario, cod_serial, id_mat_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion)
     USING INDEX
         LOGGING, 
-    CONSTRAINT RefMaterial_bibliografico141 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion),
+    CONSTRAINT RefMaterial_bibliografico141 FOREIGN KEY (id_mat_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
+    REFERENCES Material_bibliografico(id_mat_biblio, id_editorial, id_Sede, id_estanteria, id_seccion),
     CONSTRAINT RefAdquisicion201 FOREIGN KEY (id_usuario, id_adquisicion, id_proveedor)
     REFERENCES Adquisicion(id_usuario, id_adquisicion, id_proveedor)
 )
@@ -215,6 +216,7 @@ NOPARALLEL
 NOCACHE
 NOCOMPRESS
 ;
+
 
 CREATE TABLE Lector(
     id_usuario                     VARCHAR2(10)    NOT NULL,
@@ -235,7 +237,7 @@ NOCOMPRESS
 CREATE TABLE Prestamo(
     id_usuario            VARCHAR2(10)     NOT NULL,
     id_prestamo           VARCHAR2(20)     NOT NULL,
-    id_material_biblio    VARCHAR2(10)     NOT NULL,
+    id_mat_biblio    VARCHAR2(10)     NOT NULL,
     id_editorial          VARCHAR2(20)     NOT NULL,
     id_adquisicion        VARCHAR2(25)     NOT NULL,
     id_proveedor          VARCHAR2(20)     NOT NULL,
@@ -246,11 +248,11 @@ CREATE TABLE Prestamo(
     fecha_prestamo        TIMESTAMP(6)     NOT NULL,
     fecha_devolucion      TIMESTAMP(6)     NOT NULL,
     estado_prestamo       VARCHAR2(5)      NOT NULL,
-    CONSTRAINT PK15 PRIMARY KEY (id_usuario, id_prestamo, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial)
+    CONSTRAINT PK15 PRIMARY KEY (id_usuario, id_prestamo, id_mat_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial)
     USING INDEX
         LOGGING, 
-    CONSTRAINT RefEjemplar161 FOREIGN KEY (id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Ejemplar(id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion),
+    CONSTRAINT RefEjemplar161 FOREIGN KEY (id_usuario, cod_serial, id_mat_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion)
+    REFERENCES Ejemplar(id_usuario, cod_serial, id_mat_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion),
     CONSTRAINT RefLector171 FOREIGN KEY (id_usuario)
     REFERENCES Lector(id_usuario)
 )
@@ -263,7 +265,7 @@ NOCOMPRESS
 CREATE TABLE Multa(
     id_usuario            VARCHAR2(10)      NOT NULL,
     id_multa              VARCHAR2(20)      NOT NULL,
-    id_material_biblio    VARCHAR2(10)      NOT NULL,
+    id_mat_biblio    VARCHAR2(10)      NOT NULL,
     id_editorial          VARCHAR2(20)      NOT NULL,
     id_adquisicion        VARCHAR2(25)      NOT NULL,
     id_proveedor          VARCHAR2(20)      NOT NULL,
@@ -272,15 +274,15 @@ CREATE TABLE Multa(
     id_seccion            VARCHAR2(10)      NOT NULL,
     id_prestamo           VARCHAR2(20)      NOT NULL,
     cod_serial            VARCHAR2(100)     NOT NULL,
-    monto_multa           NUMBER(100, 0)    NOT NULL,
+    monto_multa           NUMBER(10, 2)    NOT NULL,
     fecha_imposicion      TIMESTAMP(6)      NOT NULL,
     estado                VARCHAR2(10)      NOT NULL,
     fecha_pago            TIMESTAMP(6),
-    CONSTRAINT PK19 PRIMARY KEY (id_usuario, id_multa, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, id_prestamo, cod_serial)
+    CONSTRAINT PK19 PRIMARY KEY (id_usuario, id_multa, id_mat_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, id_prestamo, cod_serial)
     USING INDEX
         LOGGING, 
-    CONSTRAINT RefPrestamo181 FOREIGN KEY (id_usuario, id_prestamo, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial)
-    REFERENCES Prestamo(id_usuario, id_prestamo, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial),
+    CONSTRAINT RefPrestamo181 FOREIGN KEY (id_usuario, id_prestamo, id_mat_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial)
+    REFERENCES Prestamo(id_usuario, id_prestamo, id_mat_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial),
     CONSTRAINT RefEmpleado191 FOREIGN KEY (id_usuario)
     REFERENCES Empleado(id_usuario)
 )
@@ -310,20 +312,20 @@ NOCOMPRESS
 CREATE TABLE Adiciona_estanteria(
     id_estanteria_virtual    CHAR(10)        NOT NULL,
     id_usuario               VARCHAR2(10)    NOT NULL,
-    id_material_biblio       VARCHAR2(10)    NOT NULL,
+    id_mat_biblio       VARCHAR2(10)    NOT NULL,
     id_editorial             VARCHAR2(20)    NOT NULL,
     id_Sede                  VARCHAR2(10)    NOT NULL,
     id_estanteria            VARCHAR2(10)    NOT NULL,
     id_seccion               VARCHAR2(10)    NOT NULL,
-    CONSTRAINT PK23 PRIMARY KEY (id_estanteria_virtual, id_usuario, id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
+    CONSTRAINT PK23 PRIMARY KEY (id_estanteria_virtual, id_usuario, id_mat_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
     USING INDEX
         LOGGING, 
     CONSTRAINT RefEstanteria_virtual241 FOREIGN KEY (id_estanteria_virtual, id_usuario)
     REFERENCES Estanteria_virtual(id_estanteria_virtual, id_usuario),
     CONSTRAINT RefLector251 FOREIGN KEY (id_usuario)
     REFERENCES Lector(id_usuario),
-    CONSTRAINT RefMaterial_bibliografico261 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
+    CONSTRAINT RefMaterial_bibliografico261 FOREIGN KEY (id_mat_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
+    REFERENCES Material_bibliografico(id_mat_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
 )
 LOGGING
 NOPARALLEL
@@ -345,17 +347,17 @@ NOCOMPRESS
 ;
 
 CREATE TABLE disponible_idioma(
-    id_material_biblio    VARCHAR2(10)    NOT NULL,
+    id_mat_biblio    VARCHAR2(10)    NOT NULL,
     id_idioma             VARCHAR2(2)     NOT NULL,
     id_editorial          VARCHAR2(20)    NOT NULL,
     id_Sede               VARCHAR2(10)    NOT NULL,
     id_estanteria         VARCHAR2(10)    NOT NULL,
     id_seccion            VARCHAR2(10)    NOT NULL,
-    CONSTRAINT PK12 PRIMARY KEY (id_material_biblio, id_idioma, id_editorial, id_Sede, id_estanteria, id_seccion)
+    CONSTRAINT PK12 PRIMARY KEY (id_mat_biblio, id_idioma, id_editorial, id_Sede, id_estanteria, id_seccion)
     USING INDEX
         LOGGING, 
-    CONSTRAINT RefMaterial_bibliografico121 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion),
+    CONSTRAINT RefMaterial_bibliografico121 FOREIGN KEY (id_mat_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
+    REFERENCES Material_bibliografico(id_mat_biblio, id_editorial, id_Sede, id_estanteria, id_seccion),
     CONSTRAINT RefIdioma361 FOREIGN KEY (id_idioma)
     REFERENCES Idioma(id_idioma)
 )
@@ -380,17 +382,17 @@ NOCOMPRESS
 ;
 
 CREATE TABLE tiene_categoria(
-    id_material_biblio    VARCHAR2(10)     NOT NULL,
+    id_mat_biblio    VARCHAR2(10)     NOT NULL,
     id_editorial          VARCHAR2(20)     NOT NULL,
     id_Sede               VARCHAR2(10)     NOT NULL,
     id_estanteria         VARCHAR2(10)     NOT NULL,
     id_seccion            VARCHAR2(10)     NOT NULL,
     id_categoria          NUMBER(38, 0)    NOT NULL,
-    CONSTRAINT PK9 PRIMARY KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_categoria)
+    CONSTRAINT PK9 PRIMARY KEY (id_mat_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_categoria)
     USING INDEX
         LOGGING, 
-    CONSTRAINT RefMaterial_bibliografico71 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion),
+    CONSTRAINT RefMaterial_bibliografico71 FOREIGN KEY (id_mat_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
+    REFERENCES Material_bibliografico(id_mat_biblio, id_editorial, id_Sede, id_estanteria, id_seccion),
     CONSTRAINT RefCategoria91 FOREIGN KEY (id_categoria)
     REFERENCES Categoria(id_categoria)
 )
@@ -419,17 +421,17 @@ NOCOMPRESS
 ;
 
 CREATE TABLE escrito_por(
-    id_material_biblio    VARCHAR2(10)    NOT NULL,
+    id_mat_biblio    VARCHAR2(10)    NOT NULL,
     id_editorial          VARCHAR2(20)    NOT NULL,
     id_autor              VARCHAR2(20)    NOT NULL,
     id_Sede               VARCHAR2(10)    NOT NULL,
     id_estanteria         VARCHAR2(10)    NOT NULL,
     id_seccion            VARCHAR2(10)    NOT NULL,
-    CONSTRAINT PK8 PRIMARY KEY (id_material_biblio, id_editorial, id_autor, id_Sede, id_estanteria, id_seccion)
+    CONSTRAINT PK8 PRIMARY KEY (id_mat_biblio, id_editorial, id_autor, id_Sede, id_estanteria, id_seccion)
     USING INDEX
         LOGGING, 
-    CONSTRAINT RefMaterial_bibliografico61 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion),
+    CONSTRAINT RefMaterial_bibliografico61 FOREIGN KEY (id_mat_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
+    REFERENCES Material_bibliografico(id_mat_biblio, id_editorial, id_Sede, id_estanteria, id_seccion),
     CONSTRAINT RefAutor81 FOREIGN KEY (id_autor)
     REFERENCES Autor(id_autor)
 )
@@ -442,7 +444,7 @@ NOCOMPRESS
 CREATE TABLE Tipo(
     id_tipo               NUMBER(38, 0)    NOT NULL,
     tipo                  CHAR(30)         NOT NULL,
-    id_material_biblio    VARCHAR2(10),
+    id_mat_biblio    VARCHAR2(10),
     id_editorial          VARCHAR2(20),
     id_Sede               VARCHAR2(10),
     id_estanteria         VARCHAR2(10),
@@ -450,32 +452,4 @@ CREATE TABLE Tipo(
     CONSTRAINT PK5 PRIMARY KEY (id_tipo)
     USING INDEX
         LOGGING, 
-    CONSTRAINT RefMaterial_bibliografico41 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-)
-LOGGING
-NOPARALLEL
-NOCACHE
-NOCOMPRESS
-;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    CONSTRAINT RefMaterial_bibliografico41 FOR
