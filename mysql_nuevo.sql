@@ -1,6 +1,7 @@
 DROP DATABASE bibliografica;
 CREATE DATABASE bibliografica;
 use bibliografica;
+
 CREATE TABLE Sede(
     id_Sede           VARCHAR(10)    NOT NULL,
     nombre_sede       VARCHAR(50),
@@ -52,14 +53,17 @@ CREATE TABLE Material_bibliografico(
     id_Sede                               VARCHAR(10)     NOT NULL,
     id_estanteria                         VARCHAR(10)     NOT NULL,
     id_seccion                            VARCHAR(10)     NOT NULL,
+    id_tipo                               INT             NOT NULL,
     fecha_publicacion                     DATE            NOT NULL,
     descripcion_material_bibliografico    TEXT,
     titulo_material_bibliografico         VARCHAR(251)    NOT NULL,
-    PRIMARY KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion), 
+    PRIMARY KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo), 
     CONSTRAINT RefEstanteria31 FOREIGN KEY (id_Sede, id_estanteria, id_seccion)
     REFERENCES Estanteria(id_Sede, id_estanteria, id_seccion),
     CONSTRAINT RefEditorial371 FOREIGN KEY (id_editorial)
-    REFERENCES Editorial(id_editorial)
+    REFERENCES Editorial(id_editorial),
+    CONSTRAINT RefTipo401 FOREIGN KEY (id_tipo)
+    REFERENCES Tipo(id_tipo)
 )ENGINE=MYISAM
 ;
 
@@ -70,12 +74,13 @@ CREATE TABLE Resenia(
     id_Sede                      VARCHAR(10)    NOT NULL,
     id_estanteria                VARCHAR(10)    NOT NULL,
     id_seccion                   VARCHAR(10)    NOT NULL,
+    id_tipo                      INT            NOT NULL,
     contenido                    TEXT,
     puntuacion                   INT            NOT NULL,
     fecha_publicacion_resenia    DATE           NOT NULL,
-    PRIMARY KEY (id_material_biblio, id_resenia, id_editorial, id_Sede, id_estanteria, id_seccion), 
-    CONSTRAINT RefMaterial_bibliografico151 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
+    PRIMARY KEY (id_material_biblio, id_resenia, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo), 
+    CONSTRAINT RefMaterial_bibliografico151 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo)
+    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo)
 )ENGINE=MYISAM
 ;
 
@@ -121,11 +126,12 @@ CREATE TABLE Proveedor(
 ;
 
 CREATE TABLE Adquisicion(
-    id_usuario        VARCHAR(10)       NOT NULL,
-    id_adquisicion    VARCHAR(25)       NOT NULL,
-    id_proveedor      VARCHAR(20)       NOT NULL,
-    presupuesto       DECIMAL(10, 0)    NOT NULL,
-    tasacion          DECIMAL(10, 0)    NOT NULL,
+    id_usuario           VARCHAR(10)       NOT NULL,
+    id_adquisicion       VARCHAR(25)       NOT NULL,
+    id_proveedor         VARCHAR(20)       NOT NULL,
+    presupuesto          DECIMAL(10, 0)    NOT NULL,
+    tasacion             DECIMAL(10, 0)    NOT NULL,
+    fecha_adquisicion    DATETIME          NOT NULL,
     PRIMARY KEY (id_usuario, id_adquisicion, id_proveedor), 
     CONSTRAINT RefEmpleado211 FOREIGN KEY (id_usuario)
     REFERENCES Empleado(id_usuario),
@@ -144,10 +150,14 @@ CREATE TABLE Ejemplar(
     id_Sede               VARCHAR(10)     NOT NULL,
     id_estanteria         VARCHAR(10)     NOT NULL,
     id_seccion            VARCHAR(10)     NOT NULL,
+    id_tipo               INT             NOT NULL,
     numero_paginas        INT,
-    PRIMARY KEY (id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion), 
-    CONSTRAINT RefMaterial_bibliografico141 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion),
+    id_idioma             VARCHAR(2),
+    PRIMARY KEY (id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, id_tipo), 
+    CONSTRAINT RefIdioma461 FOREIGN KEY (id_idioma)
+    REFERENCES Idioma(id_idioma),
+    CONSTRAINT RefMaterial_bibliografico141 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo)
+    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo),
     CONSTRAINT RefAdquisicion201 FOREIGN KEY (id_usuario, id_adquisicion, id_proveedor)
     REFERENCES Adquisicion(id_usuario, id_adquisicion, id_proveedor)
 )ENGINE=MYISAM
@@ -174,20 +184,21 @@ CREATE TABLE Prestamo(
     id_estanteria         VARCHAR(10)     NOT NULL,
     id_seccion            VARCHAR(10)     NOT NULL,
     cod_serial            VARCHAR(100)    NOT NULL,
+    id_tipo               INT             NOT NULL,
     fecha_prestamo        DATETIME        NOT NULL,
     fecha_devolucion      DATETIME        NOT NULL,
     estado_prestamo       VARCHAR(5)      NOT NULL,
-    PRIMARY KEY (id_usuario, id_prestamo, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial), 
-    CONSTRAINT RefEjemplar161 FOREIGN KEY (id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Ejemplar(id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion),
+    PRIMARY KEY (id_usuario, id_prestamo, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial, id_tipo), 
+    CONSTRAINT RefEjemplar161 FOREIGN KEY (id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, id_tipo)
+    REFERENCES Ejemplar(id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, id_tipo),
     CONSTRAINT RefLector171 FOREIGN KEY (id_usuario)
     REFERENCES Lector(id_usuario)
 )ENGINE=MYISAM
 ;
 
 CREATE TABLE Multa (
-    id_multa              INT PRIMARY KEY AUTO_INCREMENT,
     id_usuario            VARCHAR(10)        NOT NULL,
+    id_multa              VARCHAR(20)        NOT NULL,
     id_material_biblio    VARCHAR(10)        NOT NULL,
     id_editorial          VARCHAR(20)        NOT NULL,
     id_adquisicion        VARCHAR(25)        NOT NULL,
@@ -196,18 +207,18 @@ CREATE TABLE Multa (
     id_estanteria         VARCHAR(10)        NOT NULL,
     id_seccion            VARCHAR(10)        NOT NULL,
     id_prestamo           VARCHAR(20)        NOT NULL,
-    cod_serial            VARCHAR(100)       NOT NULL,
-    monto_multa           DECIMAL(10, 2)     NOT NULL,
+    cod_serial            VARCHAR(50)        NOT NULL, -- Reducida a VARCHAR(50)
+    id_tipo               INT                NOT NULL,
+    monto_multa           DECIMAL(65, 0)    NOT NULL,
     fecha_imposicion      DATETIME           NOT NULL,
     estado                VARCHAR(10)        NOT NULL,
     fecha_pago            DATETIME,
-    CONSTRAINT RefPrestamo181 FOREIGN KEY (id_usuario, id_prestamo, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial)
-    REFERENCES Prestamo(id_usuario, id_prestamo, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial),
+    PRIMARY KEY (id_usuario, id_multa, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, id_prestamo, cod_serial, id_tipo), 
+    CONSTRAINT RefPrestamo181 FOREIGN KEY (id_usuario, id_prestamo, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial, id_tipo)
+    REFERENCES Prestamo(id_usuario, id_prestamo, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial, id_tipo),
     CONSTRAINT RefEmpleado191 FOREIGN KEY (id_usuario)
     REFERENCES Empleado(id_usuario)
 ) ENGINE=MYISAM;
-
-
 
 CREATE TABLE Estanteria_virtual(
     id_estanteria_virtual        CHAR(10)       NOT NULL,
@@ -228,13 +239,14 @@ CREATE TABLE Adiciona_estanteria(
     id_Sede                  VARCHAR(10)    NOT NULL,
     id_estanteria            VARCHAR(10)    NOT NULL,
     id_seccion               VARCHAR(10)    NOT NULL,
-    PRIMARY KEY (id_estanteria_virtual, id_usuario, id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion), 
+    id_tipo                  INT            NOT NULL,
+    PRIMARY KEY (id_estanteria_virtual, id_usuario, id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo), 
     CONSTRAINT RefEstanteria_virtual241 FOREIGN KEY (id_estanteria_virtual, id_usuario)
     REFERENCES Estanteria_virtual(id_estanteria_virtual, id_usuario),
     CONSTRAINT RefLector251 FOREIGN KEY (id_usuario)
     REFERENCES Lector(id_usuario),
-    CONSTRAINT RefMaterial_bibliografico261 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
+    CONSTRAINT RefMaterial_bibliografico261 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo)
+    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo)
 )ENGINE=MYISAM
 ;
 
@@ -242,21 +254,6 @@ CREATE TABLE Idioma(
     id_idioma        VARCHAR(2)     NOT NULL,
     nombre_idioma    VARCHAR(50)    NOT NULL,
     PRIMARY KEY (id_idioma)
-)ENGINE=MYISAM
-;
-
-CREATE TABLE disponible_idioma(
-    id_material_biblio    VARCHAR(10)    NOT NULL,
-    id_idioma             VARCHAR(2)     NOT NULL,
-    id_editorial          VARCHAR(20)    NOT NULL,
-    id_Sede               VARCHAR(10)    NOT NULL,
-    id_estanteria         VARCHAR(10)    NOT NULL,
-    id_seccion            VARCHAR(10)    NOT NULL,
-    PRIMARY KEY (id_material_biblio, id_idioma, id_editorial, id_Sede, id_estanteria, id_seccion), 
-    CONSTRAINT RefMaterial_bibliografico121 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion),
-    CONSTRAINT RefIdioma361 FOREIGN KEY (id_idioma)
-    REFERENCES Idioma(id_idioma)
 )ENGINE=MYISAM
 ;
 
@@ -275,9 +272,10 @@ CREATE TABLE tiene_categoria(
     id_estanteria         VARCHAR(10)    NOT NULL,
     id_seccion            VARCHAR(10)    NOT NULL,
     id_categoria          INT            NOT NULL,
-    PRIMARY KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_categoria), 
-    CONSTRAINT RefMaterial_bibliografico71 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion),
+    id_tipo               INT            NOT NULL,
+    PRIMARY KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_categoria, id_tipo), 
+    CONSTRAINT RefMaterial_bibliografico71 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo)
+    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo),
     CONSTRAINT RefCategoria91 FOREIGN KEY (id_categoria)
     REFERENCES Categoria(id_categoria)
 )ENGINE=MYISAM
@@ -302,42 +300,18 @@ CREATE TABLE escrito_por(
     id_Sede               VARCHAR(10)    NOT NULL,
     id_estanteria         VARCHAR(10)    NOT NULL,
     id_seccion            VARCHAR(10)    NOT NULL,
-    PRIMARY KEY (id_material_biblio, id_editorial, id_autor, id_Sede, id_estanteria, id_seccion), 
-    CONSTRAINT RefMaterial_bibliografico61 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion),
+    id_tipo               INT            NOT NULL,
+    PRIMARY KEY (id_material_biblio, id_editorial, id_autor, id_Sede, id_estanteria, id_seccion, id_tipo), 
+    CONSTRAINT RefMaterial_bibliografico61 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo)
+    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo),
     CONSTRAINT RefAutor81 FOREIGN KEY (id_autor)
     REFERENCES Autor(id_autor)
 )ENGINE=MYISAM
 ;
 
 CREATE TABLE Tipo(
-    id_tipo               INT            AUTO_INCREMENT,
-    tipo                  CHAR(30)       NOT NULL,
-    id_material_biblio    VARCHAR(10),
-    id_editorial          VARCHAR(20),
-    id_Sede               VARCHAR(10),
-    id_estanteria         VARCHAR(10),
-    id_seccion            VARCHAR(10),
-    PRIMARY KEY (id_tipo), 
-    CONSTRAINT RefMaterial_bibliografico41 FOREIGN KEY (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-    REFERENCES Material_bibliografico(id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
+    id_tipo    INT         AUTO_INCREMENT,
+    tipo       CHAR(30)    NOT NULL,
+    PRIMARY KEY (id_tipo)
 )ENGINE=MYISAM
 ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
