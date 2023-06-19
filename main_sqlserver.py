@@ -2,29 +2,28 @@ import random
 import pymssql
 import string
 from datetime import date, timedelta, datetime, time
-
+# ConfiguraciÃ³n de la conexiÃ³n a la base de datos MySQL
 server = "localhost"
 database = "bibliografica"
 username = "diegojoel301"
 password = "diegojoel301"
 
-
 # Listas de nombres para generar registros aleatorios
 nombres_sedes = ['Sede A', 'Sede B', 'Sede C', 'Sede D', 'Sede E']
-nombres_secciones = ['Sección A', 'Sección B', 'Sección C', 'Sección D', 'Sección E']
+nombres_secciones = ['SecciÃ³n A', 'SecciÃ³n B', 'SecciÃ³n C', 'SecciÃ³n D', 'SecciÃ³n E']
 nombres_editoriales = ['Editorial 1', 'Editorial 2', 'Editorial 3', 'Editorial 4', 'Editorial 5']
 
 # Listas de nombres y descripciones para generar registros aleatorios
 titulos = ['Libro A', 'Libro B', 'Libro C', 'Libro D', 'Libro E']
-descripciones = ['Descripción del libro A', 'Descripción del libro B', 'Descripción del libro C', 'Descripción del libro D', 'Descripción del libro E']
+descripciones = ['DescripciÃ³n del libro A', 'DescripciÃ³n del libro B', 'DescripciÃ³n del libro C', 'DescripciÃ³n del libro D', 'DescripciÃ³n del libro E']
 
 # Listas de contenidos y puntuaciones para generar registros aleatorios
-contenidos = ['Buena reseña', 'Excelente libro', 'Muy recomendado', 'Interesante lectura', 'No me gustó']
+contenidos = ['Buena reseÃ±a', 'Excelente libro', 'Muy recomendado', 'Interesante lectura', 'No me gustÃ³']
 puntuaciones = [1, 2, 3, 4, 5]
 
 # Listas de nombres y apellidos para generar registros aleatorios
-nombres = ['Juan', 'María', 'Carlos', 'Laura', 'Pedro']
-apellidos = ['Gómez', 'López', 'García', 'Rodríguez', 'Martínez']
+nombres = ['Juan', 'MarÃ­a', 'Carlos', 'Laura', 'Pedro']
+apellidos = ['GÃ³mez', 'LÃ³pez', 'GarcÃ­a', 'RodrÃ­guez', 'MartÃ­nez']
 
 # Lista de cargos para generar registros aleatorios
 cargos = ['Gerente', 'Supervisor', 'Asistente', 'Analista']
@@ -35,78 +34,78 @@ nombres_proveedor = ['Proveedor A', 'Proveedor B', 'Proveedor C', 'Proveedor D',
 # Lista de idiomas:
 
 idiomas = [
-    ('es', 'Español'),
-    ('en', 'Inglés'),
-    ('fr', 'Francés'),
-    ('de', 'Alemán'),
+    ('es', 'EspaÃ±ol'),
+    ('en', 'InglÃ©s'),
+    ('fr', 'FrancÃ©s'),
+    ('de', 'AlemÃ¡n'),
     ('it', 'Italiano'),
-    ('pt', 'Portugués'),
-    ('ja', 'Japonés'),
+    ('pt', 'PortuguÃ©s'),
+    ('ja', 'JaponÃ©s'),
     ('zh', 'Chino'),
     ('ru', 'Ruso'),
-    ('ar', 'Árabe')
+    ('ar', 'Ãrabe')
 ]
 
 # Lista de categorias
 
 categorias = [
-    ("Descripción 1", "Categoría 1"),
-    ("Descripción 2", "Categoría 2"),
-    ("Descripción 3", "Categoría 3"),
-    # Agregar más categorías si es necesario
+    ("DescripciÃ³n 1", "CategorÃ­a 1"),
+    ("DescripciÃ³n 2", "CategorÃ­a 2"),
+    ("DescripciÃ³n 3", "CategorÃ­a 3"),
+    # Agregar mÃ¡s categorÃ­as si es necesario
 ]
 
-# Función para generar un registro aleatorio para la tabla "Sede"
+# FunciÃ³n para generar un registro aleatorio para la tabla "Sede"
 def generar_registro_sede(i):
-    #id_sede = str(random.randint(1000, 9999))  # Genera un ID de sede de 4 dígitos aleatorio
+    #id_sede = str(random.randint(1000, 9999))  # Genera un ID de sede de 4 dÃ­gitos aleatorio
     id_sede = str(i + 1)
     nombre_sede = random.choice(nombres_sedes)
-    pais_sede = random.choice(['España', 'Estados Unidos', 'México', 'Argentina', 'Francia'])
+    pais_sede = random.choice(['EspaÃ±a', 'Estados Unidos', 'MÃ©xico', 'Argentina', 'Francia'])
     ciudad_sede = random.choice(['Madrid', 'Barcelona', 'Valencia', 'Sevilla', 'Bilbao'])
-    avenida_calle = random.choice(['Calle Principal', 'Avenida Central', 'Paseo de la Victoria', 'Avenida Juárez'])
+    avenida_calle = random.choice(['Calle Principal', 'Avenida Central', 'Paseo de la Victoria', 'Avenida JuÃ¡rez'])
     numero_sede = random.randint(1, 100)
     capacidad_sede = random.randint(50, 500)
     return (id_sede, nombre_sede, pais_sede, ciudad_sede, avenida_calle, numero_sede, capacidad_sede)
 
-# Función para generar un registro aleatorio para la tabla "Seccion"
+# FunciÃ³n para generar un registro aleatorio para la tabla "Seccion"
 def generar_registro_seccion(i):
-    id_sede = str(random.randint(1000, 9999))  # Genera un ID de sede de 4 dígitos aleatorio
-    id_seccion = str(i + 1)  # Genera un ID de sección de 1 a 100 aleatorio
+    id_sede = str(random.randint(1000, 9999))  # Genera un ID de sede de 4 dÃ­gitos aleatorio
+    id_seccion = str(i + 1)  # Genera un ID de secciÃ³n de 1 a 100 aleatorio
     nombre_seccion = random.choice(nombres_secciones)
     return (id_sede, id_seccion, nombre_seccion)
 
-# Función para generar un registro aleatorio para la tabla "Estanteria"
+# FunciÃ³n para generar un registro aleatorio para la tabla "Estanteria"
 def generar_registro_estanteria(i):
-    id_sede = str(random.randint(1000, 9999))  # Genera un ID de sede de 4 dígitos aleatorio
-    id_estanteria = str(i + 1)  # Genera un ID de estantería de 1 a 100 aleatorio
-    id_seccion = str(random.randint(1, 100))  # Genera un ID de sección de 1 a 100 aleatorio
+    id_sede = str(random.randint(1000, 9999))  # Genera un ID de sede de 4 dÃ­gitos aleatorio
+    id_estanteria = str(i + 1)  # Genera un ID de estanterÃ­a de 1 a 100 aleatorio
+    id_seccion = str(random.randint(1, 100))  # Genera un ID de secciÃ³n de 1 a 100 aleatorio
     capacidad = random.randint(1, 50)
     numero_estanteria = random.randint(1, 10)
     numero_pasillo_ubicacion = random.randint(1, 5)
     return (id_sede, id_estanteria, id_seccion, capacidad, numero_estanteria, numero_pasillo_ubicacion)
 
-# Función para generar un registro aleatorio para la tabla "Editorial"
+# FunciÃ³n para generar un registro aleatorio para la tabla "Editorial"
 def generar_registro_editorial(i):
-    id_editorial = str(i + 1)  # Genera un ID de editorial de 5 dígitos aleatorio
-    pais = random.choice(['España', 'Estados Unidos', 'México', 'Argentina', 'Francia'])
+    id_editorial = str(i + 1)  # Genera un ID de editorial de 5 dÃ­gitos aleatorio
+    pais = random.choice(['EspaÃ±a', 'Estados Unidos', 'MÃ©xico', 'Argentina', 'Francia'])
     ciudad = random.choice(['Madrid', 'Barcelona', 'Valencia', 'Sevilla', 'Bilbao'])
-    telefono = str(random.randint(1000000000, 9999999999))  # Genera un número de teléfono de 10 dígitos aleatorio
+    telefono = str(random.randint(1000000000, 9999999999))  # Genera un nÃºmero de telÃ©fono de 10 dÃ­gitos aleatorio
     nombre_editorial = random.choice(nombres_editoriales)
     return (id_editorial, pais, ciudad, telefono, nombre_editorial)
 
-# Función para generar un registro aleatorio para la tabla "Material_bibliografico"
+# FunciÃ³n para generar un registro aleatorio para la tabla "Material_bibliografico"
 def generar_registro_material(i):
-    id_material_biblio = str(i + 1)  # Genera un ID de material bibliográfico de 3 dígitos aleatorio
-    id_editorial = str(random.randint(1000, 9999))  # Genera un ID de editorial de 3 dígitos aleatorio
-    id_sede = str(random.randint(1000, 9999))  # Genera un ID de sede de 3 dígitos aleatorio
-    id_estanteria = str(random.randint(1000, 9999))  # Genera un ID de estantería de 3 dígitos aleatorio
-    id_seccion = str(random.randint(1000, 9999))  # Genera un ID de sección de 3 dígitos aleatorio
+    id_material_biblio = str(i + 1)  # Genera un ID de material bibliogrÃ¡fico de 3 dÃ­gitos aleatorio
+    id_editorial = str(random.randint(1000, 9999))  # Genera un ID de editorial de 3 dÃ­gitos aleatorio
+    id_sede = str(random.randint(1000, 9999))  # Genera un ID de sede de 3 dÃ­gitos aleatorio
+    id_estanteria = str(random.randint(1000, 9999))  # Genera un ID de estanterÃ­a de 3 dÃ­gitos aleatorio
+    id_seccion = str(random.randint(1000, 9999))  # Genera un ID de secciÃ³n de 3 dÃ­gitos aleatorio
     fecha_publicacion = random_date()
     descripcion_material_bibliografico = random.choice(descripciones)
     titulo_material_bibliografico = random.choice(titulos)
     return (id_material_biblio, id_editorial, id_sede, id_estanteria, id_seccion, fecha_publicacion, descripcion_material_bibliografico, titulo_material_bibliografico)
 
-# Función para generar una fecha aleatoria
+# FunciÃ³n para generar una fecha aleatoria
 def random_date():
     start_date = date(2000, 1, 1)
     end_date = date(2023, 12, 31)
@@ -114,78 +113,78 @@ def random_date():
     random_days = random.randint(0, days)
     return start_date + timedelta(days=random_days)
 
-# Función para generar un registro aleatorio para la tabla "Resenia"
+# FunciÃ³n para generar un registro aleatorio para la tabla "Resenia"
 def generar_registro_resenia(i):
-    id_material_biblio = str(i + 1)  # Genera un ID de material bibliográfico de 3 dígitos aleatorio
-    id_resenia = str(random.randint(1000, 9999))  # Genera un ID de reseña de 3 dígitos aleatorio
-    id_editorial = str(random.randint(1000, 9999))  # Genera un ID de editorial de 3 dígitos aleatorio
-    id_sede = str(random.randint(1000, 9999))  # Genera un ID de sede de 3 dígitos aleatorio
-    id_estanteria = str(random.randint(1000, 9999))  # Genera un ID de estantería de 3 dígitos aleatorio
-    id_seccion = str(random.randint(1000, 9999))  # Genera un ID de sección de 3 dígitos aleatorio
+    id_material_biblio = str(i + 1)  # Genera un ID de material bibliogrÃ¡fico de 3 dÃ­gitos aleatorio
+    id_resenia = str(random.randint(1000, 9999))  # Genera un ID de reseÃ±a de 3 dÃ­gitos aleatorio
+    id_editorial = str(random.randint(1000, 9999))  # Genera un ID de editorial de 3 dÃ­gitos aleatorio
+    id_sede = str(random.randint(1000, 9999))  # Genera un ID de sede de 3 dÃ­gitos aleatorio
+    id_estanteria = str(random.randint(1000, 9999))  # Genera un ID de estanterÃ­a de 3 dÃ­gitos aleatorio
+    id_seccion = str(random.randint(1000, 9999))  # Genera un ID de secciÃ³n de 3 dÃ­gitos aleatorio
     contenido = random.choice(contenidos)
     puntuacion = random.choice(puntuaciones)
     fecha_publicacion_resenia = random_date()
     return (id_material_biblio, id_resenia, id_editorial, id_sede, id_estanteria, id_seccion, contenido, puntuacion, fecha_publicacion_resenia)
 
-# Función para generar un registro aleatorio para la tabla "Usuario"
+# FunciÃ³n para generar un registro aleatorio para la tabla "Usuario"
 def generar_registro_usuario(i):
-    id_usuario = str(i + 1)  # Genera un ID de usuario de 3 dígitos aleatorio
-    celular = ''.join(random.choice('0123456789') for _ in range(10))  # Genera un número de celular aleatorio
-    telefonoU = ''.join(random.choice('0123456789') for _ in range(10))  # Genera un número de teléfono aleatorio
+    id_usuario = str(i + 1)  # Genera un ID de usuario de 3 dÃ­gitos aleatorio
+    celular = ''.join(random.choice('0123456789') for _ in range(10))  # Genera un nÃºmero de celular aleatorio
+    telefonoU = ''.join(random.choice('0123456789') for _ in range(10))  # Genera un nÃºmero de telÃ©fono aleatorio
     nombreU = random.choice(nombres)
     primer_apellido = random.choice(apellidos)
     segundo_apellido = random.choice(apellidos)
     ciudad = random.choice(['Madrid', 'Barcelona', 'Valencia', 'Sevilla', 'Bilbao'])
-    pais = random.choice(['España', 'Estados Unidos', 'México', 'Argentina', 'Francia'])
+    pais = random.choice(['EspaÃ±a', 'Estados Unidos', 'MÃ©xico', 'Argentina', 'Francia'])
     avenida_calle = random.choice(['Avenida A', 'Calle B', 'Avenida C', 'Calle D', 'Avenida E'])
     numero_hogar = random.randint(1, 100)
-    ci = ''.join(random.choice('0123456789') for _ in range(10))  # Genera un número de CI aleatorio
+    ci = ''.join(random.choice('0123456789') for _ in range(10))  # Genera un nÃºmero de CI aleatorio
     fecha_registro = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     return (id_usuario, celular, telefonoU, nombreU, primer_apellido, segundo_apellido, ciudad, pais, avenida_calle, numero_hogar, ci, fecha_registro)
 
-# Función para generar una fecha aleatoria en el rango de los últimos 5 años
+# FunciÃ³n para generar una fecha aleatoria en el rango de los Ãºltimos 5 aÃ±os
 def generar_fecha_inicio_cargo():
     fecha_actual = date.today()
     fecha_inicio_cargo = fecha_actual - timedelta(days=random.randint(365, 1825))
     return fecha_inicio_cargo
 
-# Función para generar un horario de trabajo aleatorio
+# FunciÃ³n para generar un horario de trabajo aleatorio
 def generar_horario_trabajo():
     hora = random.randint(8, 18)  # Genera una hora aleatoria entre las 8:00 y las 18:00
     minutos = random.choice([0, 15, 30, 45])  # Genera los minutos aleatoriamente en intervalos de 15 minutos
     horario_trabajo = time(hora, minutos)
     return horario_trabajo
 
-# Función para generar un número de teléfono aleatorio
+# FunciÃ³n para generar un nÃºmero de telÃ©fono aleatorio
 def generar_telefono():
     telefono = ''.join(random.choice('0123456789') for _ in range(10))
     return telefono
 
-# Función para generar un presupuesto aleatorio
+# FunciÃ³n para generar un presupuesto aleatorio
 def generar_presupuesto():
     presupuesto = random.randint(100, 100000)
     return presupuesto
 
-# Función para generar una tasación aleatoria
+# FunciÃ³n para generar una tasaciÃ³n aleatoria
 def generar_tasacion():
     tasacion = random.randint(100, 100000)
     return tasacion
 
-# Función para generar una categoría de membresía aleatoria
+# FunciÃ³n para generar una categorÃ­a de membresÃ­a aleatoria
 def generar_categoria_membresia():
-    categorias = ['Básico', 'Premium', 'VIP']
+    categorias = ['BÃ¡sico', 'Premium', 'VIP']
     categoria_membresia = random.choice(categorias)
     return categoria_membresia
 
-# Función para generar una fecha de vencimiento de membresía aleatoria
+# FunciÃ³n para generar una fecha de vencimiento de membresÃ­a aleatoria
 def generar_fecha_vencimiento():
-    anio = random.randint(2023, 2025)  # Genera un año entre 2023 y 2025
+    anio = random.randint(2023, 2025)  # Genera un aÃ±o entre 2023 y 2025
     mes = random.randint(1, 12)  # Genera un mes entre 1 y 12
-    dia = random.randint(1, 28)  # Genera un día entre 1 y 28 (asumiendo meses con 28 días)
+    dia = random.randint(1, 28)  # Genera un dÃ­a entre 1 y 28 (asumiendo meses con 28 dÃ­as)
     fecha_vencimiento = f"{anio}-{mes:02d}-{dia:02d}"
     return fecha_vencimiento
 
-# Función para generar una fecha aleatoria dentro de un rango específico
+# FunciÃ³n para generar una fecha aleatoria dentro de un rango especÃ­fico
 def generar_fecha(rango_inicio, rango_fin):
     tiempo_inicio = datetime.strptime(rango_inicio, "%Y-%m-%d %H:%M:%S")
     tiempo_fin = datetime.strptime(rango_fin, "%Y-%m-%d %H:%M:%S")
@@ -194,14 +193,14 @@ def generar_fecha(rango_inicio, rango_fin):
     return tiempo_prestamo
 
 def generar_nombre_estanteria_virtual():
-    longitud = random.randint(5, 10)  # Longitud del nombre de estantería virtual
+    longitud = random.randint(5, 10)  # Longitud del nombre de estanterÃ­a virtual
     caracteres = string.ascii_letters + string.digits  # Caracteres permitidos en el nombre
     nombre = ''.join(random.choice(caracteres) for _ in range(longitud))
     return nombre
 
 def generar_nombre_autor():
-    nombres = ['Juan', 'María', 'Carlos', 'Laura', 'Pedro', 'Ana', 'Luis', 'Mónica', 'Javier', 'Sofía']
-    apellidos = ['García', 'Martínez', 'López', 'Hernández', 'Gómez', 'Pérez', 'Rodríguez', 'González', 'Sánchez', 'Fernández']
+    nombres = ['Juan', 'MarÃ­a', 'Carlos', 'Laura', 'Pedro', 'Ana', 'Luis', 'MÃ³nica', 'Javier', 'SofÃ­a']
+    apellidos = ['GarcÃ­a', 'MartÃ­nez', 'LÃ³pez', 'HernÃ¡ndez', 'GÃ³mez', 'PÃ©rez', 'RodrÃ­guez', 'GonzÃ¡lez', 'SÃ¡nchez', 'FernÃ¡ndez']
 
     nombre = random.choice(nombres)
     apellido1 = random.choice(apellidos)
@@ -210,15 +209,15 @@ def generar_nombre_autor():
     return f"{nombre} {apellido1} {apellido2}"
 
 def generar_apellido():
-    apellidos = ['García', 'Martínez', 'López', 'Hernández', 'Gómez', 'Pérez', 'Rodríguez', 'González', 'Sánchez', 'Fernández']
+    apellidos = ['GarcÃ­a', 'MartÃ­nez', 'LÃ³pez', 'HernÃ¡ndez', 'GÃ³mez', 'PÃ©rez', 'RodrÃ­guez', 'GonzÃ¡lez', 'SÃ¡nchez', 'FernÃ¡ndez']
     return random.choice(apellidos)
 
 def generar_nacionalidad():
-    nacionalidades = ['Española', 'Mexicana', 'Argentina', 'Colombiana', 'Chilena', 'Peruana', 'Brasileña', 'Venezolana', 'Uruguaya', 'Ecuatoriana']
+    nacionalidades = ['EspaÃ±ola', 'Mexicana', 'Argentina', 'Colombiana', 'Chilena', 'Peruana', 'BrasileÃ±a', 'Venezolana', 'Uruguaya', 'Ecuatoriana']
     return random.choice(nacionalidades)
 
 def generar_fecha_nacimiento():
-    # Generar una fecha de nacimiento aleatoria en un rango de 18 a 60 años atrás
+    # Generar una fecha de nacimiento aleatoria en un rango de 18 a 60 aÃ±os atrÃ¡s
     today = date.today()
     min_age = 18
     max_age = 60
@@ -233,15 +232,15 @@ def generar_sexo():
     return random.choice(opciones)
 
 def generar_tipo():
-    tipos = ['Libro', 'Revista', 'Periódico', 'Artículo', 'Tesis', 'Documento', 'Otro']
+    tipos = ['Libro', 'Revista', 'PeriÃ³dico', 'ArtÃ­culo', 'Tesis', 'Documento', 'Otro']
     return random.choice(tipos)
 
-# Leer el archivo que contiene el código DDL
+# Leer el archivo que contiene el cÃ³digo DDL
 #ddl_file = 'mysql_nuevo.sql'
 #with open(ddl_file, 'r') as file:
 #    ddl_script = file.read()
 
-# Conexión a la base de datos
+# ConexiÃ³n a la base de datos
 conexion = pymssql.connect(server = server, database = database, user = username, password = password)
 cursor = conexion.cursor()
 
@@ -254,9 +253,10 @@ cursor = conexion.cursor()
 # Generar y insertar 500 registros de prueba para la tabla "Sede"
 for i in range(500):
     registro_sede = generar_registro_sede(i)
-    query_sede = "INSERT INTO Sede (id_Sede, nombre_sede, pais_Sede, ciudad_Sede, avenida_calle, numero_sede, capacidad_sede) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+    query_sede = "INSERT INTO Sede (id_Sede, nombre_sede, pais_Sede, ciudad_Sede, avenida_calle, numero_sede, capacidad_sede) VALUES ('%s', '%s', '%s', '%s', '%s', %s, %s)" % registro_sede
+
     try:
-        cursor.execute(query_sede, registro_sede)
+        cursor.execute(query_sede)
         conexion.commit()
     except:
         pass
@@ -274,9 +274,10 @@ for i in range(100):
     registro_seccion = (id_sede,) + registro_seccion[1:]
 
     # Insertar el registro en la tabla "Seccion"
-    query_seccion = "INSERT INTO Seccion (id_Sede, id_seccion, nombre_Seccion) VALUES (%s, %s, %s)"
+    query_seccion = "INSERT INTO Seccion (id_Sede, id_seccion, nombre_Seccion) VALUES ('%s', '%s', '%s')" % registro_seccion
+
     try:
-        cursor.execute(query_seccion, registro_seccion)
+        cursor.execute(query_seccion)
         conexion.commit()
     except:
         pass
@@ -287,24 +288,25 @@ cursor.execute("SELECT id_Sede FROM Sede")
 sedes = cursor.fetchall()
 
 # Obtener los registros existentes de la tabla "Seccion"
-cursor.execute("SELECT id_seccion FROM Seccion")
+cursor.execute("SELECT id_sede,id_seccion FROM Seccion")
 secciones = cursor.fetchall()
 
 # Generar y insertar 50 registros de prueba para la tabla "Estanteria"
 for i in range(50):
     registro_estanteria = generar_registro_estanteria(i)
-
+    seccion = random.choice(secciones)
     # Seleccionar un ID de Sede existente de forma aleatoria
-    id_sede = random.choice(sedes)[0]
+    id_sede = seccion[0]
 
     # Seleccionar un ID de Seccion existente de forma aleatoria
-    id_seccion = random.choice(secciones)[0]
+    id_seccion = seccion[1]
 
     registro_estanteria = (id_sede, registro_estanteria[1], id_seccion, registro_estanteria[3], registro_estanteria[4], registro_estanteria[5])
     # Insertar el registro en la tabla "Estanteria"
-    query_estanteria = "INSERT INTO Estanteria (id_Sede, id_estanteria, id_seccion, capacidad, numero_estanteria, numero_pasillo_ubicacion) VALUES (%s, %s, %s, %s, %s, %s)"
+    query_estanteria = "INSERT INTO Estanteria (id_Sede, id_estanteria, id_seccion, capacidad, numero_estanteria, numero_pasillo_ubicacion) VALUES ('%s', '%s', '%s', %s, %s, %s)" % registro_estanteria
+
     try:
-        cursor.execute(query_estanteria, registro_estanteria)
+        cursor.execute(query_estanteria)
         conexion.commit()
     except:
         pass
@@ -313,9 +315,27 @@ for i in range(50):
 # Generar y insertar 10 registros de prueba para la tabla "Editorial"
 for i in range(10):
     registro_editorial = generar_registro_editorial(i)
-    query_editorial = "INSERT INTO Editorial (id_editorial, pais, ciudad, telefono, nombre_editorial) VALUES (%s, %s, %s, %s, %s)"
+    query_editorial = "INSERT INTO Editorial (id_editorial, pais, ciudad, telefono, nombre_editorial) VALUES ('%s', '%s', '%s', '%s', '%s')" % registro_editorial
+
     try:
-        cursor.execute(query_editorial, registro_editorial)
+        cursor.execute(query_editorial)
+        conexion.commit()
+    except:
+        pass
+
+cursor.execute("SET IDENTITY_INSERT Tipo ON")
+
+# Generar 10 registros de prueba para la tabla "Tipo"
+for i in range(10):    
+    tipo = generar_tipo()
+    id_tipo = str(i + 1)
+
+    valores = (tipo, id_tipo)
+    # Insertar el registro en la tabla Tipo
+    query_tipo = "INSERT INTO Tipo (tipo, id_tipo) VALUES ('%s', %s)" % valores
+    #print(query_tipo)
+    try:
+        cursor.execute(query_tipo)
         conexion.commit()
     except:
         pass
@@ -332,6 +352,10 @@ sedes = cursor.fetchall()
 cursor.execute("SELECT id_Sede, id_estanteria, id_seccion FROM Estanteria")
 estanterias = cursor.fetchall()
 
+# Obtener los registros existentes de la tabla "Tipo"
+cursor.execute("SELECT id_tipo FROM Tipo")
+tipos = cursor.fetchall()
+
 # Generar y insertar 40 registros de prueba para la tabla "Material_bibliografico"
 for i in range(40):
     registro_material = generar_registro_material(i)
@@ -340,24 +364,52 @@ for i in range(40):
     id_editorial = random.choice(editoriales)[0]
     id_sede, id_estanteria, id_seccion = random.choice(estanterias)
 
+    id_tipo = random.choice(tipos)[0]
+
     # Concatenar los ID de Editorial, Sede, Estanteria y Seccion al registro_material
-    registro_material = (str(i + 1), id_editorial, id_sede, id_estanteria, id_seccion) + registro_material[5:]
+    registro_material = (str(i + 1), id_editorial, id_sede, id_estanteria, id_seccion, id_tipo) + registro_material[5:]
 
     # Insertar el registro en la tabla "Material_bibliografico"
-    query_material = "INSERT INTO Material_bibliografico (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, fecha_publicacion, descripcion_material_bibliografico, titulo_material_bibliografico) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
-
+    query_material = "INSERT INTO Material_bibliografico (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo, fecha_publicacion, descripcion_material_bibliografico, titulo_material_bibliografico) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % registro_material
+    #print(query_material)
+    #print(query_material)
+    #print(query_material)
     try:
-        cursor.execute(query_material, registro_material)
+        cursor.execute(query_material)
         conexion.commit()
     except:
         pass
 
+# Obtener los registros existentes de la tabla "Material_bibliografico"
+cursor.execute("select id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo from Material_bibliografico")
+material_bibliograficos = cursor.fetchall()
+
+# Obtener los registros existentes de la tabla "Tipo"
+cursor.execute("SELECT id_tipo FROM Tipo")
+tipos = cursor.fetchall()
+
 # Generar y insertar 10 registros de prueba para la tabla "Resenia"
 for i in range(30):
-    registro_resenia = generar_registro_resenia(i)
-    query_resenia = "INSERT INTO Resenia (id_material_biblio, id_resenia, id_editorial, id_Sede, id_estanteria, id_seccion, contenido, puntuacion, fecha_publicacion_resenia) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
+    fila_material_bibliografico = random.choice(material_bibliograficos)
+    
+    id_material_biblio = str(fila_material_bibliografico[0])
+    id_resenia = str(i + 1)  # Genera un ID de reseÃ±a de 3 dÃ­gitos aleatorio
+    id_editorial = str(fila_material_bibliografico[1])
+    id_sede = str(fila_material_bibliografico[2])
+    id_estanteria = str(fila_material_bibliografico[3])
+    id_seccion = str(fila_material_bibliografico[4])
+    contenido = random.choice(contenidos)
+    puntuacion = random.choice(puntuaciones)
+    fecha_publicacion_resenia = random_date()
+    
+    id_tipo = str(fila_material_bibliografico[5])
+
+    registro_resenia = (id_material_biblio, id_resenia, id_editorial, id_sede, id_estanteria, id_seccion, id_tipo,contenido, puntuacion, fecha_publicacion_resenia)
+    query_resenia = "INSERT INTO Resenia (id_material_biblio, id_resenia, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo, contenido, puntuacion, fecha_publicacion_resenia) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', %s, '%s', %s, '%s')" % registro_resenia
+    #print(query_resenia)
+
     try:
-        cursor.execute(query_resenia, registro_resenia)
+        cursor.execute(query_resenia)
         conexion.commit()
     except:
         pass
@@ -365,10 +417,9 @@ for i in range(30):
 # Generar y insertar 10 registros de prueba para la tabla "Usuario"
 for i in range(100):
     registro_usuario = generar_registro_usuario(i)
-    query_usuario = "INSERT INTO Usuario (id_usuario, celular, telefonoU, nombreU, primer_apellido, segundo_apellido, ciudad, pais, avenida_calle, numero_hogar, ci, fecha_registro) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-
+    query_usuario = "INSERT INTO Usuario (id_usuario, celular, telefonoU, nombreU, primer_apellido, segundo_apellido, ciudad, pais, avenida_calle, numero_hogar, ci, fecha_registro) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %s, '%s', '%s')" % registro_usuario
     try:
-        cursor.execute(query_usuario, registro_usuario)
+        cursor.execute(query_usuario)
         conexion.commit()
     except:
         pass
@@ -378,7 +429,7 @@ cursor.execute("SELECT id_usuario FROM Usuario")
 usuarios = cursor.fetchall()
 # Generar y insertar 10 registros de prueba para la tabla "Empleado"
 for _ in range(40):
-    id_usuario = str(random.choice(usuarios)[0])  # Genera un ID de usuario de 3 dígitos aleatorio
+    id_usuario = str(random.choice(usuarios)[0])  # Genera un ID de usuario de 3 dÃ­gitos aleatorio
     correo = f'usuario{id_usuario}@empresa.com'
     fecha_inicio_cargo = generar_fecha_inicio_cargo()
     cargo = random.choice(cargos)
@@ -393,16 +444,16 @@ for _ in range(40):
 
 # Generar y insertar 10 registros de prueba para la tabla "Proveedor"
 for i in range(30):
-    id_proveedor = str(i + 1)  # Genera un ID de proveedor de 3 dígitos aleatorio
+    id_proveedor = str(i + 1)  # Genera un ID de proveedor de 3 dÃ­gitos aleatorio
     telefono = generar_telefono()
-    pais = random.choice(['España', 'Estados Unidos', 'México', 'Argentina', 'Francia'])
+    pais = random.choice(['EspaÃ±a', 'Estados Unidos', 'MÃ©xico', 'Argentina', 'Francia'])
     ciudad = random.choice(['Madrid', 'Barcelona', 'Valencia', 'Sevilla', 'Bilbao'])
     avenida_calle = random.choice(['Avenida A', 'Calle B', 'Avenida C', 'Calle D', 'Avenida E'])
     numero_direccion = random.randint(1, 100)
     nombre = random.choice(nombres_proveedor)
-    query_proveedor = "INSERT INTO Proveedor (id_proveedor, telefono, pais, ciudad, avenida_calle, numero_direccion, nombre) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+    query_proveedor = "INSERT INTO Proveedor (id_proveedor, telefono, pais, ciudad, avenida_calle, numero_direccion, nombre) VALUES ('%s', '%s', '%s', '%s', '%s', %s, '%s')" % (id_proveedor, telefono, pais, ciudad, avenida_calle, numero_direccion, nombre)
     try:
-        cursor.execute(query_proveedor, (id_proveedor, telefono, pais, ciudad, avenida_calle, numero_direccion, nombre))
+        cursor.execute(query_proveedor)
         conexion.commit()
     except:
         pass
@@ -416,25 +467,47 @@ proveedores = cursor.fetchall()
 
 # Generar y insertar 10 registros de prueba para la tabla "Adquisicion"
 for i in range(40):
-    id_usuario = str(random.choice(usuarios)[0])  # Genera un ID de usuario de 3 dígitos aleatorio
-    id_adquisicion = str(i + 1)  # Genera un ID de adquisición de 4 dígitos aleatorio
-    id_proveedor = str(random.choice(proveedores)[0])  # Genera un ID de proveedor de 3 dígitos aleatorio
+    id_usuario = str(random.choice(usuarios)[0])  # Genera un ID de usuario de 3 dÃ­gitos aleatorio
+    id_adquisicion = str(i + 1)  # Genera un ID de adquisiciÃ³n de 4 dÃ­gitos aleatorio
+    id_proveedor = str(random.choice(proveedores)[0])  # Genera un ID de proveedor de 3 dÃ­gitos aleatorio
     presupuesto = generar_presupuesto()
     tasacion = generar_tasacion()
-    query_adquisicion = "INSERT INTO Adquisicion (id_usuario, id_adquisicion, id_proveedor, presupuesto, tasacion) VALUES (%s, %s, %s, %s, %s)"
+    fecha_adquisicion = generar_fecha_inicio_cargo()
+    query_adquisicion = "INSERT INTO Adquisicion (id_usuario, id_adquisicion, id_proveedor, presupuesto, tasacion, fecha_adquisicion) VALUES ('%s', '%s', '%s', %s, %s, '%s')" % (id_usuario, id_adquisicion, id_proveedor, presupuesto, tasacion, fecha_adquisicion)
+
     try:
-        cursor.execute(query_adquisicion, (id_usuario, id_adquisicion, id_proveedor, presupuesto, tasacion))
+        cursor.execute(query_adquisicion)
+        conexion.commit()
+    except:
+        pass
+
+for idioma in idiomas:
+    id_idioma = idioma[0]
+    nombre_idioma = idioma[1]
+
+    valores = (id_idioma, nombre_idioma)
+    query_idioma = "INSERT INTO Idioma (id_idioma, nombre_idioma) VALUES ('%s', '%s')" % valores
+
+    #f_mysql.write(query_idioma + ";\n")
+    #f_sqlserver.write(query_idioma + ";\n")
+    #f_oracle.write(query_idioma + ";\n")
+
+    try:
+        cursor.execute(query_idioma)
         conexion.commit()
     except:
         pass
 
 # Obtener los registros existentes de la tabla "Material_bibliografico"
-cursor.execute("select id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion from Material_bibliografico")
+cursor.execute("select id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo from Material_bibliografico")
 material_bibliograficos = cursor.fetchall()
 
 # Obtener los registros existentes de la tabla "Adquisicion"
 cursor.execute("select id_usuario, id_adquisicion, id_proveedor from Adquisicion")
 adquisiciones = cursor.fetchall()
+
+cursor.execute("SELECT id_idioma FROM Idioma")
+idiomas = cursor.fetchall()
 
 # Generar 10 registros de prueba para la tabla "Ejemplar"
 for _ in range(20):
@@ -452,11 +525,14 @@ for _ in range(20):
     id_estanteria = str(fila_material_bibliografico[3])
     id_seccion = str(fila_material_bibliografico[4])
     numero_paginas = random.randint(1, 500)
-
-    valores = (id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, numero_paginas)
+    id_tipo = str(fila_material_bibliografico[5])
+    id_idioma = random.choice(idiomas)[0]
+    valores = (id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, id_tipo, numero_paginas, id_idioma)
 
     # Insertar el registro en la tabla Ejemplar
-    query_ejemplar = "INSERT INTO Ejemplar (id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, numero_paginas) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %s)" % valores   
+    query_ejemplar = "INSERT INTO Ejemplar (id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, id_tipo, numero_paginas, id_idioma) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %s, %s, '%s')" % valores   
+
+    #print(query_ejemplar)
     try:
 
         cursor.execute(query_ejemplar)
@@ -475,62 +551,66 @@ for _ in range(10):
     categoria_membresia = generar_categoria_membresia()
     fecha_vencimiento_membresia = generar_fecha_vencimiento()
 
-    # Insertar el registro en la tabla "Lector"
-    query_lector = "INSERT INTO Lector (id_usuario, categoria_membresia, fecha_vencimiento_membresia) VALUES (%s, %s, %s)"
     valores = (id_usuario, categoria_membresia, fecha_vencimiento_membresia)
+    # Insertar el registro en la tabla "Lector"
+    query_lector = "INSERT INTO Lector (id_usuario, categoria_membresia, fecha_vencimiento_membresia) VALUES ('%s', '%s', '%s')" % valores
 
     try:
-        cursor.execute(query_lector, valores)
+        cursor.execute(query_lector)
         conexion.commit()
     except:
         pass
 
 # Obtener todos los ejemplares existentes en la base de datos
-query_ejemplares = "SELECT id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion FROM Ejemplar"
+query_ejemplares = "SELECT id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, id_tipo FROM Ejemplar"
 cursor.execute(query_ejemplares)
 ejemplares = cursor.fetchall()
 
-# Generar y insertar múltiples registros de préstamo
+# Generar y insertar mÃºltiples registros de prÃ©stamo
 
 for i in range(10):
     # Seleccionar un ejemplar aleatorio
     ejemplar = random.choice(ejemplares)
-    id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion = ejemplar
+    id_usuario, cod_serial, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, id_tipo = ejemplar
 
-    # Generar fechas de préstamo y devolución aleatorias
+    # Generar fechas de prÃ©stamo y devoluciÃ³n aleatorias
     fecha_actual = datetime.now()
     fecha_prestamo = generar_fecha("2023-01-01 00:00:00", fecha_actual.strftime("%Y-%m-%d %H:%M:%S"))
     fecha_devolucion = generar_fecha(fecha_prestamo.strftime("%Y-%m-%d %H:%M:%S"), fecha_actual.strftime("%Y-%m-%d %H:%M:%S"))
 
-    # Generar estado de préstamo aleatorio
+    # Generar estado de prÃ©stamo aleatorio
     estados_prestamo = ['Activo', 'Vencido', 'Devuelto']
-    estado_prestamo = random.choice(estados_prestamo)[:5]  # Truncar el valor a una longitud máxima de 5 caracteres
+    estado_prestamo = random.choice(estados_prestamo)[:5]  # Truncar el valor a una longitud mÃ¡xima de 5 caracteres
+    
+    id_prestamo = str(i + 1)  # Genera un ID de prÃ©stamo de 3 dÃ­gitos aleatorio
+    valores = (id_usuario, id_prestamo, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial, id_tipo, fecha_prestamo, fecha_devolucion, estado_prestamo)
 
-    # Insertar el registro de préstamo
-    query_prestamo = "INSERT INTO Prestamo (id_usuario, id_prestamo, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial, fecha_prestamo, fecha_devolucion, estado_prestamo) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-    id_prestamo = str(i + 1)  # Genera un ID de préstamo de 3 dígitos aleatorio
-    valores = (id_usuario, id_prestamo, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial, fecha_prestamo, fecha_devolucion, estado_prestamo)
+    # Insertar el registro de prÃ©stamo
+    query_prestamo = "INSERT INTO Prestamo (id_usuario, id_prestamo, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial, id_tipo, fecha_prestamo, fecha_devolucion, estado_prestamo) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %s, '%s', '%s', '%s')" % valores
+    
+    #print(query_prestamo)
+
     try:
-        cursor.execute(query_prestamo, valores)
+        cursor.execute(query_prestamo)
         conexion.commit()
     except:
         pass
 
-# Obtener todos los préstamos existentes en la base de datos
+# Obtener todos los prÃ©stamos existentes en la base de datos
 query_prestamos = "SELECT id_usuario, id_prestamo, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial FROM Prestamo"
 cursor.execute(query_prestamos)
 prestamos = cursor.fetchall()
 
 # Generar y insertar 10 registros de prueba para la tabla "Multa"
-for _ in range(10):
-    # Seleccionar un préstamo aleatorio
+for i in range(10):
+    # Seleccionar un prÃ©stamo aleatorio
     prestamo = random.choice(prestamos)
     id_usuario, id_prestamo, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, cod_serial = prestamo
     
     # Generar monto de multa aleatorio
     monto_multa = round(random.uniform(0.0, 100.0), 2)
     
-    # Generar fecha de imposición aleatoria
+    # Generar fecha de imposiciÃ³n aleatoria
     fecha_actual = datetime.now()
     fecha_imposicion = generar_fecha("2023-01-01 00:00:00", fecha_actual.strftime("%Y-%m-%d %H:%M:%S"))
     
@@ -543,11 +623,18 @@ for _ in range(10):
     if estado_multa == 'Pagada':
         fecha_pago = generar_fecha(fecha_imposicion.strftime("%Y-%m-%d %H:%M:%S"), fecha_actual.strftime("%Y-%m-%d %H:%M:%S"))
     
+    id_multa = str(i + 1)
+    id_tipo = str(random.choice(tipos)[0])
+
+    valores = (id_usuario, id_multa, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, id_prestamo, cod_serial, id_tipo, monto_multa, fecha_imposicion, estado_multa, fecha_pago)
+    
     # Insertar el registro de multa
-    query_multa = "INSERT INTO Multa (id_usuario, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, id_prestamo, cod_serial, monto_multa, fecha_imposicion, estado, fecha_pago) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-    valores = (id_usuario, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, id_prestamo, cod_serial, monto_multa, fecha_imposicion, estado_multa, fecha_pago)
+    query_multa = "INSERT INTO Multa (id_usuario, id_multa, id_material_biblio, id_editorial, id_adquisicion, id_proveedor, id_Sede, id_estanteria, id_seccion, id_prestamo, cod_serial, id_tipo, monto_multa, fecha_imposicion, estado, fecha_pago) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %s, %s, '%s', '%s', '%s')" % valores
+    
+    #print(query_multa)
+
     try:
-        cursor.execute(query_multa, valores)
+        cursor.execute(query_multa)
         conexion.commit()
     except:
         pass
@@ -560,15 +647,16 @@ lectores = cursor.fetchall()
 for i in range(10):
     id_estanteria_virtual = str(i + 1)
     id_usuario = random.choice(lectores)[0]
-    tipos_estanteria = ['Favoritos', 'Por Leer', 'Leídos', 'Recomendados']
+    tipos_estanteria = ['Favoritos', 'Por Leer', 'LeÃ­dos', 'Recomendados']
     tipo_estanteria_virtual = random.choice(tipos_estanteria)
     nombre_estanteria_virtual = generar_nombre_estanteria_virtual()
 
-    # Insertar el registro en la tabla "Estanteria_virtual"
-    query_estanteria_virtual = "INSERT INTO Estanteria_virtual (id_estanteria_virtual, id_usuario, tipo_estanteria_virtual, nombre_estanteria_virtual) VALUES (%s, %s, %s, %s)"
     valores = (id_estanteria_virtual, id_usuario, tipo_estanteria_virtual, nombre_estanteria_virtual)
+    # Insertar el registro en la tabla "Estanteria_virtual"
+    query_estanteria_virtual = "INSERT INTO Estanteria_virtual (id_estanteria_virtual, id_usuario, tipo_estanteria_virtual, nombre_estanteria_virtual) VALUES ('%s', '%s', '%s', '%s')" % valores
+
     try:
-        cursor.execute(query_estanteria_virtual, valores)
+        cursor.execute(query_estanteria_virtual)
         conexion.commit()
     except:
         pass
@@ -595,12 +683,13 @@ for _ in range(20):
     id_Sede = material_bibliografico[2]
     id_estanteria = material_bibliografico[3]
     id_seccion = material_bibliografico[4]
+    id_tipo = random.choice(tipos)[0]
+    valores = (id_estanteria_virtual, id_usuario, id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo)
 
-    valores = (id_estanteria_virtual, id_usuario, id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-
-    query_adiciona_estanteria = "INSERT INTO Adiciona_estanteria (id_estanteria_virtual, id_usuario, id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion) VALUES (%s, %s, %s, %s, %s, %s, %s)" % valores
+    query_adiciona_estanteria = "INSERT INTO Adiciona_estanteria (id_estanteria_virtual, id_usuario, id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_tipo) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', %s)" % valores
     
     #print(query_adiciona_estanteria)
+
 
     try:
         cursor.execute(query_adiciona_estanteria)
@@ -608,59 +697,18 @@ for _ in range(20):
     except:
         pass
 
-for idioma in idiomas:
-    id_idioma = idioma[0]
-    nombre_idioma = idioma[1]
-
-    query_idioma = "INSERT INTO Idioma (id_idioma, nombre_idioma) VALUES (%s, %s)"
-    valores = (id_idioma, nombre_idioma)
-
-    try:
-        cursor.execute(query_idioma, valores)
-        conexion.commit()
-    except:
-        pass
-
-# Obtener los registros existentes de la tabla "Material_bibliografico"
-cursor.execute("SELECT id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion FROM Material_bibliografico")
-materiales_bibliograficos = cursor.fetchall()
-
-# Obtener los registros existentes de la tabla "Idioma"
-cursor.execute("SELECT id_idioma FROM Idioma")
-idiomas = cursor.fetchall()
-
-# Generar 10 registros de prueba para la tabla "disponible_idioma"
-for _ in range(10):
-
-    material_bibliografico = random.choice(materiales_bibliograficos)
-
-    id_material_biblio = str(material_bibliografico[0])
-    id_idioma = str(random.choice(idiomas)[0])
-    id_editorial = str(material_bibliografico[1])
-    id_Sede = str(material_bibliografico[2])
-    id_estanteria = str(material_bibliografico[3])
-    id_seccion = str(material_bibliografico[4])
-
-    valores = (id_material_biblio, id_idioma, id_editorial, id_Sede, id_estanteria, id_seccion)
-
-    query_disponible_idioma = "INSERT INTO disponible_idioma (id_material_biblio, id_idioma, id_editorial, id_Sede, id_estanteria, id_seccion) VALUES (%s, '%s', %s, %s, %s, %s)" % valores
-    
-    try:
-        cursor.execute(query_disponible_idioma)
-        conexion.commit()
-    except:
-        pass
 
 # Generar 10 registros de prueba para la tabla "Categoria"
 for categoria in categorias:
     descripcion = categoria[0]
     categoria = categoria[1]
 
-    query_categoria = "INSERT INTO Categoria (descripcion, categoria) VALUES (%s, %s)"
     valores = (descripcion, categoria)
 
+    query_categoria = "INSERT INTO Categoria (descripcion, categoria) VALUES ('%s', '%s')" % valores
+
     try:
-        cursor.execute(query_categoria, valores)
+        cursor.execute(query_categoria)
         conexion.commit()
     except:
         pass
@@ -678,21 +726,22 @@ for i in range(10):
     id_Sede = str(material_bibliografico[2])
     id_estanteria = str(material_bibliografico[3])
     id_seccion = str(material_bibliografico[4])
-    id_categoria = str(i + 1)  # ID de categoría aleatorio
+    id_categoria = str(i + 1)  # ID de categorÃ­a aleatorio
+    id_tipo = random.choice(tipos)[0]
 
+    valores = (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_categoria, id_tipo)
     # Insertar el registro en la tabla tiene_categoria
-    query_tiene_categoria = "INSERT INTO tiene_categoria (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_categoria) VALUES (%s, %s, %s, %s, %s, %s)"
-    valores = (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_categoria)
+    query_tiene_categoria = "INSERT INTO tiene_categoria (id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion, id_categoria, id_tipo) VALUES ('%s', '%s', '%s', '%s', '%s', %s, %s)" % valores
 
     try:
-        cursor.execute(query_tiene_categoria, valores)
+        cursor.execute(query_tiene_categoria)
         conexion.commit()
     except:
         pass
 
 # Generar 10 registros de prueba para la tabla "Autor"
 for _ in range(10):
-    id_autor = str(random.randint(1000, 9999))  # ID de autor de 4 dígitos aleatorio
+    id_autor = str(random.randint(1000, 9999))  # ID de autor de 4 dÃ­gitos aleatorio
     nombres = generar_nombre_autor()
     primer_apellido = generar_apellido()
     segundo_apellido = generar_apellido()
@@ -706,7 +755,7 @@ for _ in range(10):
     query_autor = "INSERT INTO Autor (id_autor, [nombre(s)], primer_apellido, segundo_apellido, nacionalidad, fecha_nacimiento, sexo) VALUES (%s, '%s', '%s', '%s', '%s', '%s', '%s')" % valores
 
     try:
-        cursor.execute(query_autor, valores)
+        cursor.execute(query_autor)
         conexion.commit()
     except:
         pass
@@ -729,9 +778,10 @@ for _ in range(10):
     id_estanteria = str(material_bibliografico[3])
     id_seccion = str(material_bibliografico[4])
 
-    # Insertar el registro en la tabla escrito_por
-    query_escrito_por = "INSERT INTO escrito_por (id_material_biblio, id_editorial, id_autor, id_Sede, id_estanteria, id_seccion) VALUES (%s, %s, %s, %s, %s, %s)"
     valores = (id_material_biblio, id_editorial, id_autor, id_Sede, id_estanteria, id_seccion)
+
+    # Insertar el registro en la tabla escrito_por
+    query_escrito_por = "INSERT INTO escrito_por (id_material_biblio, id_editorial, id_autor, id_Sede, id_estanteria, id_seccion) VALUES ('%s', '%s', '%s', '%s', '%s', '%s')" % valores
 
     try:
         cursor.execute(query_escrito_por, valores)
@@ -739,31 +789,6 @@ for _ in range(10):
     except:
         pass
 
-cursor.execute("SELECT id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion FROM Material_bibliografico")
-materiales_bibliograficos = cursor.fetchall()
-
-# Generar 10 registros de prueba para la tabla "Tipo"
-for _ in range(10):
-
-    material_bibliografico = random.choice(materiales_bibliograficos)
-    
-    tipo = generar_tipo()
-    id_material_biblio = str(material_bibliografico[0])
-    id_editorial = str(material_bibliografico[1])
-    id_Sede = str(material_bibliografico[2])
-    id_estanteria = str(material_bibliografico[3])
-    id_seccion = str(material_bibliografico[4])
-
-    valores = (tipo, id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion)
-    # Insertar el registro en la tabla Tipo
-    query_tipo = "INSERT INTO Tipo (tipo, id_material_biblio, id_editorial, id_Sede, id_estanteria, id_seccion) VALUES ('%s', %s, %s, %s, %s, %s)" % valores
-
-    try:
-        cursor.execute(query_tipo)
-        conexion.commit()
-    except:
-        pass
-
-# Cerrar la conexión a la base de datos
+# Cerrar la conexiÃ³n a la base de datos
 cursor.close()
 conexion.close()
