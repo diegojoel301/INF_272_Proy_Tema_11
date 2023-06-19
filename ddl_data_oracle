@@ -1,0 +1,1179 @@
+--
+-- Volcado de datos para la tabla sede
+--
+INSERT INTO sede VALUES('1', 'Sede B', 'Argentina', 'Bilbao', 'Avenida JuÃ¡rez', 93, 92);
+INSERT INTO sede VALUES('2', 'Sede A', 'Estados Unidos', 'Sevilla', 'Calle Principal', 18, 235);
+INSERT INTO sede VALUES('3', 'Sede A', 'EspaÃ±a', 'Barcelona', 'Avenida Central', 64, 200);
+INSERT INTO sede VALUES('4', 'Sede B', 'MÃ©xico', 'Valencia', 'Calle Principal', 73, 288);
+INSERT INTO sede VALUES('5', 'Sede C', 'EspaÃ±a', 'Bilbao', 'Avenida Central', 22, 83);
+INSERT INTO sede VALUES('6', 'Sede C', 'MÃ©xico', 'Barcelona', 'Calle Principal', 100, 318);
+INSERT INTO sede VALUES('7', 'Sede C', 'MÃ©xico', 'Bilbao', 'Paseo de la Victoria', 73, 244);
+INSERT INTO sede VALUES('8', 'Sede C', 'Argentina', 'Valencia', 'Avenida Central', 44, 160);
+INSERT INTO sede VALUES('9', 'Sede E', 'Argentina', 'Barcelona', 'Paseo de la Victoria', 49, 416);
+INSERT INTO sede VALUES('10', 'Sede E', 'MÃ©xico', 'Valencia', 'Paseo de la Victoria', 66, 351);
+INSERT INTO sede VALUES('11', 'Sede C', 'Estados Unidos', 'Valencia', 'Avenida Central', 17, 163);
+INSERT INTO sede VALUES('12', 'Sede E', 'Estados Unidos', 'Sevilla', 'Avenida JuÃ¡rez', 41, 408);
+INSERT INTO sede VALUES('13', 'Sede E', 'EspaÃ±a', 'Bilbao', 'Avenida Central', 27, 446);
+INSERT INTO sede VALUES('14', 'Sede D', 'EspaÃ±a', 'Bilbao', 'Avenida Central', 38, 486);
+INSERT INTO sede VALUES('15', 'Sede D', 'MÃ©xico', 'Barcelona', 'Avenida Central', 15, 287);
+INSERT INTO sede VALUES('16', 'Sede B', 'MÃ©xico', 'Sevilla', 'Avenida JuÃ¡rez', 1, 482);
+INSERT INTO sede VALUES('17', 'Sede D', 'Estados Unidos', 'Sevilla', 'Paseo de la Victoria', 30, 376);
+INSERT INTO sede VALUES('18', 'Sede B', 'Argentina', 'Madrid', 'Avenida Central', 90, 405);
+INSERT INTO sede VALUES('19', 'Sede C', 'Francia', 'Valencia', 'Calle Principal', 27, 140);
+INSERT INTO sede VALUES('20', 'Sede D', 'Francia', 'Sevilla', 'Calle Principal', 10, 211);
+INSERT INTO sede VALUES('21', 'Sede B', 'Argentina', 'Valencia', 'Avenida JuÃ¡rez', 70, 200);
+INSERT INTO sede VALUES('22', 'Sede E', 'MÃ©xico', 'Bilbao', 'Paseo de la Victoria', 80, 141);
+INSERT INTO sede VALUES('23', 'Sede C', 'MÃ©xico', 'Sevilla', 'Avenida JuÃ¡rez', 40, 375);
+INSERT INTO sede VALUES('24', 'Sede D', 'MÃ©xico', 'Barcelona', 'Calle Principal', 40, 80);
+INSERT INTO sede VALUES('25', 'Sede E', 'MÃ©xico', 'Valencia', 'Avenida Central', 83, 384);
+INSERT INTO sede VALUES('26', 'Sede E', 'Argentina', 'Valencia', 'Paseo de la Victoria', 48, 354);
+INSERT INTO sede VALUES('27', 'Sede E', 'Argentina', 'Madrid', 'Avenida JuÃ¡rez', 29, 225);
+INSERT INTO sede VALUES('28', 'Sede D', 'EspaÃ±a', 'Madrid', 'Avenida Central', 10, 413);
+INSERT INTO sede VALUES('29', 'Sede C', 'Estados Unidos', 'Bilbao', 'Calle Principal', 69, 220);
+INSERT INTO sede VALUES('30', 'Sede E', 'MÃ©xico', 'Bilbao', 'Calle Principal', 22, 461);
+INSERT INTO sede VALUES('31', 'Sede A', 'EspaÃ±a', 'Sevilla', 'Avenida Central', 45, 484);
+INSERT INTO sede VALUES('32', 'Sede A', 'MÃ©xico', 'Bilbao', 'Paseo de la Victoria', 95, 396);
+INSERT INTO sede VALUES('33', 'Sede D', 'MÃ©xico', 'Barcelona', 'Calle Principal', 60, 145);
+INSERT INTO sede VALUES('34', 'Sede A', 'Argentina', 'Sevilla', 'Avenida Central', 61, 215);
+INSERT INTO sede VALUES('35', 'Sede D', 'EspaÃ±a', 'Bilbao', 'Avenida Central', 4, 236);
+INSERT INTO sede VALUES('36', 'Sede C', 'Argentina', 'Barcelona', 'Avenida Central', 27, 326);
+INSERT INTO sede VALUES('37', 'Sede E', 'Francia', 'Barcelona', 'Avenida Central', 44, 110);
+INSERT INTO sede VALUES('38', 'Sede B', 'Francia', 'Barcelona', 'Avenida JuÃ¡rez', 47, 169);
+INSERT INTO sede VALUES('39', 'Sede B', 'Francia', 'Bilbao', 'Calle Principal', 84, 460);
+INSERT INTO sede VALUES('40', 'Sede C', 'Estados Unidos', 'Bilbao', 'Avenida JuÃ¡rez', 82, 463);
+INSERT INTO sede VALUES('41', 'Sede E', 'Argentina', 'Madrid', 'Paseo de la Victoria', 21, 219);
+INSERT INTO sede VALUES('42', 'Sede E', 'EspaÃ±a', 'Sevilla', 'Paseo de la Victoria', 92, 79);
+INSERT INTO sede VALUES('43', 'Sede E', 'EspaÃ±a', 'Barcelona', 'Calle Principal', 34, 250);
+INSERT INTO sede VALUES('44', 'Sede D', 'Francia', 'Barcelona', 'Calle Principal', 75, 475);
+INSERT INTO sede VALUES('45', 'Sede C', 'Estados Unidos', 'Sevilla', 'Calle Principal', 30, 138);
+INSERT INTO sede VALUES('46', 'Sede C', 'Argentina', 'Valencia', 'Paseo de la Victoria', 65, 84);
+INSERT INTO sede VALUES('47', 'Sede B', 'Francia', 'Sevilla', 'Paseo de la Victoria', 28, 461);
+INSERT INTO sede VALUES('48', 'Sede A', 'EspaÃ±a', 'Barcelona', 'Paseo de la Victoria', 85, 70);
+INSERT INTO sede VALUES('49', 'Sede E', 'Francia', 'Valencia', 'Avenida Central', 87, 253);
+INSERT INTO sede VALUES('50', 'Sede E', 'Estados Unidos', 'Madrid', 'Avenida JuÃ¡rez', 71, 458);
+INSERT INTO sede VALUES('51', 'Sede C', 'Argentina', 'Valencia', 'Avenida Central', 90, 334);
+INSERT INTO sede VALUES('52', 'Sede A', 'MÃ©xico', 'Sevilla', 'Avenida Central', 41, 482);
+INSERT INTO sede VALUES('53', 'Sede D', 'EspaÃ±a', 'Valencia', 'Paseo de la Victoria', 42, 476);
+INSERT INTO sede VALUES('54', 'Sede B', 'Francia', 'Sevilla', 'Calle Principal', 81, 245);
+INSERT INTO sede VALUES('55', 'Sede B', 'EspaÃ±a', 'Barcelona', 'Avenida Central', 57, 224);
+INSERT INTO sede VALUES('56', 'Sede D', 'MÃ©xico', 'Valencia', 'Paseo de la Victoria', 68, 133);
+INSERT INTO sede VALUES('57', 'Sede C', 'Estados Unidos', 'Barcelona', 'Paseo de la Victoria', 48, 167);
+INSERT INTO sede VALUES('58', 'Sede C', 'Argentina', 'Bilbao', 'Paseo de la Victoria', 31, 315);
+INSERT INTO sede VALUES('59', 'Sede A', 'MÃ©xico', 'Barcelona', 'Calle Principal', 91, 311);
+INSERT INTO sede VALUES('60', 'Sede C', 'MÃ©xico', 'Barcelona', 'Paseo de la Victoria', 61, 213);
+INSERT INTO sede VALUES('61', 'Sede C', 'Francia', 'Barcelona', 'Paseo de la Victoria', 11, 424);
+INSERT INTO sede VALUES('62', 'Sede A', 'Francia', 'Sevilla', 'Calle Principal', 44, 241);
+INSERT INTO sede VALUES('63', 'Sede D', 'Francia', 'Sevilla', 'Avenida Central', 71, 325);
+INSERT INTO sede VALUES('64', 'Sede A', 'Argentina', 'Sevilla', 'Paseo de la Victoria', 93, 458);
+INSERT INTO sede VALUES('65', 'Sede A', 'MÃ©xico', 'Sevilla', 'Paseo de la Victoria', 80, 121);
+INSERT INTO sede VALUES('66', 'Sede B', 'Estados Unidos', 'Barcelona', 'Avenida Central', 78, 490);
+INSERT INTO sede VALUES('67', 'Sede C', 'Argentina', 'Valencia', 'Calle Principal', 88, 448);
+INSERT INTO sede VALUES('68', 'Sede C', 'Argentina', 'Madrid', 'Avenida JuÃ¡rez', 24, 151);
+INSERT INTO sede VALUES('69', 'Sede C', 'Estados Unidos', 'Bilbao', 'Avenida Central', 1, 396);
+INSERT INTO sede VALUES('70', 'Sede D', 'Argentina', 'Valencia', 'Avenida Central', 87, 481);
+INSERT INTO sede VALUES('71', 'Sede C', 'Francia', 'Barcelona', 'Calle Principal', 38, 113);
+INSERT INTO sede VALUES('72', 'Sede C', 'MÃ©xico', 'Barcelona', 'Calle Principal', 59, 460);
+INSERT INTO sede VALUES('73', 'Sede C', 'Argentina', 'Bilbao', 'Avenida Central', 69, 113);
+INSERT INTO sede VALUES('74', 'Sede D', 'MÃ©xico', 'Sevilla', 'Paseo de la Victoria', 95, 167);
+INSERT INTO sede VALUES('75', 'Sede B', 'EspaÃ±a', 'Valencia', 'Avenida Central', 100, 289);
+INSERT INTO sede VALUES('76', 'Sede D', 'Estados Unidos', 'Barcelona', 'Paseo de la Victoria', 25, 300);
+INSERT INTO sede VALUES('77', 'Sede B', 'EspaÃ±a', 'Barcelona', 'Calle Principal', 89, 250);
+INSERT INTO sede VALUES('78', 'Sede C', 'Francia', 'Sevilla', 'Paseo de la Victoria', 52, 228);
+INSERT INTO sede VALUES('79', 'Sede A', 'EspaÃ±a', 'Bilbao', 'Calle Principal', 40, 495);
+INSERT INTO sede VALUES('80', 'Sede C', 'MÃ©xico', 'Barcelona', 'Calle Principal', 78, 382);
+INSERT INTO sede VALUES('81', 'Sede A', 'Argentina', 'Barcelona', 'Paseo de la Victoria', 72, 378);
+INSERT INTO sede VALUES('82', 'Sede D', 'Francia', 'Madrid', 'Avenida Central', 3, 313);
+INSERT INTO sede VALUES('83', 'Sede A', 'Francia', 'Valencia', 'Calle Principal', 25, 251);
+INSERT INTO sede VALUES('84', 'Sede D', 'Estados Unidos', 'Barcelona', 'Avenida Central', 88, 222);
+INSERT INTO sede VALUES('85', 'Sede D', 'EspaÃ±a', 'Barcelona', 'Avenida Central', 75, 314);
+INSERT INTO sede VALUES('86', 'Sede E', 'Francia', 'Barcelona', 'Avenida JuÃ¡rez', 3, 215);
+INSERT INTO sede VALUES('87', 'Sede C', 'Francia', 'Sevilla', 'Avenida Central', 70, 170);
+INSERT INTO sede VALUES('88', 'Sede C', 'Argentina', 'Sevilla', 'Calle Principal', 91, 78);
+INSERT INTO sede VALUES('89', 'Sede D', 'Estados Unidos', 'Bilbao', 'Avenida Central', 62, 287);
+INSERT INTO sede VALUES('90', 'Sede D', 'Estados Unidos', 'Sevilla', 'Paseo de la Victoria', 68, 461);
+INSERT INTO sede VALUES('91', 'Sede A', 'MÃ©xico', 'Valencia', 'Calle Principal', 97, 204);
+INSERT INTO sede VALUES('92', 'Sede C', 'Argentina', 'Bilbao', 'Paseo de la Victoria', 28, 329);
+INSERT INTO sede VALUES('93', 'Sede B', 'Argentina', 'Valencia', 'Avenida Central', 42, 316);
+INSERT INTO sede VALUES('94', 'Sede D', 'EspaÃ±a', 'Sevilla', 'Avenida JuÃ¡rez', 59, 164);
+INSERT INTO sede VALUES('95', 'Sede C', 'Estados Unidos', 'Barcelona', 'Avenida Central', 88, 368);
+INSERT INTO sede VALUES('96', 'Sede E', 'Argentina', 'Madrid', 'Avenida Central', 65, 174);
+INSERT INTO sede VALUES('97', 'Sede A', 'Estados Unidos', 'Bilbao', 'Paseo de la Victoria', 16, 90);
+INSERT INTO sede VALUES('98', 'Sede A', 'Francia', 'Valencia', 'Avenida JuÃ¡rez', 15, 208);
+INSERT INTO sede VALUES('99', 'Sede E', 'EspaÃ±a', 'Madrid', 'Calle Principal', 85, 189);
+INSERT INTO sede VALUES('100', 'Sede A', 'Estados Unidos', 'Valencia', 'Avenida Central', 50, 431);
+INSERT INTO sede VALUES('101', 'Sede B', 'MÃ©xico', 'Bilbao', 'Avenida JuÃ¡rez', 74, 462);
+INSERT INTO sede VALUES('102', 'Sede A', 'Estados Unidos', 'Bilbao', 'Paseo de la Victoria', 59, 460);
+INSERT INTO sede VALUES('103', 'Sede D', 'Estados Unidos', 'Barcelona', 'Avenida JuÃ¡rez', 60, 423);
+INSERT INTO sede VALUES('104', 'Sede E', 'Estados Unidos', 'Sevilla', 'Paseo de la Victoria', 82, 284);
+INSERT INTO sede VALUES('105', 'Sede B', 'EspaÃ±a', 'Madrid', 'Avenida JuÃ¡rez', 46, 376);
+INSERT INTO sede VALUES('106', 'Sede E', 'MÃ©xico', 'Valencia', 'Calle Principal', 27, 434);
+INSERT INTO sede VALUES('107', 'Sede B', 'Argentina', 'Madrid', 'Avenida Central', 78, 178);
+INSERT INTO sede VALUES('108', 'Sede D', 'EspaÃ±a', 'Bilbao', 'Avenida JuÃ¡rez', 27, 297);
+INSERT INTO sede VALUES('109', 'Sede A', 'MÃ©xico', 'Madrid', 'Avenida Central', 53, 326);
+INSERT INTO sede VALUES('110', 'Sede A', 'EspaÃ±a', 'Valencia', 'Paseo de la Victoria', 91, 152);
+INSERT INTO sede VALUES('111', 'Sede A', 'Argentina', 'Barcelona', 'Calle Principal', 37, 277);
+INSERT INTO sede VALUES('112', 'Sede D', 'MÃ©xico', 'Sevilla', 'Avenida Central', 84, 135);
+INSERT INTO sede VALUES('113', 'Sede E', 'Argentina', 'Sevilla', 'Avenida JuÃ¡rez', 26, 383);
+INSERT INTO sede VALUES('114', 'Sede D', 'Estados Unidos', 'Bilbao', 'Avenida JuÃ¡rez', 98, 400);
+INSERT INTO sede VALUES('115', 'Sede D', 'MÃ©xico', 'Valencia', 'Avenida Central', 75, 243);
+INSERT INTO sede VALUES('116', 'Sede E', 'MÃ©xico', 'Madrid', 'Paseo de la Victoria', 80, 453);
+INSERT INTO sede VALUES('117', 'Sede B', 'EspaÃ±a', 'Madrid', 'Calle Principal', 56, 130);
+INSERT INTO sede VALUES('118', 'Sede C', 'EspaÃ±a', 'Bilbao', 'Avenida Central', 34, 166);
+INSERT INTO sede VALUES('119', 'Sede E', 'Argentina', 'Valencia', 'Avenida Central', 22, 362);
+INSERT INTO sede VALUES('120', 'Sede E', 'Francia', 'Madrid', 'Paseo de la Victoria', 6, 354);
+INSERT INTO sede VALUES('121', 'Sede A', 'Francia', 'Valencia', 'Avenida Central', 85, 204);
+INSERT INTO sede VALUES('122', 'Sede C', 'MÃ©xico', 'Bilbao', 'Paseo de la Victoria', 56, 354);
+INSERT INTO sede VALUES('123', 'Sede A', 'MÃ©xico', 'Bilbao', 'Calle Principal', 27, 74);
+INSERT INTO sede VALUES('124', 'Sede D', 'EspaÃ±a', 'Bilbao', 'Avenida Central', 43, 78);
+INSERT INTO sede VALUES('125', 'Sede D', 'EspaÃ±a', 'Barcelona', 'Paseo de la Victoria', 99, 262);
+INSERT INTO sede VALUES('126', 'Sede B', 'MÃ©xico', 'Sevilla', 'Avenida JuÃ¡rez', 22, 243);
+INSERT INTO sede VALUES('127', 'Sede D', 'MÃ©xico', 'Bilbao', 'Avenida JuÃ¡rez', 73, 318);
+INSERT INTO sede VALUES('128', 'Sede C', 'MÃ©xico', 'Barcelona', 'Paseo de la Victoria', 74, 206);
+INSERT INTO sede VALUES('129', 'Sede C', 'EspaÃ±a', 'Madrid', 'Avenida JuÃ¡rez', 17, 141);
+INSERT INTO sede VALUES('130', 'Sede B', 'Estados Unidos', 'Madrid', 'Avenida JuÃ¡rez', 90, 58);
+INSERT INTO sede VALUES('131', 'Sede A', 'Argentina', 'Sevilla', 'Calle Principal', 66, 276);
+INSERT INTO sede VALUES('132', 'Sede E', 'EspaÃ±a', 'Barcelona', 'Calle Principal', 26, 101);
+INSERT INTO sede VALUES('133', 'Sede C', 'Estados Unidos', 'Sevilla', 'Avenida Central', 29, 456);
+INSERT INTO sede VALUES('134', 'Sede A', 'EspaÃ±a', 'Madrid', 'Avenida Central', 84, 288);
+INSERT INTO sede VALUES('135', 'Sede D', 'Francia', 'Madrid', 'Paseo de la Victoria', 73, 303);
+INSERT INTO sede VALUES('136', 'Sede D', 'MÃ©xico', 'Barcelona', 'Avenida Central', 71, 428);
+INSERT INTO sede VALUES('137', 'Sede E', 'Francia', 'Barcelona', 'Avenida JuÃ¡rez', 6, 273);
+INSERT INTO sede VALUES('138', 'Sede D', 'Argentina', 'Sevilla', 'Calle Principal', 11, 72);
+INSERT INTO sede VALUES('139', 'Sede E', 'Estados Unidos', 'Valencia', 'Avenida Central', 65, 245);
+INSERT INTO sede VALUES('140', 'Sede E', 'MÃ©xico', 'Valencia', 'Calle Principal', 83, 313);
+INSERT INTO sede VALUES('141', 'Sede B', 'EspaÃ±a', 'Bilbao', 'Avenida Central', 66, 203);
+INSERT INTO sede VALUES('142', 'Sede C', 'Francia', 'Valencia', 'Calle Principal', 90, 166);
+INSERT INTO sede VALUES('143', 'Sede E', 'Argentina', 'Barcelona', 'Avenida Central', 72, 267);
+INSERT INTO sede VALUES('144', 'Sede C', 'MÃ©xico', 'Sevilla', 'Paseo de la Victoria', 20, 379);
+INSERT INTO sede VALUES('145', 'Sede E', 'Argentina', 'Madrid', 'Avenida JuÃ¡rez', 71, 96);
+INSERT INTO sede VALUES('146', 'Sede E', 'Argentina', 'Madrid', 'Avenida Central', 45, 405);
+INSERT INTO sede VALUES('147', 'Sede D', 'MÃ©xico', 'Bilbao', 'Avenida JuÃ¡rez', 73, 436);
+INSERT INTO sede VALUES('148', 'Sede D', 'Francia', 'Madrid', 'Calle Principal', 53, 117);
+INSERT INTO sede VALUES('149', 'Sede B', 'EspaÃ±a', 'Barcelona', 'Calle Principal', 42, 146);
+INSERT INTO sede VALUES('150', 'Sede C', 'Francia', 'Barcelona', 'Avenida JuÃ¡rez', 22, 471);
+INSERT INTO sede VALUES('151', 'Sede A', 'Francia', 'Barcelona', 'Avenida JuÃ¡rez', 55, 425);
+INSERT INTO sede VALUES('152', 'Sede B', 'EspaÃ±a', 'Bilbao', 'Calle Principal', 49, 211);
+INSERT INTO sede VALUES('153', 'Sede B', 'Francia', 'Madrid', 'Avenida Central', 86, 183);
+INSERT INTO sede VALUES('154', 'Sede D', 'EspaÃ±a', 'Madrid', 'Avenida Central', 73, 327);
+INSERT INTO sede VALUES('155', 'Sede E', 'MÃ©xico', 'Bilbao', 'Avenida JuÃ¡rez', 77, 478);
+INSERT INTO sede VALUES('156', 'Sede E', 'MÃ©xico', 'Valencia', 'Calle Principal', 6, 500);
+INSERT INTO sede VALUES('157', 'Sede C', 'EspaÃ±a', 'Bilbao', 'Paseo de la Victoria', 75, 396);
+INSERT INTO sede VALUES('158', 'Sede E', 'Francia', 'Sevilla', 'Paseo de la Victoria', 1, 322);
+INSERT INTO sede VALUES('159', 'Sede C', 'EspaÃ±a', 'Valencia', 'Paseo de la Victoria', 22, 494);
+INSERT INTO sede VALUES('160', 'Sede B', 'Francia', 'Sevilla', 'Avenida Central', 58, 481);
+INSERT INTO sede VALUES('161', 'Sede C', 'Argentina', 'Bilbao', 'Calle Principal', 99, 75);
+INSERT INTO sede VALUES('162', 'Sede E', 'MÃ©xico', 'Madrid', 'Paseo de la Victoria', 29, 468);
+INSERT INTO sede VALUES('163', 'Sede B', 'MÃ©xico', 'Sevilla', 'Avenida JuÃ¡rez', 60, 67);
+INSERT INTO sede VALUES('164', 'Sede E', 'Francia', 'Barcelona', 'Avenida Central', 44, 104);
+INSERT INTO sede VALUES('165', 'Sede E', 'MÃ©xico', 'Bilbao', 'Calle Principal', 12, 127);
+INSERT INTO sede VALUES('166', 'Sede C', 'Estados Unidos', 'Barcelona', 'Avenida JuÃ¡rez', 26, 68);
+INSERT INTO sede VALUES('167', 'Sede D', 'EspaÃ±a', 'Sevilla', 'Paseo de la Victoria', 88, 129);
+INSERT INTO sede VALUES('168', 'Sede D', 'MÃ©xico', 'Bilbao', 'Calle Principal', 5, 144);
+INSERT INTO sede VALUES('169', 'Sede B', 'MÃ©xico', 'Bilbao', 'Paseo de la Victoria', 54, 404);
+INSERT INTO sede VALUES('170', 'Sede B', 'MÃ©xico', 'Bilbao', 'Avenida Central', 98, 487);
+INSERT INTO sede VALUES('171', 'Sede E', 'MÃ©xico', 'Bilbao', 'Paseo de la Victoria', 91, 74);
+INSERT INTO sede VALUES('172', 'Sede E', 'Estados Unidos', 'Barcelona', 'Calle Principal', 2, 251);
+INSERT INTO sede VALUES('173', 'Sede B', 'Argentina', 'Sevilla', 'Avenida Central', 53, 388);
+INSERT INTO sede VALUES('174', 'Sede A', 'Argentina', 'Bilbao', 'Avenida JuÃ¡rez', 17, 254);
+INSERT INTO sede VALUES('175', 'Sede E', 'MÃ©xico', 'Valencia', 'Avenida Central', 62, 446);
+INSERT INTO sede VALUES('176', 'Sede B', 'Estados Unidos', 'Bilbao', 'Avenida Central', 45, 213);
+INSERT INTO sede VALUES('177', 'Sede C', 'Francia', 'Valencia', 'Paseo de la Victoria', 31, 304);
+INSERT INTO sede VALUES('178', 'Sede E', 'Argentina', 'Bilbao', 'Avenida JuÃ¡rez', 66, 357);
+INSERT INTO sede VALUES('179', 'Sede E', 'MÃ©xico', 'Madrid', 'Avenida Central', 15, 283);
+INSERT INTO sede VALUES('180', 'Sede D', 'EspaÃ±a', 'Bilbao', 'Avenida Central', 67, 119);
+INSERT INTO sede VALUES('181', 'Sede B', 'Estados Unidos', 'Valencia', 'Avenida Central', 48, 369);
+INSERT INTO sede VALUES('182', 'Sede E', 'Estados Unidos', 'Barcelona', 'Paseo de la Victoria', 75, 77);
+INSERT INTO sede VALUES('183', 'Sede A', 'EspaÃ±a', 'Sevilla', 'Paseo de la Victoria', 84, 105);
+INSERT INTO sede VALUES('184', 'Sede A', 'Francia', 'Bilbao', 'Paseo de la Victoria', 13, 489);
+INSERT INTO sede VALUES('185', 'Sede D', 'Argentina', 'Sevilla', 'Avenida JuÃ¡rez', 65, 424);
+INSERT INTO sede VALUES('186', 'Sede D', 'Francia', 'Sevilla', 'Paseo de la Victoria', 12, 492);
+INSERT INTO sede VALUES('187', 'Sede C', 'EspaÃ±a', 'Valencia', 'Avenida Central', 53, 180);
+INSERT INTO sede VALUES('188', 'Sede D', 'Argentina', 'Barcelona', 'Avenida JuÃ¡rez', 51, 363);
+INSERT INTO sede VALUES('189', 'Sede D', 'MÃ©xico', 'Valencia', 'Calle Principal', 37, 302);
+INSERT INTO sede VALUES('190', 'Sede A', 'MÃ©xico', 'Valencia', 'Avenida Central', 44, 99);
+INSERT INTO sede VALUES('191', 'Sede C', 'MÃ©xico', 'Valencia', 'Avenida JuÃ¡rez', 63, 372);
+INSERT INTO sede VALUES('192', 'Sede C', 'Estados Unidos', 'Madrid', 'Avenida Central', 1, 97);
+INSERT INTO sede VALUES('193', 'Sede E', 'MÃ©xico', 'Madrid', 'Paseo de la Victoria', 39, 200);
+INSERT INTO sede VALUES('194', 'Sede D', 'MÃ©xico', 'Sevilla', 'Avenida JuÃ¡rez', 96, 211);
+INSERT INTO sede VALUES('195', 'Sede D', 'MÃ©xico', 'Barcelona', 'Calle Principal', 81, 438);
+INSERT INTO sede VALUES('196', 'Sede D', 'MÃ©xico', 'Valencia', 'Paseo de la Victoria', 48, 316);
+INSERT INTO sede VALUES('197', 'Sede B', 'MÃ©xico', 'Barcelona', 'Calle Principal', 10, 473);
+INSERT INTO sede VALUES('198', 'Sede A', 'EspaÃ±a', 'Barcelona', 'Avenida JuÃ¡rez', 42, 249);
+INSERT INTO sede VALUES('199', 'Sede D', 'Argentina', 'Valencia', 'Avenida JuÃ¡rez', 51, 259);
+INSERT INTO sede VALUES('200', 'Sede C', 'MÃ©xico', 'Madrid', 'Avenida JuÃ¡rez', 85, 275);
+INSERT INTO sede VALUES('201', 'Sede D', 'Estados Unidos', 'Madrid', 'Calle Principal', 24, 337);
+INSERT INTO sede VALUES('202', 'Sede C', 'Estados Unidos', 'Bilbao', 'Avenida JuÃ¡rez', 63, 189);
+INSERT INTO sede VALUES('203', 'Sede A', 'EspaÃ±a', 'Valencia', 'Avenida JuÃ¡rez', 40, 109);
+INSERT INTO sede VALUES('204', 'Sede E', 'Francia', 'Sevilla', 'Paseo de la Victoria', 68, 496);
+INSERT INTO sede VALUES('205', 'Sede E', 'Argentina', 'Barcelona', 'Avenida Central', 65, 180);
+INSERT INTO sede VALUES('206', 'Sede B', 'MÃ©xico', 'Valencia', 'Avenida JuÃ¡rez', 52, 297);
+INSERT INTO sede VALUES('207', 'Sede C', 'Estados Unidos', 'Sevilla', 'Avenida Central', 35, 307);
+INSERT INTO sede VALUES('208', 'Sede C', 'MÃ©xico', 'Madrid', 'Paseo de la Victoria', 16, 276);
+INSERT INTO sede VALUES('209', 'Sede A', 'Estados Unidos', 'Barcelona', 'Avenida JuÃ¡rez', 57, 410);
+INSERT INTO sede VALUES('210', 'Sede C', 'MÃ©xico', 'Bilbao', 'Calle Principal', 59, 318);
+INSERT INTO sede VALUES('211', 'Sede E', 'Estados Unidos', 'Madrid', 'Avenida JuÃ¡rez', 55, 166);
+INSERT INTO sede VALUES('212', 'Sede A', 'EspaÃ±a', 'Barcelona', 'Avenida Central', 96, 96);
+INSERT INTO sede VALUES('213', 'Sede E', 'EspaÃ±a', 'Valencia', 'Paseo de la Victoria', 27, 367);
+INSERT INTO sede VALUES('214', 'Sede B', 'Estados Unidos', 'Sevilla', 'Paseo de la Victoria', 29, 238);
+INSERT INTO sede VALUES('215', 'Sede C', 'Francia', 'Madrid', 'Calle Principal', 20, 125);
+INSERT INTO sede VALUES('216', 'Sede D', 'Francia', 'Valencia', 'Paseo de la Victoria', 7, 208);
+INSERT INTO sede VALUES('217', 'Sede D', 'Argentina', 'Valencia', 'Paseo de la Victoria', 70, 386);
+INSERT INTO sede VALUES('218', 'Sede B', 'MÃ©xico', 'Bilbao', 'Avenida JuÃ¡rez', 69, 152);
+INSERT INTO sede VALUES('219', 'Sede C', 'Estados Unidos', 'Madrid', 'Avenida Central', 94, 188);
+INSERT INTO sede VALUES('220', 'Sede A', 'Argentina', 'Barcelona', 'Avenida Central', 73, 315);
+INSERT INTO sede VALUES('221', 'Sede D', 'EspaÃ±a', 'Valencia', 'Avenida Central', 61, 385);
+INSERT INTO sede VALUES('222', 'Sede D', 'Estados Unidos', 'Barcelona', 'Avenida JuÃ¡rez', 56, 135);
+INSERT INTO sede VALUES('223', 'Sede D', 'Argentina', 'Madrid', 'Avenida JuÃ¡rez', 59, 211);
+INSERT INTO sede VALUES('224', 'Sede C', 'Argentina', 'Madrid', 'Calle Principal', 51, 151);
+INSERT INTO sede VALUES('225', 'Sede D', 'Estados Unidos', 'Valencia', 'Avenida Central', 55, 275);
+INSERT INTO sede VALUES('226', 'Sede A', 'Estados Unidos', 'Madrid', 'Calle Principal', 32, 371);
+INSERT INTO sede VALUES('227', 'Sede C', 'EspaÃ±a', 'Bilbao', 'Avenida JuÃ¡rez', 21, 139);
+INSERT INTO sede VALUES('228', 'Sede A', 'Estados Unidos', 'Bilbao', 'Avenida Central', 25, 205);
+INSERT INTO sede VALUES('229', 'Sede E', 'MÃ©xico', 'Valencia', 'Calle Principal', 57, 80);
+INSERT INTO sede VALUES('230', 'Sede C', 'Francia', 'Bilbao', 'Avenida JuÃ¡rez', 37, 474);
+INSERT INTO sede VALUES('231', 'Sede C', 'Francia', 'Madrid', 'Avenida Central', 65, 304);
+INSERT INTO sede VALUES('232', 'Sede D', 'EspaÃ±a', 'Barcelona', 'Avenida JuÃ¡rez', 5, 73);
+INSERT INTO sede VALUES('233', 'Sede E', 'Francia', 'Valencia', 'Avenida JuÃ¡rez', 78, 221);
+INSERT INTO sede VALUES('234', 'Sede A', 'Francia', 'Barcelona', 'Calle Principal', 38, 348);
+INSERT INTO sede VALUES('235', 'Sede D', 'Argentina', 'Barcelona', 'Calle Principal', 84, 484);
+INSERT INTO sede VALUES('236', 'Sede B', 'EspaÃ±a', 'Madrid', 'Avenida Central', 45, 72);
+INSERT INTO sede VALUES('237', 'Sede B', 'Argentina', 'Madrid', 'Paseo de la Victoria', 85, 212);
+INSERT INTO sede VALUES('238', 'Sede C', 'MÃ©xico', 'Valencia', 'Paseo de la Victoria', 34, 478);
+INSERT INTO sede VALUES('239', 'Sede A', 'MÃ©xico', 'Madrid', 'Avenida JuÃ¡rez', 98, 164);
+INSERT INTO sede VALUES('240', 'Sede D', 'Estados Unidos', 'Valencia', 'Avenida Central', 79, 486);
+INSERT INTO sede VALUES('241', 'Sede E', 'Estados Unidos', 'Bilbao', 'Paseo de la Victoria', 43, 300);
+INSERT INTO sede VALUES('242', 'Sede A', 'Francia', 'Madrid', 'Avenida Central', 62, 381);
+INSERT INTO sede VALUES('243', 'Sede D', 'EspaÃ±a', 'Sevilla', 'Avenida Central', 48, 429);
+INSERT INTO sede VALUES('244', 'Sede D', 'Estados Unidos', 'Barcelona', 'Avenida Central', 66, 182);
+INSERT INTO sede VALUES('245', 'Sede D', 'Argentina', 'Sevilla', 'Avenida Central', 30, 84);
+INSERT INTO sede VALUES('246', 'Sede C', 'MÃ©xico', 'Barcelona', 'Calle Principal', 16, 219);
+INSERT INTO sede VALUES('247', 'Sede C', 'Estados Unidos', 'Bilbao', 'Paseo de la Victoria', 45, 71);
+INSERT INTO sede VALUES('248', 'Sede E', 'Estados Unidos', 'Sevilla', 'Calle Principal', 6, 234);
+INSERT INTO sede VALUES('249', 'Sede E', 'Francia', 'Madrid', 'Avenida JuÃ¡rez', 50, 112);
+INSERT INTO sede VALUES('250', 'Sede A', 'EspaÃ±a', 'Valencia', 'Calle Principal', 81, 166);
+INSERT INTO sede VALUES('251', 'Sede E', 'Francia', 'Valencia', 'Paseo de la Victoria', 73, 122);
+INSERT INTO sede VALUES('252', 'Sede B', 'Estados Unidos', 'Valencia', 'Avenida JuÃ¡rez', 71, 421);
+INSERT INTO sede VALUES('253', 'Sede B', 'Estados Unidos', 'Bilbao', 'Avenida Central', 43, 110);
+INSERT INTO sede VALUES('254', 'Sede B', 'EspaÃ±a', 'Bilbao', 'Avenida Central', 1, 291);
+INSERT INTO sede VALUES('255', 'Sede C', 'Estados Unidos', 'Bilbao', 'Calle Principal', 77, 152);
+INSERT INTO sede VALUES('256', 'Sede E', 'EspaÃ±a', 'Madrid', 'Calle Principal', 66, 418);
+INSERT INTO sede VALUES('257', 'Sede D', 'Argentina', 'Barcelona', 'Avenida JuÃ¡rez', 29, 344);
+INSERT INTO sede VALUES('258', 'Sede B', 'Estados Unidos', 'Sevilla', 'Paseo de la Victoria', 35, 291);
+INSERT INTO sede VALUES('259', 'Sede E', 'EspaÃ±a', 'Madrid', 'Avenida Central', 66, 98);
+INSERT INTO sede VALUES('260', 'Sede C', 'Francia', 'Sevilla', 'Avenida JuÃ¡rez', 29, 425);
+INSERT INTO sede VALUES('261', 'Sede D', 'EspaÃ±a', 'Sevilla', 'Paseo de la Victoria', 55, 121);
+INSERT INTO sede VALUES('262', 'Sede A', 'MÃ©xico', 'Sevilla', 'Avenida JuÃ¡rez', 100, 95);
+INSERT INTO sede VALUES('263', 'Sede A', 'EspaÃ±a', 'Bilbao', 'Avenida Central', 35, 192);
+INSERT INTO sede VALUES('264', 'Sede B', 'MÃ©xico', 'Bilbao', 'Paseo de la Victoria', 90, 231);
+INSERT INTO sede VALUES('265', 'Sede A', 'Francia', 'Sevilla', 'Paseo de la Victoria', 91, 384);
+INSERT INTO sede VALUES('266', 'Sede D', 'Argentina', 'Barcelona', 'Calle Principal', 1, 500);
+INSERT INTO sede VALUES('267', 'Sede B', 'Francia', 'Sevilla', 'Avenida JuÃ¡rez', 51, 280);
+INSERT INTO sede VALUES('268', 'Sede D', 'Francia', 'Bilbao', 'Paseo de la Victoria', 95, 367);
+INSERT INTO sede VALUES('269', 'Sede E', 'Estados Unidos', 'Bilbao', 'Paseo de la Victoria', 54, 467);
+INSERT INTO sede VALUES('270', 'Sede C', 'MÃ©xico', 'Barcelona', 'Avenida JuÃ¡rez', 68, 418);
+INSERT INTO sede VALUES('271', 'Sede E', 'MÃ©xico', 'Barcelona', 'Calle Principal', 92, 366);
+INSERT INTO sede VALUES('272', 'Sede A', 'Argentina', 'Madrid', 'Avenida Central', 38, 245);
+INSERT INTO sede VALUES('273', 'Sede A', 'Francia', 'Sevilla', 'Calle Principal', 12, 303);
+INSERT INTO sede VALUES('274', 'Sede A', 'Francia', 'Barcelona', 'Avenida JuÃ¡rez', 29, 254);
+INSERT INTO sede VALUES('275', 'Sede A', 'Estados Unidos', 'Bilbao', 'Avenida Central', 77, 199);
+INSERT INTO sede VALUES('276', 'Sede A', 'Argentina', 'Sevilla', 'Avenida Central', 23, 321);
+INSERT INTO sede VALUES('277', 'Sede E', 'EspaÃ±a', 'Valencia', 'Paseo de la Victoria', 31, 147);
+INSERT INTO sede VALUES('278', 'Sede E', 'MÃ©xico', 'Bilbao', 'Paseo de la Victoria', 30, 462);
+INSERT INTO sede VALUES('279', 'Sede E', 'Estados Unidos', 'Bilbao', 'Calle Principal', 20, 175);
+INSERT INTO sede VALUES('280', 'Sede E', 'EspaÃ±a', 'Valencia', 'Avenida JuÃ¡rez', 77, 326);
+INSERT INTO sede VALUES('281', 'Sede B', 'EspaÃ±a', 'Sevilla', 'Paseo de la Victoria', 98, 163);
+INSERT INTO sede VALUES('282', 'Sede A', 'Francia', 'Sevilla', 'Calle Principal', 38, 170);
+INSERT INTO sede VALUES('283', 'Sede A', 'Francia', 'Madrid', 'Avenida Central', 88, 460);
+INSERT INTO sede VALUES('284', 'Sede C', 'Estados Unidos', 'Barcelona', 'Avenida Central', 75, 298);
+INSERT INTO sede VALUES('285', 'Sede B', 'Argentina', 'Bilbao', 'Calle Principal', 24, 148);
+INSERT INTO sede VALUES('286', 'Sede C', 'MÃ©xico', 'Barcelona', 'Paseo de la Victoria', 80, 66);
+INSERT INTO sede VALUES('287', 'Sede A', 'Estados Unidos', 'Valencia', 'Avenida JuÃ¡rez', 46, 136);
+INSERT INTO sede VALUES('288', 'Sede C', 'MÃ©xico', 'Bilbao', 'Avenida Central', 50, 300);
+INSERT INTO sede VALUES('289', 'Sede C', 'EspaÃ±a', 'Sevilla', 'Calle Principal', 91, 306);
+INSERT INTO sede VALUES('290', 'Sede D', 'MÃ©xico', 'Madrid', 'Avenida JuÃ¡rez', 37, 433);
+INSERT INTO sede VALUES('291', 'Sede C', 'Francia', 'Barcelona', 'Paseo de la Victoria', 53, 377);
+INSERT INTO sede VALUES('292', 'Sede B', 'Argentina', 'Bilbao', 'Avenida Central', 45, 156);
+INSERT INTO sede VALUES('293', 'Sede C', 'Argentina', 'Bilbao', 'Calle Principal', 41, 342);
+INSERT INTO sede VALUES('294', 'Sede B', 'Estados Unidos', 'Madrid', 'Paseo de la Victoria', 33, 173);
+INSERT INTO sede VALUES('295', 'Sede B', 'Francia', 'Bilbao', 'Calle Principal', 1, 265);
+INSERT INTO sede VALUES('296', 'Sede D', 'Francia', 'Bilbao', 'Paseo de la Victoria', 53, 163);
+INSERT INTO sede VALUES('297', 'Sede A', 'EspaÃ±a', 'Bilbao', 'Paseo de la Victoria', 27, 127);
+INSERT INTO sede VALUES('298', 'Sede A', 'MÃ©xico', 'Sevilla', 'Paseo de la Victoria', 30, 380);
+INSERT INTO sede VALUES('299', 'Sede A', 'Argentina', 'Madrid', 'Avenida Central', 48, 402);
+INSERT INTO sede VALUES('300', 'Sede C', 'EspaÃ±a', 'Barcelona', 'Avenida Central', 44, 369);
+INSERT INTO sede VALUES('301', 'Sede A', 'EspaÃ±a', 'Bilbao', 'Paseo de la Victoria', 51, 120);
+INSERT INTO sede VALUES('302', 'Sede D', 'MÃ©xico', 'Bilbao', 'Avenida JuÃ¡rez', 18, 292);
+INSERT INTO sede VALUES('303', 'Sede D', 'EspaÃ±a', 'Valencia', 'Avenida JuÃ¡rez', 84, 141);
+INSERT INTO sede VALUES('304', 'Sede A', 'Argentina', 'Barcelona', 'Avenida JuÃ¡rez', 27, 239);
+INSERT INTO sede VALUES('305', 'Sede E', 'Estados Unidos', 'Bilbao', 'Paseo de la Victoria', 82, 66);
+INSERT INTO sede VALUES('306', 'Sede A', 'EspaÃ±a', 'Valencia', 'Avenida Central', 57, 423);
+INSERT INTO sede VALUES('307', 'Sede B', 'Estados Unidos', 'Madrid', 'Avenida JuÃ¡rez', 96, 191);
+INSERT INTO sede VALUES('308', 'Sede E', 'EspaÃ±a', 'Bilbao', 'Paseo de la Victoria', 92, 143);
+INSERT INTO sede VALUES('309', 'Sede A', 'Francia', 'Bilbao', 'Avenida Central', 18, 421);
+INSERT INTO sede VALUES('310', 'Sede C', 'EspaÃ±a', 'Bilbao', 'Paseo de la Victoria', 83, 208);
+INSERT INTO sede VALUES('311', 'Sede A', 'Argentina', 'Madrid', 'Avenida JuÃ¡rez', 32, 211);
+INSERT INTO sede VALUES('312', 'Sede E', 'EspaÃ±a', 'Barcelona', 'Avenida JuÃ¡rez', 84, 287);
+INSERT INTO sede VALUES('313', 'Sede D', 'EspaÃ±a', 'Madrid', 'Avenida Central', 58, 465);
+INSERT INTO sede VALUES('314', 'Sede C', 'Argentina', 'Madrid', 'Calle Principal', 71, 381);
+INSERT INTO sede VALUES('315', 'Sede C', 'Argentina', 'Sevilla', 'Calle Principal', 43, 169);
+INSERT INTO sede VALUES('316', 'Sede E', 'Argentina', 'Bilbao', 'Paseo de la Victoria', 31, 187);
+INSERT INTO sede VALUES('317', 'Sede B', 'Argentina', 'Sevilla', 'Avenida JuÃ¡rez', 53, 214);
+INSERT INTO sede VALUES('318', 'Sede A', 'EspaÃ±a', 'Barcelona', 'Avenida Central', 73, 257);
+INSERT INTO sede VALUES('319', 'Sede C', 'Francia', 'Madrid', 'Paseo de la Victoria', 41, 319);
+INSERT INTO sede VALUES('320', 'Sede D', 'EspaÃ±a', 'Madrid', 'Calle Principal', 64, 328);
+INSERT INTO sede VALUES('321', 'Sede E', 'EspaÃ±a', 'Valencia', 'Avenida JuÃ¡rez', 99, 129);
+INSERT INTO sede VALUES('322', 'Sede E', 'Argentina', 'Sevilla', 'Calle Principal', 36, 290);
+INSERT INTO sede VALUES('323', 'Sede C', 'Estados Unidos', 'Sevilla', 'Avenida Central', 56, 248);
+INSERT INTO sede VALUES('324', 'Sede D', 'MÃ©xico', 'Madrid', 'Avenida Central', 75, 302);
+INSERT INTO sede VALUES('325', 'Sede D', 'Francia', 'Bilbao', 'Avenida JuÃ¡rez', 31, 407);
+INSERT INTO sede VALUES('326', 'Sede D', 'EspaÃ±a', 'Madrid', 'Avenida Central', 83, 103);
+INSERT INTO sede VALUES('327', 'Sede B', 'Argentina', 'Barcelona', 'Paseo de la Victoria', 90, 121);
+INSERT INTO sede VALUES('328', 'Sede A', 'Argentina', 'Valencia', 'Calle Principal', 21, 472);
+INSERT INTO sede VALUES('329', 'Sede E', 'Francia', 'Madrid', 'Calle Principal', 98, 159);
+INSERT INTO sede VALUES('330', 'Sede E', 'MÃ©xico', 'Bilbao', 'Calle Principal', 33, 243);
+INSERT INTO sede VALUES('331', 'Sede A', 'Estados Unidos', 'Valencia', 'Avenida Central', 71, 174);
+INSERT INTO sede VALUES('332', 'Sede B', 'Argentina', 'Valencia', 'Paseo de la Victoria', 83, 377);
+INSERT INTO sede VALUES('333', 'Sede D', 'Estados Unidos', 'Sevilla', 'Paseo de la Victoria', 78, 71);
+INSERT INTO sede VALUES('334', 'Sede A', 'Argentina', 'Madrid', 'Calle Principal', 33, 249);
+INSERT INTO sede VALUES('335', 'Sede A', 'Argentina', 'Barcelona', 'Avenida JuÃ¡rez', 59, 250);
+INSERT INTO sede VALUES('336', 'Sede E', 'Argentina', 'Madrid', 'Calle Principal', 82, 370);
+INSERT INTO sede VALUES('337', 'Sede B', 'Francia', 'Sevilla', 'Avenida JuÃ¡rez', 19, 254);
+INSERT INTO sede VALUES('338', 'Sede B', 'MÃ©xico', 'Sevilla', 'Paseo de la Victoria', 84, 297);
+INSERT INTO sede VALUES('339', 'Sede D', 'Francia', 'Madrid', 'Avenida Central', 29, 422);
+INSERT INTO sede VALUES('340', 'Sede C', 'MÃ©xico', 'Valencia', 'Avenida JuÃ¡rez', 73, 310);
+INSERT INTO sede VALUES('341', 'Sede E', 'Argentina', 'Sevilla', 'Avenida Central', 71, 496);
+INSERT INTO sede VALUES('342', 'Sede D', 'Estados Unidos', 'Madrid', 'Calle Principal', 65, 443);
+INSERT INTO sede VALUES('343', 'Sede A', 'Estados Unidos', 'Valencia', 'Avenida Central', 37, 274);
+INSERT INTO sede VALUES('344', 'Sede A', 'EspaÃ±a', 'Madrid', 'Paseo de la Victoria', 47, 408);
+INSERT INTO sede VALUES('345', 'Sede A', 'Francia', 'Valencia', 'Paseo de la Victoria', 94, 126);
+INSERT INTO sede VALUES('346', 'Sede A', 'EspaÃ±a', 'Madrid', 'Avenida Central', 90, 88);
+INSERT INTO sede VALUES('347', 'Sede C', 'MÃ©xico', 'Sevilla', 'Avenida JuÃ¡rez', 61, 430);
+INSERT INTO sede VALUES('348', 'Sede A', 'EspaÃ±a', 'Valencia', 'Avenida Central', 6, 132);
+INSERT INTO sede VALUES('349', 'Sede D', 'MÃ©xico', 'Sevilla', 'Paseo de la Victoria', 96, 195);
+INSERT INTO sede VALUES('350', 'Sede D', 'Argentina', 'Bilbao', 'Avenida JuÃ¡rez', 23, 475);
+INSERT INTO sede VALUES('351', 'Sede C', 'MÃ©xico', 'Barcelona', 'Calle Principal', 32, 408);
+INSERT INTO sede VALUES('352', 'Sede B', 'Argentina', 'Madrid', 'Avenida Central', 64, 484);
+INSERT INTO sede VALUES('353', 'Sede B', 'MÃ©xico', 'Bilbao', 'Avenida JuÃ¡rez', 41, 154);
+INSERT INTO sede VALUES('354', 'Sede E', 'Francia', 'Bilbao', 'Calle Principal', 32, 439);
+INSERT INTO sede VALUES('355', 'Sede C', 'Francia', 'Barcelona', 'Calle Principal', 77, 340);
+INSERT INTO sede VALUES('356', 'Sede D', 'MÃ©xico', 'Bilbao', 'Avenida JuÃ¡rez', 100, 422);
+INSERT INTO sede VALUES('357', 'Sede B', 'Argentina', 'Bilbao', 'Calle Principal', 54, 332);
+INSERT INTO sede VALUES('358', 'Sede E', 'Francia', 'Bilbao', 'Calle Principal', 58, 486);
+INSERT INTO sede VALUES('359', 'Sede B', 'EspaÃ±a', 'Madrid', 'Paseo de la Victoria', 44, 399);
+INSERT INTO sede VALUES('360', 'Sede B', 'MÃ©xico', 'Madrid', 'Avenida Central', 85, 205);
+INSERT INTO sede VALUES('361', 'Sede A', 'Estados Unidos', 'Madrid', 'Paseo de la Victoria', 17, 62);
+INSERT INTO sede VALUES('362', 'Sede A', 'Estados Unidos', 'Sevilla', 'Paseo de la Victoria', 71, 198);
+INSERT INTO sede VALUES('363', 'Sede B', 'EspaÃ±a', 'Valencia', 'Avenida Central', 25, 60);
+INSERT INTO sede VALUES('364', 'Sede C', 'EspaÃ±a', 'Barcelona', 'Calle Principal', 4, 100);
+INSERT INTO sede VALUES('365', 'Sede E', 'EspaÃ±a', 'Bilbao', 'Avenida JuÃ¡rez', 72, 332);
+INSERT INTO sede VALUES('366', 'Sede E', 'Argentina', 'Bilbao', 'Paseo de la Victoria', 6, 120);
+INSERT INTO sede VALUES('367', 'Sede E', 'Estados Unidos', 'Bilbao', 'Calle Principal', 63, 456);
+INSERT INTO sede VALUES('368', 'Sede D', 'MÃ©xico', 'Sevilla', 'Avenida JuÃ¡rez', 54, 160);
+INSERT INTO sede VALUES('369', 'Sede D', 'Francia', 'Sevilla', 'Avenida JuÃ¡rez', 62, 251);
+INSERT INTO sede VALUES('370', 'Sede C', 'Argentina', 'Barcelona', 'Avenida Central', 98, 279);
+INSERT INTO sede VALUES('371', 'Sede C', 'EspaÃ±a', 'Sevilla', 'Avenida JuÃ¡rez', 71, 267);
+INSERT INTO sede VALUES('372', 'Sede A', 'EspaÃ±a', 'Valencia', 'Paseo de la Victoria', 82, 387);
+INSERT INTO sede VALUES('373', 'Sede A', 'Argentina', 'Bilbao', 'Avenida JuÃ¡rez', 1, 104);
+INSERT INTO sede VALUES('374', 'Sede A', 'MÃ©xico', 'Bilbao', 'Paseo de la Victoria', 63, 232);
+INSERT INTO sede VALUES('375', 'Sede E', 'Argentina', 'Valencia', 'Calle Principal', 78, 156);
+INSERT INTO sede VALUES('376', 'Sede C', 'MÃ©xico', 'Barcelona', 'Calle Principal', 25, 195);
+INSERT INTO sede VALUES('377', 'Sede A', 'Francia', 'Barcelona', 'Avenida Central', 13, 179);
+INSERT INTO sede VALUES('378', 'Sede D', 'EspaÃ±a', 'Barcelona', 'Avenida Central', 97, 54);
+INSERT INTO sede VALUES('379', 'Sede E', 'EspaÃ±a', 'Bilbao', 'Avenida JuÃ¡rez', 58, 281);
+INSERT INTO sede VALUES('380', 'Sede B', 'EspaÃ±a', 'Madrid', 'Avenida JuÃ¡rez', 47, 280);
+INSERT INTO sede VALUES('381', 'Sede E', 'Argentina', 'Barcelona', 'Calle Principal', 5, 70);
+INSERT INTO sede VALUES('382', 'Sede A', 'Francia', 'Valencia', 'Calle Principal', 1, 192);
+INSERT INTO sede VALUES('383', 'Sede C', 'MÃ©xico', 'Bilbao', 'Calle Principal', 11, 267);
+INSERT INTO sede VALUES('384', 'Sede C', 'Estados Unidos', 'Sevilla', 'Avenida JuÃ¡rez', 9, 322);
+INSERT INTO sede VALUES('385', 'Sede C', 'MÃ©xico', 'Madrid', 'Calle Principal', 10, 252);
+INSERT INTO sede VALUES('386', 'Sede B', 'Argentina', 'Barcelona', 'Avenida JuÃ¡rez', 71, 159);
+INSERT INTO sede VALUES('387', 'Sede D', 'Estados Unidos', 'Sevilla', 'Avenida JuÃ¡rez', 33, 310);
+INSERT INTO sede VALUES('388', 'Sede A', 'EspaÃ±a', 'Madrid', 'Paseo de la Victoria', 17, 84);
+INSERT INTO sede VALUES('389', 'Sede C', 'Estados Unidos', 'Valencia', 'Avenida JuÃ¡rez', 21, 282);
+INSERT INTO sede VALUES('390', 'Sede B', 'Argentina', 'Madrid', 'Avenida JuÃ¡rez', 46, 398);
+INSERT INTO sede VALUES('391', 'Sede C', 'EspaÃ±a', 'Valencia', 'Avenida Central', 68, 73);
+INSERT INTO sede VALUES('392', 'Sede C', 'Francia', 'Barcelona', 'Avenida JuÃ¡rez', 17, 382);
+INSERT INTO sede VALUES('393', 'Sede D', 'EspaÃ±a', 'Barcelona', 'Avenida JuÃ¡rez', 70, 367);
+INSERT INTO sede VALUES('394', 'Sede D', 'Argentina', 'Valencia', 'Avenida Central', 50, 403);
+INSERT INTO sede VALUES('395', 'Sede D', 'MÃ©xico', 'Barcelona', 'Calle Principal', 83, 219);
+INSERT INTO sede VALUES('396', 'Sede E', 'MÃ©xico', 'Sevilla', 'Avenida JuÃ¡rez', 49, 381);
+INSERT INTO sede VALUES('397', 'Sede B', 'Argentina', 'Barcelona', 'Paseo de la Victoria', 65, 83);
+INSERT INTO sede VALUES('398', 'Sede B', 'Estados Unidos', 'Sevilla', 'Avenida JuÃ¡rez', 55, 236);
+INSERT INTO sede VALUES('399', 'Sede D', 'Estados Unidos', 'Bilbao', 'Paseo de la Victoria', 34, 111);
+INSERT INTO sede VALUES('400', 'Sede E', 'MÃ©xico', 'Barcelona', 'Calle Principal', 92, 486);
+INSERT INTO sede VALUES('401', 'Sede A', 'MÃ©xico', 'Valencia', 'Avenida JuÃ¡rez', 75, 390);
+INSERT INTO sede VALUES('402', 'Sede D', 'MÃ©xico', 'Sevilla', 'Avenida Central', 83, 60);
+INSERT INTO sede VALUES('403', 'Sede B', 'EspaÃ±a', 'Barcelona', 'Avenida JuÃ¡rez', 22, 302);
+INSERT INTO sede VALUES('404', 'Sede E', 'Francia', 'Barcelona', 'Calle Principal', 96, 264);
+INSERT INTO sede VALUES('405', 'Sede E', 'MÃ©xico', 'Valencia', 'Avenida JuÃ¡rez', 87, 96);
+INSERT INTO sede VALUES('406', 'Sede C', 'EspaÃ±a', 'Madrid', 'Paseo de la Victoria', 39, 420);
+INSERT INTO sede VALUES('407', 'Sede C', 'Argentina', 'Barcelona', 'Calle Principal', 88, 187);
+INSERT INTO sede VALUES('408', 'Sede C', 'Argentina', 'Madrid', 'Avenida Central', 99, 174);
+INSERT INTO sede VALUES('409', 'Sede B', 'MÃ©xico', 'Madrid', 'Avenida JuÃ¡rez', 41, 487);
+INSERT INTO sede VALUES('410', 'Sede A', 'MÃ©xico', 'Madrid', 'Calle Principal', 70, 216);
+INSERT INTO sede VALUES('411', 'Sede C', 'Francia', 'Valencia', 'Avenida JuÃ¡rez', 50, 193);
+INSERT INTO sede VALUES('412', 'Sede A', 'Estados Unidos', 'Valencia', 'Avenida Central', 91, 125);
+INSERT INTO sede VALUES('413', 'Sede C', 'Francia', 'Madrid', 'Paseo de la Victoria', 83, 89);
+INSERT INTO sede VALUES('414', 'Sede B', 'Francia', 'Valencia', 'Paseo de la Victoria', 22, 329);
+INSERT INTO sede VALUES('415', 'Sede D', 'MÃ©xico', 'Valencia', 'Calle Principal', 16, 470);
+INSERT INTO sede VALUES('416', 'Sede D', 'EspaÃ±a', 'Bilbao', 'Avenida Central', 3, 161);
+INSERT INTO sede VALUES('417', 'Sede E', 'MÃ©xico', 'Sevilla', 'Paseo de la Victoria', 17, 181);
+INSERT INTO sede VALUES('418', 'Sede C', 'EspaÃ±a', 'Barcelona', 'Avenida JuÃ¡rez', 13, 258);
+INSERT INTO sede VALUES('419', 'Sede D', 'EspaÃ±a', 'Madrid', 'Avenida JuÃ¡rez', 17, 365);
+INSERT INTO sede VALUES('420', 'Sede D', 'MÃ©xico', 'Barcelona', 'Avenida JuÃ¡rez', 98, 53);
+INSERT INTO sede VALUES('421', 'Sede A', 'EspaÃ±a', 'Barcelona', 'Calle Principal', 20, 65);
+INSERT INTO sede VALUES('422', 'Sede B', 'Estados Unidos', 'Bilbao', 'Calle Principal', 38, 418);
+INSERT INTO sede VALUES('423', 'Sede D', 'Estados Unidos', 'Valencia', 'Paseo de la Victoria', 11, 189);
+INSERT INTO sede VALUES('424', 'Sede C', 'Argentina', 'Valencia', 'Calle Principal', 59, 377);
+INSERT INTO sede VALUES('425', 'Sede E', 'Argentina', 'Bilbao', 'Calle Principal', 85, 366);
+INSERT INTO sede VALUES('426', 'Sede A', 'Francia', 'Madrid', 'Calle Principal', 12, 491);
+INSERT INTO sede VALUES('427', 'Sede C', 'Francia', 'Bilbao', 'Avenida Central', 69, 360);
+INSERT INTO sede VALUES('428', 'Sede E', 'MÃ©xico', 'Valencia', 'Avenida JuÃ¡rez', 55, 53);
+INSERT INTO sede VALUES('429', 'Sede E', 'Argentina', 'Valencia', 'Calle Principal', 37, 434);
+INSERT INTO sede VALUES('430', 'Sede D', 'EspaÃ±a', 'Barcelona', 'Calle Principal', 64, 256);
+INSERT INTO sede VALUES('431', 'Sede A', 'Estados Unidos', 'Sevilla', 'Calle Principal', 51, 90);
+INSERT INTO sede VALUES('432', 'Sede A', 'Francia', 'Madrid', 'Avenida JuÃ¡rez', 91, 105);
+INSERT INTO sede VALUES('433', 'Sede C', 'Estados Unidos', 'Valencia', 'Paseo de la Victoria', 67, 158);
+INSERT INTO sede VALUES('434', 'Sede E', 'Estados Unidos', 'Barcelona', 'Avenida Central', 67, 280);
+INSERT INTO sede VALUES('435', 'Sede D', 'Francia', 'Barcelona', 'Avenida Central', 79, 396);
+INSERT INTO sede VALUES('436', 'Sede A', 'Argentina', 'Valencia', 'Paseo de la Victoria', 84, 412);
+INSERT INTO sede VALUES('437', 'Sede C', 'Argentina', 'Bilbao', 'Calle Principal', 5, 307);
+INSERT INTO sede VALUES('438', 'Sede C', 'Argentina', 'Valencia', 'Calle Principal', 52, 394);
+INSERT INTO sede VALUES('439', 'Sede B', 'Estados Unidos', 'Barcelona', 'Avenida JuÃ¡rez', 17, 165);
+INSERT INTO sede VALUES('440', 'Sede C', 'EspaÃ±a', 'Bilbao', 'Paseo de la Victoria', 7, 220);
+INSERT INTO sede VALUES('441', 'Sede E', 'MÃ©xico', 'Valencia', 'Calle Principal', 3, 204);
+INSERT INTO sede VALUES('442', 'Sede A', 'EspaÃ±a', 'Sevilla', 'Paseo de la Victoria', 21, 421);
+INSERT INTO sede VALUES('443', 'Sede C', 'EspaÃ±a', 'Valencia', 'Avenida Central', 63, 57);
+INSERT INTO sede VALUES('444', 'Sede B', 'MÃ©xico', 'Bilbao', 'Paseo de la Victoria', 48, 404);
+INSERT INTO sede VALUES('445', 'Sede B', 'Estados Unidos', 'Madrid', 'Avenida JuÃ¡rez', 95, 359);
+INSERT INTO sede VALUES('446', 'Sede D', 'Estados Unidos', 'Bilbao', 'Avenida JuÃ¡rez', 1, 341);
+INSERT INTO sede VALUES('447', 'Sede A', 'Argentina', 'Valencia', 'Paseo de la Victoria', 35, 83);
+INSERT INTO sede VALUES('448', 'Sede A', 'Estados Unidos', 'Sevilla', 'Avenida JuÃ¡rez', 11, 340);
+INSERT INTO sede VALUES('449', 'Sede E', 'Francia', 'Valencia', 'Calle Principal', 14, 451);
+INSERT INTO sede VALUES('450', 'Sede E', 'MÃ©xico', 'Barcelona', 'Avenida Central', 78, 104);
+INSERT INTO sede VALUES('451', 'Sede A', 'Argentina', 'Sevilla', 'Avenida Central', 59, 376);
+INSERT INTO sede VALUES('452', 'Sede B', 'MÃ©xico', 'Valencia', 'Avenida JuÃ¡rez', 8, 197);
+INSERT INTO sede VALUES('453', 'Sede E', 'Francia', 'Barcelona', 'Paseo de la Victoria', 43, 243);
+INSERT INTO sede VALUES('454', 'Sede A', 'Argentina', 'Sevilla', 'Avenida JuÃ¡rez', 80, 52);
+INSERT INTO sede VALUES('455', 'Sede D', 'MÃ©xico', 'Sevilla', 'Avenida JuÃ¡rez', 26, 277);
+INSERT INTO sede VALUES('456', 'Sede D', 'EspaÃ±a', 'Barcelona', 'Avenida Central', 30, 483);
+INSERT INTO sede VALUES('457', 'Sede D', 'MÃ©xico', 'Sevilla', 'Avenida Central', 73, 407);
+INSERT INTO sede VALUES('458', 'Sede A', 'EspaÃ±a', 'Sevilla', 'Paseo de la Victoria', 46, 451);
+INSERT INTO sede VALUES('459', 'Sede A', 'Francia', 'Madrid', 'Avenida JuÃ¡rez', 10, 117);
+INSERT INTO sede VALUES('460', 'Sede C', 'Estados Unidos', 'Barcelona', 'Calle Principal', 31, 75);
+INSERT INTO sede VALUES('461', 'Sede E', 'Estados Unidos', 'Barcelona', 'Avenida Central', 68, 420);
+INSERT INTO sede VALUES('462', 'Sede C', 'Francia', 'Sevilla', 'Paseo de la Victoria', 37, 421);
+INSERT INTO sede VALUES('463', 'Sede A', 'Francia', 'Valencia', 'Avenida JuÃ¡rez', 28, 459);
+INSERT INTO sede VALUES('464', 'Sede B', 'Francia', 'Madrid', 'Avenida Central', 14, 60);
+INSERT INTO sede VALUES('465', 'Sede A', 'EspaÃ±a', 'Barcelona', 'Avenida Central', 67, 67);
+INSERT INTO sede VALUES('466', 'Sede B', 'Francia', 'Barcelona', 'Avenida Central', 27, 459);
+INSERT INTO sede VALUES('467', 'Sede C', 'MÃ©xico', 'Madrid', 'Paseo de la Victoria', 99, 81);
+INSERT INTO sede VALUES('468', 'Sede A', 'Francia', 'Barcelona', 'Avenida Central', 70, 423);
+INSERT INTO sede VALUES('469', 'Sede C', 'Estados Unidos', 'Sevilla', 'Paseo de la Victoria', 17, 482);
+INSERT INTO sede VALUES('470', 'Sede B', 'EspaÃ±a', 'Bilbao', 'Avenida Central', 97, 372);
+INSERT INTO sede VALUES('471', 'Sede B', 'Estados Unidos', 'Sevilla', 'Paseo de la Victoria', 12, 320);
+INSERT INTO sede VALUES('472', 'Sede A', 'Argentina', 'Bilbao', 'Paseo de la Victoria', 7, 116);
+INSERT INTO sede VALUES('473', 'Sede C', 'EspaÃ±a', 'Valencia', 'Paseo de la Victoria', 62, 474);
+INSERT INTO sede VALUES('474', 'Sede C', 'Francia', 'Madrid', 'Avenida Central', 5, 69);
+INSERT INTO sede VALUES('475', 'Sede D', 'Estados Unidos', 'Valencia', 'Calle Principal', 88, 297);
+INSERT INTO sede VALUES('476', 'Sede E', 'Argentina', 'Sevilla', 'Avenida JuÃ¡rez', 50, 95);
+INSERT INTO sede VALUES('477', 'Sede A', 'Francia', 'Valencia', 'Avenida Central', 25, 306);
+INSERT INTO sede VALUES('478', 'Sede A', 'Francia', 'Sevilla', 'Calle Principal', 57, 472);
+INSERT INTO sede VALUES('479', 'Sede B', 'Estados Unidos', 'Valencia', 'Avenida JuÃ¡rez', 59, 399);
+INSERT INTO sede VALUES('480', 'Sede B', 'MÃ©xico', 'Madrid', 'Avenida Central', 77, 487);
+INSERT INTO sede VALUES('481', 'Sede A', 'Francia', 'Valencia', 'Paseo de la Victoria', 25, 287);
+INSERT INTO sede VALUES('482', 'Sede E', 'Estados Unidos', 'Barcelona', 'Paseo de la Victoria', 91, 168);
+INSERT INTO sede VALUES('483', 'Sede E', 'Argentina', 'Bilbao', 'Avenida JuÃ¡rez', 8, 85);
+INSERT INTO sede VALUES('484', 'Sede C', 'EspaÃ±a', 'Barcelona', 'Avenida JuÃ¡rez', 75, 450);
+INSERT INTO sede VALUES('485', 'Sede E', 'EspaÃ±a', 'Barcelona', 'Calle Principal', 36, 471);
+INSERT INTO sede VALUES('486', 'Sede B', 'Estados Unidos', 'Sevilla', 'Avenida JuÃ¡rez', 26, 298);
+INSERT INTO sede VALUES('487', 'Sede D', 'Estados Unidos', 'Madrid', 'Calle Principal', 49, 250);
+INSERT INTO sede VALUES('488', 'Sede B', 'Argentina', 'Sevilla', 'Paseo de la Victoria', 75, 415);
+INSERT INTO sede VALUES('489', 'Sede D', 'Argentina', 'Valencia', 'Paseo de la Victoria', 16, 303);
+INSERT INTO sede VALUES('490', 'Sede D', 'Estados Unidos', 'Sevilla', 'Paseo de la Victoria', 48, 59);
+INSERT INTO sede VALUES('491', 'Sede C', 'Francia', 'Bilbao', 'Paseo de la Victoria', 13, 445);
+INSERT INTO sede VALUES('492', 'Sede A', 'Francia', 'Madrid', 'Avenida Central', 79, 341);
+INSERT INTO sede VALUES('493', 'Sede A', 'Francia', 'Sevilla', 'Avenida JuÃ¡rez', 70, 257);
+INSERT INTO sede VALUES('494', 'Sede B', 'EspaÃ±a', 'Barcelona', 'Calle Principal', 82, 149);
+INSERT INTO sede VALUES('495', 'Sede C', 'EspaÃ±a', 'Barcelona', 'Avenida JuÃ¡rez', 79, 214);
+INSERT INTO sede VALUES('496', 'Sede B', 'Estados Unidos', 'Madrid', 'Avenida JuÃ¡rez', 90, 90);
+INSERT INTO sede VALUES('497', 'Sede C', 'EspaÃ±a', 'Sevilla', 'Avenida JuÃ¡rez', 5, 415);
+INSERT INTO sede VALUES('498', 'Sede B', 'Argentina', 'Madrid', 'Avenida Central', 19, 484);
+INSERT INTO sede VALUES('499', 'Sede A', 'Estados Unidos', 'Bilbao', 'Avenida Central', 18, 248);
+INSERT INTO sede VALUES('500', 'Sede C', 'Estados Unidos', 'Bilbao', 'Calle Principal', 98, 195);
+
+--
+-- Volcado de datos para la tabla seccion
+--
+
+INSERT INTO seccion VALUES('73', '1', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('148', '2', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('113', '3', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('429', '4', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('199', '5', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('387', '6', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('324', '7', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('308', '8', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('124', '9', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('86', '10', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('367', '11', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('416', '12', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('40', '13', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('473', '14', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('392', '15', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('439', '16', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('14', '17', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('132', '18', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('117', '19', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('325', '20', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('449', '21', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('457', '22', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('292', '23', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('254', '24', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('304', '25', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('73', '26', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('246', '27', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('333', '28', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('133', '29', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('287', '30', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('493', '31', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('288', '32', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('397', '33', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('167', '34', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('460', '35', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('153', '36', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('273', '37', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('313', '38', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('140', '39', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('444', '40', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('195', '41', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('359', '42', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('366', '43', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('261', '44', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('232', '45', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('384', '46', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('337', '47', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('261', '48', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('305', '49', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('20', '50', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('274', '51', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('357', '52', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('202', '53', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('338', '54', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('200', '55', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('325', '56', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('433', '57', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('264', '58', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('195', '59', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('272', '60', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('228', '61', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('445', '62', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('11', '63', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('236', '64', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('238', '65', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('33', '66', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('141', '67', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('24', '68', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('384', '69', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('34', '70', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('406', '71', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('36', '72', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('219', '73', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('179', '74', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('98', '75', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('203', '76', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('399', '77', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('377', '78', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('108', '79', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('495', '80', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('370', '81', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('204', '82', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('440', '83', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('295', '84', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('359', '85', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('383', '86', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('260', '87', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('465', '88', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('225', '89', 'SecciÃ³n E');
+INSERT INTO seccion VALUES('118', '90', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('456', '91', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('370', '92', 'SecciÃ³n B');
+INSERT INTO seccion VALUES('260', '93', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('300', '94', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('315', '95', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('233', '96', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('340', '97', 'SecciÃ³n D');
+INSERT INTO seccion VALUES('175', '98', 'SecciÃ³n A');
+INSERT INTO seccion VALUES('171', '99', 'SecciÃ³n C');
+INSERT INTO seccion VALUES('332', '100', 'SecciÃ³n E');
+
+--
+-- Volcado de datos para la tabla estanteria
+--
+
+INSERT INTO estanteria VALUES('133', '1', '29', 40, 8, 1);
+INSERT INTO estanteria VALUES('370', '2', '92', 2, 2, 5);
+INSERT INTO estanteria VALUES('287', '3', '30', 15, 6, 4);
+INSERT INTO estanteria VALUES('383', '4', '86', 48, 6, 5);
+INSERT INTO estanteria VALUES('171', '5', '99', 38, 1, 1);
+INSERT INTO estanteria VALUES('465', '6', '88', 26, 3, 2);
+INSERT INTO estanteria VALUES('445', '7', '62', 39, 10, 3);
+INSERT INTO estanteria VALUES('73', '8', '1', 8, 2, 2);
+INSERT INTO estanteria VALUES('304', '9', '25', 1, 3, 4);
+INSERT INTO estanteria VALUES('40', '10', '13', 36, 5, 5);
+INSERT INTO estanteria VALUES('383', '11', '86', 38, 1, 5);
+INSERT INTO estanteria VALUES('153', '12', '36', 1, 8, 1);
+INSERT INTO estanteria VALUES('232', '13', '45', 39, 9, 1);
+INSERT INTO estanteria VALUES('397', '14', '33', 48, 5, 1);
+INSERT INTO estanteria VALUES('195', '15', '41', 16, 9, 3);
+INSERT INTO estanteria VALUES('153', '16', '36', 34, 1, 5);
+INSERT INTO estanteria VALUES('273', '17', '37', 35, 1, 5);
+INSERT INTO estanteria VALUES('124', '18', '9', 21, 8, 1);
+INSERT INTO estanteria VALUES('359', '19', '42', 11, 3, 5);
+INSERT INTO estanteria VALUES('444', '20', '40', 26, 7, 2);
+INSERT INTO estanteria VALUES('384', '21', '69', 48, 7, 1);
+INSERT INTO estanteria VALUES('238', '22', '65', 7, 6, 1);
+INSERT INTO estanteria VALUES('383', '23', '86', 35, 2, 2);
+INSERT INTO estanteria VALUES('132', '24', '18', 20, 2, 2);
+INSERT INTO estanteria VALUES('325', '25', '20', 1, 7, 1);
+INSERT INTO estanteria VALUES('295', '26', '84', 10, 10, 4);
+INSERT INTO estanteria VALUES('397', '27', '33', 13, 3, 4);
+INSERT INTO estanteria VALUES('153', '28', '36', 48, 6, 4);
+INSERT INTO estanteria VALUES('440', '29', '83', 2, 8, 3);
+INSERT INTO estanteria VALUES('440', '30', '83', 20, 7, 3);
+INSERT INTO estanteria VALUES('202', '31', '53', 35, 7, 3);
+INSERT INTO estanteria VALUES('456', '32', '91', 34, 7, 4);
+INSERT INTO estanteria VALUES('457', '33', '22', 4, 1, 2);
+INSERT INTO estanteria VALUES('493', '34', '31', 37, 3, 1);
+INSERT INTO estanteria VALUES('124', '35', '9', 21, 2, 4);
+INSERT INTO estanteria VALUES('225', '36', '89', 25, 5, 4);
+INSERT INTO estanteria VALUES('383', '37', '86', 15, 8, 1);
+INSERT INTO estanteria VALUES('473', '38', '14', 9, 9, 3);
+INSERT INTO estanteria VALUES('86', '39', '10', 43, 4, 5);
+INSERT INTO estanteria VALUES('338', '40', '54', 18, 9, 2);
+INSERT INTO estanteria VALUES('406', '41', '71', 43, 3, 3);
+INSERT INTO estanteria VALUES('383', '42', '86', 2, 4, 3);
+INSERT INTO estanteria VALUES('359', '43', '85', 24, 3, 3);
+INSERT INTO estanteria VALUES('325', '44', '20', 26, 6, 5);
+INSERT INTO estanteria VALUES('384', '45', '69', 37, 10, 5);
+INSERT INTO estanteria VALUES('86', '46', '10', 36, 9, 1);
+INSERT INTO estanteria VALUES('300', '47', '94', 27, 4, 4);
+INSERT INTO estanteria VALUES('117', '48', '19', 10, 7, 5);
+INSERT INTO estanteria VALUES('449', '49', '21', 33, 4, 5);
+INSERT INTO estanteria VALUES('315', '50', '95', 32, 9, 3);
+
+--
+-- Volcado de datos para la tabla editorial
+--
+
+INSERT INTO editorial VALUES('1', 'EspaÃ±a', 'Sevilla', '1432482809', 'Editorial 4');
+INSERT INTO editorial VALUES('2', 'MÃ©xico', 'Bilbao', '9241378933', 'Editorial 4');
+INSERT INTO editorial VALUES('3', 'MÃ©xico', 'Madrid', '5656109991', 'Editorial 4');
+INSERT INTO editorial VALUES('4', 'MÃ©xico', 'Valencia', '5123819452', 'Editorial 1');
+INSERT INTO editorial VALUES('5', 'MÃ©xico', 'Sevilla', '7365680660', 'Editorial 3');
+INSERT INTO editorial VALUES('6', 'MÃ©xico', 'Bilbao', '4955662867', 'Editorial 1');
+INSERT INTO editorial VALUES('7', 'Argentina', 'Valencia', '1914855843', 'Editorial 1');
+INSERT INTO editorial VALUES('8', 'MÃ©xico', 'Valencia', '7965927073', 'Editorial 2');
+INSERT INTO editorial VALUES('9', 'Francia', 'Bilbao', '2374870299', 'Editorial 5');
+INSERT INTO editorial VALUES('10', 'EspaÃ±a', 'Sevilla', '1101756793', 'Editorial 4');
+
+--
+-- Volcado de datos para la tabla tipo
+--
+
+INSERT INTO tipo VALUES(1, 'Otro');
+INSERT INTO tipo VALUES(2, 'Tesis');
+INSERT INTO tipo VALUES(3, 'Otro');
+INSERT INTO tipo VALUES(4, 'Libro');
+INSERT INTO tipo VALUES(5, 'Revista');
+INSERT INTO tipo VALUES(6, 'Documento');
+INSERT INTO tipo VALUES(7, 'Revista');
+INSERT INTO tipo VALUES(8, 'Documento');
+INSERT INTO tipo VALUES(9, 'Tesis');
+INSERT INTO tipo VALUES(10, 'Revista');
+
+
+--
+-- Volcado de datos para la tabla material_bibliografico
+--
+
+INSERT INTO material_bibliografico VALUES('1', '3', '383', '37', '86', 3, DATE '2014-09-15', 'DescripciÃ³n del libro A', 'Libro A');
+INSERT INTO material_bibliografico VALUES('2', '1', '493', '34', '31', 6, DATE '2008-01-15', 'DescripciÃ³n del libro D', 'Libro C');
+INSERT INTO material_bibliografico VALUES('3', '10', '232', '13', '45', 7, DATE '2009-09-27', 'DescripciÃ³n del libro E', 'Libro D');
+INSERT INTO material_bibliografico VALUES('4', '6', '287', '3', '30', 2, DATE '2014-12-08', 'DescripciÃ³n del libro A', 'Libro A');
+INSERT INTO material_bibliografico VALUES('5', '3', '132', '24', '18', 1, DATE '2009-02-10', 'DescripciÃ³n del libro E', 'Libro A');
+INSERT INTO material_bibliografico VALUES('6', '9', '449', '49', '21', 3, DATE '2017-08-04', 'DescripciÃ³n del libro D', 'Libro A');
+INSERT INTO material_bibliografico VALUES('7', '2', '171', '5', '99', 8, DATE '2017-01-03', 'DescripciÃ³n del libro E', 'Libro B');
+INSERT INTO material_bibliografico VALUES('8', '2', '406', '41', '71', 1, DATE '2012-04-27', 'DescripciÃ³n del libro D', 'Libro D');
+INSERT INTO material_bibliografico VALUES('9', '2', '440', '29', '83', 4, DATE '2002-04-29', 'DescripciÃ³n del libro A', 'Libro B');
+INSERT INTO material_bibliografico VALUES('10', '6', '195', '15', '41', 10, DATE '2010-08-24', 'DescripciÃ³n del libro C', 'Libro B');
+INSERT INTO material_bibliografico VALUES('11', '1', '397', '27', '33', 7, DATE '2007-05-15', 'DescripciÃ³n del libro D', 'Libro C');
+INSERT INTO material_bibliografico VALUES('12', '10', '202', '31', '53', 5, DATE '2011-01-09', 'DescripciÃ³n del libro B', 'Libro E');
+INSERT INTO material_bibliografico VALUES('13', '8', '86', '46', '10', 8, DATE '2002-01-10', 'DescripciÃ³n del libro B', 'Libro D');
+INSERT INTO material_bibliografico VALUES('14', '9', '473', '38', '14', 2, DATE '2021-12-21', 'DescripciÃ³n del libro D', 'Libro C');
+INSERT INTO material_bibliografico VALUES('15', '2', '397', '14', '33', 3, DATE '2008-11-23', 'DescripciÃ³n del libro E', 'Libro E');
+INSERT INTO material_bibliografico VALUES('16', '6', '383', '42', '86', 4, DATE '2009-10-26', 'DescripciÃ³n del libro C', 'Libro B');
+INSERT INTO material_bibliografico VALUES('17', '4', '406', '41', '71', 7, DATE '2005-08-11', 'DescripciÃ³n del libro A', 'Libro C');
+INSERT INTO material_bibliografico VALUES('18', '8', '133', '1', '29', 7, DATE '2011-10-31', 'DescripciÃ³n del libro B', 'Libro B');
+INSERT INTO material_bibliografico VALUES('19', '6', '359', '43', '85', 10, DATE '2004-08-26', 'DescripciÃ³n del libro B', 'Libro B');
+INSERT INTO material_bibliografico VALUES('20', '10', '445', '7', '62', 6, DATE '2023-12-21', 'DescripciÃ³n del libro C', 'Libro A');
+INSERT INTO material_bibliografico VALUES('21', '3', '225', '36', '89', 3, DATE '2022-12-30', 'DescripciÃ³n del libro E', 'Libro E');
+INSERT INTO material_bibliografico VALUES('22', '9', '359', '43', '85', 8, DATE '2023-03-07', 'DescripciÃ³n del libro A', 'Libro D');
+INSERT INTO material_bibliografico VALUES('23', '7', '473', '38', '14', 2, DATE '2015-12-17', 'DescripciÃ³n del libro C', 'Libro D');
+INSERT INTO material_bibliografico VALUES('24', '6', '195', '15', '41', 8, DATE '2013-06-02', 'DescripciÃ³n del libro D', 'Libro E');
+INSERT INTO material_bibliografico VALUES('25', '5', '273', '17', '37', 9, DATE '2007-05-18', 'DescripciÃ³n del libro A', 'Libro B');
+INSERT INTO material_bibliografico VALUES('26', '2', '473', '38', '14', 10, DATE '2009-03-12', 'DescripciÃ³n del libro C', 'Libro D');
+INSERT INTO material_bibliografico VALUES('27', '4', '449', '49', '21', 2, DATE '2002-01-18', 'DescripciÃ³n del libro B', 'Libro C');
+INSERT INTO material_bibliografico VALUES('28', '2', '383', '4', '86', 9, DATE '2015-05-06', 'DescripciÃ³n del libro E', 'Libro E');
+INSERT INTO material_bibliografico VALUES('29', '10', '225', '36', '89', 10, DATE '2019-10-21', 'DescripciÃ³n del libro D', 'Libro A');
+INSERT INTO material_bibliografico VALUES('30', '5', '338', '40', '54', 8, DATE '2023-04-16', 'DescripciÃ³n del libro A', 'Libro A');
+INSERT INTO material_bibliografico VALUES('31', '4', '338', '40', '54', 8, DATE '2013-01-27', 'DescripciÃ³n del libro C', 'Libro D');
+INSERT INTO material_bibliografico VALUES('32', '1', '124', '18', '9', 5, DATE '2016-03-30', 'DescripciÃ³n del libro B', 'Libro A');
+INSERT INTO material_bibliografico VALUES('33', '4', '397', '27', '33', 7, DATE '2018-12-22', 'DescripciÃ³n del libro D', 'Libro D');
+INSERT INTO material_bibliografico VALUES('34', '8', '153', '28', '36', 10, DATE '2011-11-05', 'DescripciÃ³n del libro D', 'Libro D');
+INSERT INTO material_bibliografico VALUES('35', '1', '440', '29', '83', 4, DATE '2020-01-25', 'DescripciÃ³n del libro B', 'Libro E');
+INSERT INTO material_bibliografico VALUES('36', '6', '445', '7', '62', 3, DATE '2021-05-19', 'DescripciÃ³n del libro C', 'Libro C');
+INSERT INTO material_bibliografico VALUES('37', '7', '383', '23', '86', 2, DATE '2021-03-20', 'DescripciÃ³n del libro D', 'Libro B');
+INSERT INTO material_bibliografico VALUES('38', '4', '359', '43', '85', 3, DATE '2000-06-18', 'DescripciÃ³n del libro C', 'Libro E');
+INSERT INTO material_bibliografico VALUES('39', '4', '86', '39', '10', 10, DATE '2013-03-15', 'DescripciÃ³n del libro D', 'Libro B');
+INSERT INTO material_bibliografico VALUES('40', '3', '273', '17', '37', 3, DATE '2008-03-27', 'DescripciÃ³n del libro A', 'Libro A');
+
+--
+-- Volcado de datos para la tabla resenia
+--
+
+
+INSERT INTO resenia VALUES('31', '1', '4', '338', '40', '54', 8, 'Muy recomendado', 2, DATE '2009-11-27');
+INSERT INTO resenia VALUES('15', '2', '2', '397', '14', '33', 3, 'Buena reseÃ±a', 2, DATE '2000-01-30');
+INSERT INTO resenia VALUES('30', '3', '5', '338', '40', '54', 8, 'No me gustÃ³', 2, DATE '2022-03-08');
+INSERT INTO resenia VALUES('13', '4', '8', '86', '46', '10', 8, 'Buena reseÃ±a', 2, DATE '2002-01-01');
+INSERT INTO resenia VALUES('29', '5', '10', '225', '36', '89', 10, 'Muy recomendado', 3, DATE '2007-10-10');
+INSERT INTO resenia VALUES('21', '6', '3', '225', '36', '89', 3, 'Interesante lectura', 1, DATE '2019-05-04');
+INSERT INTO resenia VALUES('16', '7', '6', '383', '42', '86', 4, 'Muy recomendado', 2, DATE '2016-04-04');
+INSERT INTO resenia VALUES('28', '8', '2', '383', '4', '86', 9, 'Interesante lectura', 2, DATE '2016-06-07');
+INSERT INTO resenia VALUES('31', '9', '4', '338', '40', '54', 8, 'Muy recomendado', 1, DATE '2008-03-17');
+INSERT INTO resenia VALUES('24', '10', '6', '195', '15', '41', 8, 'Excelente libro', 5, DATE '2002-08-19');
+INSERT INTO resenia VALUES('5', '11', '3', '132', '24', '18', 1, 'Muy recomendado', 2, DATE '2011-05-14');
+INSERT INTO resenia VALUES('34', '12', '8', '153', '28', '36', 10, 'Interesante lectura', 1, DATE '2021-06-21');
+INSERT INTO resenia VALUES('35', '13', '1', '440', '29', '83', 4, 'Excelente libro', 3, DATE '2001-03-10');
+INSERT INTO resenia VALUES('8', '14', '2', '406', '41', '71', 1, 'Interesante lectura', 5, DATE '2022-07-07');
+INSERT INTO resenia VALUES('7', '15', '2', '171', '5', '99', 8, 'Excelente libro', 1, DATE '2019-08-01');
+INSERT INTO resenia VALUES('30', '16', '5', '338', '40', '54', 8, 'Excelente libro', 5, DATE '2020-01-01');
+INSERT INTO resenia VALUES('38', '17', '4', '359', '43', '85', 3, 'Interesante lectura', 1, DATE '2008-01-24');
+INSERT INTO resenia VALUES('1', '18', '3', '383', '37', '86', 3, 'Buena reseÃ±a', 3, DATE '2012-08-26');
+INSERT INTO resenia VALUES('12', '19', '10', '202', '31', '53', 5, 'No me gustÃ³', 4, DATE '2007-07-09');
+INSERT INTO resenia VALUES('14', '20', '9', '473', '38', '14', 2, 'Excelente libro', 5, DATE '2022-07-08');
+INSERT INTO resenia VALUES('8', '21', '2', '406', '41', '71', 1, 'Interesante lectura', 5, DATE '2002-01-06');
+INSERT INTO resenia VALUES('5', '22', '3', '132', '24', '18', 1, 'Buena reseÃ±a', 2, DATE '2019-01-16');
+INSERT INTO resenia VALUES('3', '23', '10', '232', '13', '45', 7, 'No me gustÃ³', 3, DATE '2017-08-07');
+INSERT INTO resenia VALUES('14', '24', '9', '473', '38', '14', 2, 'No me gustÃ³', 3, DATE '2000-01-15');
+INSERT INTO resenia VALUES('30', '25', '5', '338', '40', '54', 8, 'No me gustÃ³', 5, DATE '2006-07-20');
+INSERT INTO resenia VALUES('22', '26', '9', '359', '43', '85', 8, 'Buena reseÃ±a', 2, DATE '2015-03-06');
+INSERT INTO resenia VALUES('27', '27', '4', '449', '49', '21', 2, 'Buena reseÃ±a', 4, DATE '2008-04-07');
+INSERT INTO resenia VALUES('14', '28', '9', '473', '38', '14', 2, 'Buena reseÃ±a', 1, DATE '2021-01-14');
+INSERT INTO resenia VALUES('28', '29', '2', '383', '4', '86', 9, 'Interesante lectura', 4, DATE '2004-11-15');
+INSERT INTO resenia VALUES('17', '30', '4', '406', '41', '71', 7, 'Interesante lectura', 5, DATE '2016-06-08');
+
+--
+-- Volcado de datos para la tabla usuario
+--
+
+INSERT INTO usuario VALUES('1', '1045755802', '6936828635', 'Juan', 'GÃ³mez', 'GÃ³mez', 'Bilbao', 'MÃ©xico', 'Calle D', 97, '9586624614', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('2', '6800857246', '1408571796', 'Carlos', 'RodrÃ­guez', 'RodrÃ­guez', 'Bilbao', 'Argentina', 'Avenida C', 75, '8774323526', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('3', '5067250286', '4618262589', 'Carlos', 'LÃ³pez', 'GarcÃ­a', 'Madrid', 'Argentina', 'Avenida A', 89, '5844355184', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('4', '1834555944', '0599411876', 'Pedro', 'MartÃ­nez', 'GÃ³mez', 'Madrid', 'Argentina', 'Avenida A', 67, '2585988789', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('5', '9953636188', '9374205831', 'Laura', 'RodrÃ­guez', 'GarcÃ­a', 'Barcelona', 'EspaÃ±a', 'Calle B', 23, '7660415892', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('6', '1409571242', '1838972218', 'Laura', 'MartÃ­nez', 'MartÃ­nez', 'Sevilla', 'Argentina', 'Avenida E', 30, '7478769427', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('7', '3485032508', '9079268049', 'Laura', 'GÃ³mez', 'LÃ³pez', 'Sevilla', 'Argentina', 'Avenida A', 36, '6643342836', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('8', '0767878433', '1525625706', 'Carlos', 'RodrÃ­guez', 'GÃ³mez', 'Valencia', 'Argentina', 'Avenida A', 12, '5940229003', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('9', '3681042846', '7033889455', 'MarÃ­a', 'GarcÃ­a', 'RodrÃ­guez', 'Madrid', 'Estados Unidos', 'Calle D', 94, '6115071468', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('10', '4478233742', '4759259138', 'Pedro', 'RodrÃ­guez', 'LÃ³pez', 'Madrid', 'Francia', 'Calle B', 73, '1491960024', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('11', '4015164666', '3404161429', 'MarÃ­a', 'GÃ³mez', 'GÃ³mez', 'Madrid', 'EspaÃ±a', 'Calle B', 95, '7919710013', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('12', '0231428009', '9489127858', 'Carlos', 'RodrÃ­guez', 'LÃ³pez', 'Bilbao', 'Francia', 'Avenida A', 10, '9647393767', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('13', '9102015657', '6133725886', 'MarÃ­a', 'MartÃ­nez', 'GarcÃ­a', 'Madrid', 'MÃ©xico', 'Calle B', 50, '4778873762', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('14', '8070942984', '6293725574', 'Laura', 'MartÃ­nez', 'GÃ³mez', 'Madrid', 'Estados Unidos', 'Calle B', 87, '7854596103', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('15', '5335732595', '6631994249', 'Carlos', 'GÃ³mez', 'GarcÃ­a', 'Madrid', 'MÃ©xico', 'Avenida E', 93, '1166681478', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('16', '6565342672', '7751998437', 'Laura', 'LÃ³pez', 'LÃ³pez', 'Sevilla', 'EspaÃ±a', 'Avenida A', 39, '5634282896', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('17', '5818886117', '9710573397', 'Laura', 'GarcÃ­a', 'GÃ³mez', 'Sevilla', 'MÃ©xico', 'Avenida E', 14, '7143618171', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('18', '7308167939', '1085228962', 'Laura', 'GarcÃ­a', 'LÃ³pez', 'Sevilla', 'MÃ©xico', 'Avenida C', 96, '0995917639', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('19', '9683439871', '3323200285', 'Pedro', 'RodrÃ­guez', 'GÃ³mez', 'Barcelona', 'Estados Unidos', 'Avenida A', 25, '4571665393', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('20', '6282364158', '0392117393', 'Juan', 'GarcÃ­a', 'GarcÃ­a', 'Sevilla', 'Estados Unidos', 'Calle D', 61, '1053295016', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('21', '7464240743', '3878919817', 'Laura', 'LÃ³pez', 'MartÃ­nez', 'Barcelona', 'EspaÃ±a', 'Calle D', 32, '6561167091', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('22', '8704119046', '1892975782', 'MarÃ­a', 'MartÃ­nez', 'RodrÃ­guez', 'Madrid', 'EspaÃ±a', 'Avenida C', 96, '9299907663', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('23', '1667836061', '8025812862', 'Carlos', 'MartÃ­nez', 'GÃ³mez', 'Sevilla', 'MÃ©xico', 'Avenida E', 53, '7350397304', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('24', '7102200641', '1244646869', 'Carlos', 'LÃ³pez', 'RodrÃ­guez', 'Sevilla', 'Estados Unidos', 'Avenida A', 20, '1284059594', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('25', '4162386538', '8938297421', 'Juan', 'GarcÃ­a', 'RodrÃ­guez', 'Valencia', 'Estados Unidos', 'Calle D', 59, '2579158802', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('26', '6991360213', '8828437811', 'MarÃ­a', 'GarcÃ­a', 'GÃ³mez', 'Barcelona', 'Francia', 'Calle B', 74, '2544318026', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('27', '0853987138', '7449811620', 'Carlos', 'GarcÃ­a', 'GarcÃ­a', 'Madrid', 'EspaÃ±a', 'Calle B', 9, '0576548688', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('28', '2987041414', '6475047100', 'Laura', 'LÃ³pez', 'GÃ³mez', 'Valencia', 'EspaÃ±a', 'Avenida A', 3, '7559344566', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('29', '3639118889', '2356487763', 'Laura', 'LÃ³pez', 'LÃ³pez', 'Barcelona', 'MÃ©xico', 'Avenida A', 33, '2002211548', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('30', '5499022101', '0853541519', 'MarÃ­a', 'RodrÃ­guez', 'GarcÃ­a', 'Bilbao', 'Francia', 'Calle B', 91, '8794674352', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('31', '7356453618', '1030277808', 'Juan', 'LÃ³pez', 'RodrÃ­guez', 'Valencia', 'Francia', 'Avenida A', 53, '3421224523', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('32', '2150296453', '0349397886', 'MarÃ­a', 'LÃ³pez', 'GarcÃ­a', 'Bilbao', 'Argentina', 'Calle D', 99, '5129678571', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('33', '2753161088', '4674848597', 'Carlos', 'LÃ³pez', 'LÃ³pez', 'Sevilla', 'EspaÃ±a', 'Avenida C', 30, '2736472202', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('34', '6261280833', '4551945554', 'MarÃ­a', 'RodrÃ­guez', 'RodrÃ­guez', 'Bilbao', 'MÃ©xico', 'Avenida E', 62, '5794067523', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('35', '9045934071', '4204574902', 'Laura', 'RodrÃ­guez', 'RodrÃ­guez', 'Barcelona', 'Francia', 'Calle D', 12, '1750046157', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('36', '5132832828', '2797213107', 'Juan', 'LÃ³pez', 'GÃ³mez', 'Bilbao', 'Estados Unidos', 'Calle D', 73, '7601898270', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('37', '3480311961', '8055036351', 'Juan', 'LÃ³pez', 'RodrÃ­guez', 'Valencia', 'Estados Unidos', 'Calle B', 57, '7871573885', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('38', '2552255419', '5312035356', 'MarÃ­a', 'GÃ³mez', 'GarcÃ­a', 'Bilbao', 'Argentina', 'Avenida A', 50, '8529220358', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('39', '9543931075', '0692369856', 'Juan', 'LÃ³pez', 'MartÃ­nez', 'Madrid', 'Argentina', 'Avenida A', 79, '7448759797', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('40', '7145444546', '5390924800', 'Laura', 'MartÃ­nez', 'GÃ³mez', 'Valencia', 'Estados Unidos', 'Calle B', 7, '5655031041', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('41', '9965273110', '9158785339', 'Juan', 'GÃ³mez', 'RodrÃ­guez', 'Madrid', 'Estados Unidos', 'Avenida C', 82, '0665167661', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('42', '4925257572', '9367416297', 'Laura', 'MartÃ­nez', 'GarcÃ­a', 'Madrid', 'MÃ©xico', 'Calle D', 60, '8699047956', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('43', '1387863263', '9288063781', 'Pedro', 'GarcÃ­a', 'GÃ³mez', 'Madrid', 'Estados Unidos', 'Avenida C', 78, '6619108533', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('44', '4640892407', '6472678003', 'MarÃ­a', 'GÃ³mez', 'LÃ³pez', 'Valencia', 'Francia', 'Calle B', 95, '0269145909', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('45', '1634867852', '9331617656', 'Pedro', 'GarcÃ­a', 'LÃ³pez', 'Barcelona', 'MÃ©xico', 'Avenida C', 25, '0702384219', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('46', '9472427954', '3349522082', 'Juan', 'LÃ³pez', 'LÃ³pez', 'Sevilla', 'MÃ©xico', 'Avenida A', 39, '4745906876', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('47', '5869579984', '6047120119', 'Pedro', 'LÃ³pez', 'GÃ³mez', 'Sevilla', 'Francia', 'Calle B', 32, '1220718156', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('48', '8195137734', '1495587419', 'Pedro', 'MartÃ­nez', 'GarcÃ­a', 'Madrid', 'MÃ©xico', 'Calle D', 38, '1671976823', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('49', '7019290680', '3758899939', 'MarÃ­a', 'LÃ³pez', 'RodrÃ­guez', 'Bilbao', 'Francia', 'Calle D', 72, '5173760653', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('50', '8938941955', '7222644165', 'Juan', 'RodrÃ­guez', 'GarcÃ­a', 'Valencia', 'EspaÃ±a', 'Calle B', 69, '9037185229', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('51', '3439609771', '3671878154', 'Laura', 'GÃ³mez', 'LÃ³pez', 'Madrid', 'MÃ©xico', 'Calle B', 88, '2325872316', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('52', '3716754372', '2294980226', 'Juan', 'RodrÃ­guez', 'MartÃ­nez', 'Sevilla', 'Argentina', 'Calle D', 72, '0763094959', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('53', '6536301679', '9976268754', 'MarÃ­a', 'RodrÃ­guez', 'GÃ³mez', 'Valencia', 'Estados Unidos', 'Avenida E', 26, '9475049705', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('54', '1248046798', '2093667810', 'MarÃ­a', 'LÃ³pez', 'GarcÃ­a', 'Bilbao', 'Francia', 'Calle B', 20, '0129481739', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('55', '2817917225', '8158301138', 'Juan', 'GarcÃ­a', 'GarcÃ­a', 'Madrid', 'MÃ©xico', 'Calle B', 54, '0168747324', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('56', '1856467642', '8310511161', 'Juan', 'RodrÃ­guez', 'MartÃ­nez', 'Bilbao', 'Argentina', 'Calle B', 17, '8652470532', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('57', '7760932276', '3289828744', 'Pedro', 'LÃ³pez', 'RodrÃ­guez', 'Valencia', 'Francia', 'Avenida E', 26, '3460133746', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('58', '7959374645', '7041391117', 'Pedro', 'LÃ³pez', 'LÃ³pez', 'Bilbao', 'Francia', 'Calle D', 4, '3473804519', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('59', '3660046446', '9712131845', 'Juan', 'GÃ³mez', 'RodrÃ­guez', 'Valencia', 'MÃ©xico', 'Avenida A', 27, '9670403302', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('60', '4414587949', '8309214756', 'Pedro', 'LÃ³pez', 'GÃ³mez', 'Valencia', 'Estados Unidos', 'Avenida E', 95, '4441487566', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('61', '3155422834', '2993497424', 'MarÃ­a', 'GÃ³mez', 'GÃ³mez', 'Valencia', 'Francia', 'Avenida A', 52, '9314889326', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('62', '9412528158', '3596409827', 'Carlos', 'GÃ³mez', 'MartÃ­nez', 'Sevilla', 'EspaÃ±a', 'Calle D', 12, '8564120426', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('63', '5660988734', '5888667386', 'Juan', 'GÃ³mez', 'RodrÃ­guez', 'Madrid', 'MÃ©xico', 'Avenida C', 70, '0649121999', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('64', '8533232640', '6861856257', 'MarÃ­a', 'GarcÃ­a', 'GÃ³mez', 'Valencia', 'Estados Unidos', 'Calle D', 71, '6045632769', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('65', '3132672665', '0190766590', 'MarÃ­a', 'LÃ³pez', 'RodrÃ­guez', 'Valencia', 'Argentina', 'Avenida C', 95, '3054899067', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('66', '2857176047', '1243286172', 'Juan', 'GarcÃ­a', 'GarcÃ­a', 'Sevilla', 'MÃ©xico', 'Avenida E', 7, '2415574861', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('67', '0684721258', '3213892277', 'MarÃ­a', 'RodrÃ­guez', 'GarcÃ­a', 'Bilbao', 'EspaÃ±a', 'Avenida E', 63, '4865653972', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('68', '2917061086', '5717100495', 'Juan', 'GarcÃ­a', 'LÃ³pez', 'Sevilla', 'Francia', 'Calle B', 80, '8523826800', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('69', '6491236449', '3217790869', 'Laura', 'GarcÃ­a', 'RodrÃ­guez', 'Barcelona', 'MÃ©xico', 'Avenida E', 42, '5657971126', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('70', '1222477650', '4232359921', 'Juan', 'RodrÃ­guez', 'LÃ³pez', 'Bilbao', 'EspaÃ±a', 'Avenida A', 22, '0226260986', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('71', '6433400687', '4445038030', 'Juan', 'MartÃ­nez', 'RodrÃ­guez', 'Valencia', 'EspaÃ±a', 'Avenida A', 72, '9573472429', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('72', '3138529472', '3927097360', 'Pedro', 'RodrÃ­guez', 'GarcÃ­a', 'Madrid', 'MÃ©xico', 'Avenida C', 48, '2433781908', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('73', '1418964959', '0382354788', 'Juan', 'GarcÃ­a', 'RodrÃ­guez', 'Barcelona', 'Argentina', 'Calle D', 37, '5067419096', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('74', '4054258738', '6111142111', 'Carlos', 'RodrÃ­guez', 'MartÃ­nez', 'Barcelona', 'Argentina', 'Avenida C', 9, '6539832060', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('75', '4923036186', '9331748764', 'Juan', 'GÃ³mez', 'MartÃ­nez', 'Madrid', 'Francia', 'Avenida A', 43, '3634151638', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('76', '2575775477', '9143353782', 'Juan', 'RodrÃ­guez', 'MartÃ­nez', 'Madrid', 'MÃ©xico', 'Avenida A', 89, '5045697587', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('77', '5321173032', '5834206922', 'Laura', 'MartÃ­nez', 'RodrÃ­guez', 'Bilbao', 'Francia', 'Calle D', 18, '8478079101', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('78', '7953764374', '7809198893', 'Carlos', 'MartÃ­nez', 'LÃ³pez', 'Sevilla', 'Francia', 'Calle D', 44, '0276622163', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('79', '5869202124', '7503196937', 'Juan', 'GÃ³mez', 'GÃ³mez', 'Barcelona', 'MÃ©xico', 'Calle B', 43, '6585424282', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('80', '1186654776', '3648258374', 'Juan', 'GÃ³mez', 'RodrÃ­guez', 'Sevilla', 'MÃ©xico', 'Calle B', 55, '8341116657', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('81', '6349087013', '8173088144', 'Juan', 'GarcÃ­a', 'GÃ³mez', 'Barcelona', 'Argentina', 'Calle B', 90, '7057065818', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('82', '3208430591', '6063625009', 'Carlos', 'GÃ³mez', 'GarcÃ­a', 'Barcelona', 'EspaÃ±a', 'Avenida A', 24, '1098621505', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('83', '3282882698', '9929075888', 'Carlos', 'GÃ³mez', 'RodrÃ­guez', 'Valencia', 'MÃ©xico', 'Calle D', 42, '3941021454', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('84', '4598311510', '2024754533', 'Laura', 'GarcÃ­a', 'LÃ³pez', 'Sevilla', 'EspaÃ±a', 'Avenida A', 70, '9454749453', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('85', '1021037729', '4925816372', 'Carlos', 'GÃ³mez', 'MartÃ­nez', 'Barcelona', 'MÃ©xico', 'Avenida A', 57, '0321181216', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('86', '7931557090', '4998693820', 'Juan', 'MartÃ­nez', 'GÃ³mez', 'Madrid', 'Estados Unidos', 'Calle B', 84, '1944014173', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('87', '9873180816', '6340713621', 'Juan', 'LÃ³pez', 'GÃ³mez', 'Madrid', 'Estados Unidos', 'Calle B', 49, '3018640115', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('88', '8190771561', '0333708381', 'Carlos', 'GÃ³mez', 'GÃ³mez', 'Bilbao', 'Estados Unidos', 'Calle B', 71, '0686804031', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('89', '1174250578', '1825946539', 'MarÃ­a', 'RodrÃ­guez', 'MartÃ­nez', 'Valencia', 'Argentina', 'Calle D', 85, '8439981987', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('90', '1602852144', '5159620909', 'Carlos', 'LÃ³pez', 'GarcÃ­a', 'Valencia', 'EspaÃ±a', 'Calle B', 16, '0745026475', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('91', '8637166169', '8590958909', 'Laura', 'LÃ³pez', 'GarcÃ­a', 'Sevilla', 'Francia', 'Calle B', 42, '8387511390', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('92', '9290723470', '5211379941', 'Carlos', 'MartÃ­nez', 'GÃ³mez', 'Madrid', 'Estados Unidos', 'Calle D', 76, '4121417808', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('93', '8390154912', '3790334329', 'MarÃ­a', 'RodrÃ­guez', 'GÃ³mez', 'Bilbao', 'Estados Unidos', 'Avenida C', 98, '4317014216', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('94', '0617619116', '4260392302', 'Laura', 'RodrÃ­guez', 'LÃ³pez', 'Sevilla', 'Argentina', 'Avenida C', 92, '3740691000', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('95', '3960346811', '5937862609', 'Juan', 'GarcÃ­a', 'RodrÃ­guez', 'Sevilla', 'Estados Unidos', 'Calle B', 4, '3571974409', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('96', '5901589760', '4158692322', 'Carlos', 'GarcÃ­a', 'LÃ³pez', 'Bilbao', 'Estados Unidos', 'Avenida C', 60, '9725663352', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('97', '6598551066', '2304729470', 'Carlos', 'GarcÃ­a', 'GÃ³mez', 'Barcelona', 'Argentina', 'Avenida C', 36, '2531263253', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('98', '9142271833', '6174931402', 'MarÃ­a', 'RodrÃ­guez', 'RodrÃ­guez', 'Sevilla', 'Francia', 'Calle D', 23, '5786662713', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('99', '6322422444', '6236922082', 'Carlos', 'MartÃ­nez', 'RodrÃ­guez', 'Madrid', 'Estados Unidos', 'Calle B', 29, '5647042729', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO usuario VALUES('100', '6219966623', '3563943227', 'Juan', 'LÃ³pez', 'LÃ³pez', 'Bilbao', 'Estados Unidos', 'Avenida A', 22, '8919607102', TO_DATE('2023-06-19 00:17:29', 'YYYY-MM-DD HH24:MI:SS'));
+
+--
+-- Volcado de datos para la tabla empleado
+--
+
+INSERT INTO empleado VALUES('66', 'usuario66@empresa.com', DATE '2020-01-08', 'Supervisor', TO_TIMESTAMP('14:30:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('36', 'usuario36@empresa.com', DATE '2020-08-16', 'Asistente', TO_TIMESTAMP('18:00:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('11', 'usuario11@empresa.com', DATE '2022-03-12', 'Supervisor', TO_TIMESTAMP('17:00:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('82', 'usuario82@empresa.com', DATE '2019-04-05', 'Asistente', TO_TIMESTAMP('10:15:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('21', 'usuario21@empresa.com', DATE '2020-07-20', 'Gerente', TO_TIMESTAMP('17:45:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('88', 'usuario88@empresa.com', DATE '2021-05-09', 'Gerente', TO_TIMESTAMP('11:30:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('19', 'usuario19@empresa.com', DATE '2020-03-02', 'Supervisor', TO_TIMESTAMP('18:30:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('1', 'usuario1@empresa.com', DATE '2018-07-08', 'Supervisor', TO_TIMESTAMP('15:45:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('62', 'usuario62@empresa.com', DATE '2019-10-14', 'Supervisor', TO_TIMESTAMP('10:15:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('76', 'usuario76@empresa.com', DATE '2019-03-21', 'Supervisor', TO_TIMESTAMP('09:15:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('99', 'usuario99@empresa.com', DATE '2018-07-04', 'Analista', TO_TIMESTAMP('14:00:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('70', 'usuario70@empresa.com', DATE '2019-03-29', 'Asistente', TO_TIMESTAMP('14:15:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('26', 'usuario26@empresa.com', DATE '2019-08-09', 'Analista', TO_TIMESTAMP('14:00:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('71', 'usuario71@empresa.com', DATE '2020-03-22', 'Analista', TO_TIMESTAMP('12:15:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('25', 'usuario25@empresa.com', DATE '2021-01-10', 'Gerente', TO_TIMESTAMP('13:15:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('37', 'usuario37@empresa.com', DATE '2021-07-29', 'Supervisor', TO_TIMESTAMP('17:45:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('41', 'usuario41@empresa.com', DATE '2019-02-23', 'Gerente', TO_TIMESTAMP('15:30:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('77', 'usuario77@empresa.com', DATE '2021-01-24', 'Analista', TO_TIMESTAMP('08:45:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('24', 'usuario24@empresa.com', DATE '2020-06-23', 'Analista', TO_TIMESTAMP('15:45:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('38', 'usuario38@empresa.com', DATE '2020-10-24', 'Gerente', TO_TIMESTAMP('18:45:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('46', 'usuario46@empresa.com', DATE '2019-08-02', 'Gerente', TO_TIMESTAMP('08:30:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('69', 'usuario69@empresa.com', DATE '2021-11-15', 'Analista', TO_TIMESTAMP('08:00:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('89', 'usuario89@empresa.com', DATE '2021-12-19', 'Asistente', TO_TIMESTAMP('13:15:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('80', 'usuario80@empresa.com', DATE '2021-12-18', 'Analista', TO_TIMESTAMP('09:30:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('32', 'usuario32@empresa.com', DATE '2022-04-01', 'Gerente', TO_TIMESTAMP('10:15:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('84', 'usuario84@empresa.com', DATE '2020-04-01', 'Supervisor', TO_TIMESTAMP('15:15:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('7', 'usuario7@empresa.com', DATE '2019-04-15', 'Supervisor', TO_TIMESTAMP('12:00:00', 'HH24:MI:SS'));
+INSERT INTO empleado VALUES('74', 'usuario74@empresa.com', DATE '2020-04-27', 'Supervisor', TO_TIMESTAMP('16:00:00', 'HH24:MI:SS'));
+
+--
+-- Volcado de datos para la tabla proveedor
+--
+
+INSERT INTO proveedor VALUES('1', '6715335801', 'Estados Unidos', 'Barcelona', 'Calle D', 85, 'Proveedor A');
+INSERT INTO proveedor VALUES('2', '3181709355', 'Estados Unidos', 'Valencia', 'Avenida C', 79, 'Proveedor D');
+INSERT INTO proveedor VALUES('3', '5792749223', 'EspaÃ±a', 'Sevilla', 'Avenida C', 70, 'Proveedor E');
+INSERT INTO proveedor VALUES('4', '0847008474', 'EspaÃ±a', 'Madrid', 'Avenida C', 30, 'Proveedor B');
+INSERT INTO proveedor VALUES('5', '6659556629', 'MÃ©xico', 'Madrid', 'Avenida A', 29, 'Proveedor D');
+INSERT INTO proveedor VALUES('6', '6180066914', 'Francia', 'Barcelona', 'Avenida E', 57, 'Proveedor A');
+INSERT INTO proveedor VALUES('7', '8166197552', 'MÃ©xico', 'Sevilla', 'Calle D', 3, 'Proveedor D');
+INSERT INTO proveedor VALUES('8', '5267790587', 'Argentina', 'Barcelona', 'Avenida C', 29, 'Proveedor E');
+INSERT INTO proveedor VALUES('9', '8421708041', 'EspaÃ±a', 'Sevilla', 'Avenida A', 93, 'Proveedor C');
+INSERT INTO proveedor VALUES('10', '3216475363', 'EspaÃ±a', 'Valencia', 'Avenida C', 37, 'Proveedor B');
+INSERT INTO proveedor VALUES('11', '3869984994', 'Estados Unidos', 'Bilbao', 'Avenida C', 13, 'Proveedor D');
+INSERT INTO proveedor VALUES('12', '8618142344', 'MÃ©xico', 'Madrid', 'Avenida A', 23, 'Proveedor B');
+INSERT INTO proveedor VALUES('13', '9795427135', 'MÃ©xico', 'Bilbao', 'Avenida C', 71, 'Proveedor D');
+INSERT INTO proveedor VALUES('14', '2810160467', 'Francia', 'Valencia', 'Avenida E', 53, 'Proveedor A');
+INSERT INTO proveedor VALUES('15', '7895085979', 'MÃ©xico', 'Madrid', 'Avenida E', 6, 'Proveedor B');
+INSERT INTO proveedor VALUES('16', '3310819040', 'Argentina', 'Valencia', 'Calle D', 38, 'Proveedor A');
+INSERT INTO proveedor VALUES('17', '0307056771', 'MÃ©xico', 'Barcelona', 'Calle D', 2, 'Proveedor B');
+INSERT INTO proveedor VALUES('18', '1134959442', 'Francia', 'Bilbao', 'Avenida E', 9, 'Proveedor B');
+INSERT INTO proveedor VALUES('19', '0892719728', 'Argentina', 'Madrid', 'Avenida A', 21, 'Proveedor E');
+INSERT INTO proveedor VALUES('20', '7688171645', 'Argentina', 'Madrid', 'Calle B', 16, 'Proveedor C');
+INSERT INTO proveedor VALUES('21', '5703640150', 'Estados Unidos', 'Barcelona', 'Avenida C', 66, 'Proveedor D');
+INSERT INTO proveedor VALUES('22', '4411843010', 'Estados Unidos', 'Valencia', 'Avenida C', 87, 'Proveedor E');
+INSERT INTO proveedor VALUES('23', '0631665553', 'EspaÃ±a', 'Sevilla', 'Avenida A', 75, 'Proveedor E');
+INSERT INTO proveedor VALUES('24', '2538945574', 'Argentina', 'Sevilla', 'Avenida A', 43, 'Proveedor E');
+INSERT INTO proveedor VALUES('25', '3430229201', 'EspaÃ±a', 'Barcelona', 'Avenida E', 64, 'Proveedor D');
+INSERT INTO proveedor VALUES('26', '7412369453', 'Estados Unidos', 'Valencia', 'Avenida A', 71, 'Proveedor C');
+INSERT INTO proveedor VALUES('27', '1779541828', 'MÃ©xico', 'Bilbao', 'Avenida C', 93, 'Proveedor C');
+INSERT INTO proveedor VALUES('28', '6246536694', 'Francia', 'Bilbao', 'Avenida E', 48, 'Proveedor B');
+INSERT INTO proveedor VALUES('29', '7833936032', 'Argentina', 'Madrid', 'Avenida A', 51, 'Proveedor C');
+INSERT INTO proveedor VALUES('30', '9538240611', 'Estados Unidos', 'Sevilla', 'Avenida C', 40, 'Proveedor A');
+
+--
+-- Volcado de datos para la tabla adquisicion
+--
+
+INSERT INTO adquisicion VALUES('86', '1', '10', '7038', '23261', TO_DATE('2022-05-09 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('31', '2', '11', '44688', '5713', TO_DATE('2019-02-24 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('63', '3', '3', '17992', '14355', TO_DATE('2021-11-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('49', '4', '12', '17677', '51431', TO_DATE('2019-08-09 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('34', '5', '10', '70240', '42748', TO_DATE('2020-05-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('97', '6', '28', '94938', '82784', TO_DATE('2019-02-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('56', '7', '23', '84100', '80837', TO_DATE('2021-03-21 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('66', '8', '5', '83407', '5576', TO_DATE('2020-01-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('88', '9', '27', '29548', '12149', TO_DATE('2018-07-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('96', '10', '2', '96590', '36982', TO_DATE('2019-09-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('12', '11', '4', '84815', '81021', TO_DATE('2020-11-07 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('46', '12', '13', '54929', '23730', TO_DATE('2020-10-09 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('23', '13', '7', '30264', '27270', TO_DATE('2021-09-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('22', '14', '8', '43886', '57910', TO_DATE('2020-12-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('35', '15', '4', '12540', '48465', TO_DATE('2021-12-27 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('89', '16', '8', '14114', '63052', TO_DATE('2019-01-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('56', '17', '30', '32296', '24693', TO_DATE('2019-08-21 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('69', '18', '23', '26393', '89205', TO_DATE('2019-07-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('79', '19', '3', '60328', '90281', TO_DATE('2022-04-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('12', '20', '12', '46133', '94714', TO_DATE('2019-01-16 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('73', '21', '12', '22664', '43130', TO_DATE('2021-03-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('43', '22', '16', '35020', '29408', TO_DATE('2019-09-13 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('67', '23', '3', '5803', '41035', TO_DATE('2018-12-09 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('77', '24', '28', '73350', '5625', TO_DATE('2022-04-24 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('55', '25', '11', '60168', '90559', TO_DATE('2020-05-04 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('9', '26', '7', '68405', '70933', TO_DATE('2019-10-24 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('15', '27', '30', '55490', '23886', TO_DATE('2020-06-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('48', '28', '20', '45934', '43160', TO_DATE('2021-05-02 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('66', '29', '3', '20326', '94758', TO_DATE('2021-11-06 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('85', '30', '13', '90296', '22784', TO_DATE('2020-11-23 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('96', '31', '12', '40569', '91811', TO_DATE('2019-03-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('98', '32', '10', '32342', '37204', TO_DATE('2020-03-23 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('61', '33', '7', '52970', '7228', TO_DATE('2020-03-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('79', '34', '24', '99161', '10951', TO_DATE('2019-11-13 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('62', '35', '10', '66411', '924', TO_DATE('2022-01-04 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('56', '36', '1', '90337', '47962', TO_DATE('2018-11-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('26', '37', '22', '34064', '66397', TO_DATE('2022-03-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('64', '38', '4', '25291', '98931', TO_DATE('2018-07-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('26', '39', '30', '10575', '77187', TO_DATE('2018-11-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO adquisicion VALUES('27', '40', '17', '97992', '4393', TO_DATE('2021-06-21 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+
+--
+-- Volcado de datos para la tabla idioma
+--
+
+INSERT INTO idioma VALUES('es', 'EspaÃ±ol');
+INSERT INTO idioma VALUES('en', 'InglÃ©s');
+INSERT INTO idioma VALUES('fr', 'FrancÃ©s');
+INSERT INTO idioma VALUES('de', 'AlemÃ¡n');
+INSERT INTO idioma VALUES('it', 'Italiano');
+INSERT INTO idioma VALUES('pt', 'PortuguÃ©s');
+INSERT INTO idioma VALUES('ja', 'JaponÃ©s');
+INSERT INTO idioma VALUES('zh', 'Chino');
+INSERT INTO idioma VALUES('ru', 'Ruso');
+INSERT INTO idioma VALUES('ar', 'Ãrabe');
+
+--
+-- Volcado de datos para la tabla ejemplar
+--
+
+INSERT INTO ejemplar VALUES('66', '156', '34', '8', '29', '3', '153', '28', '36', 10, 476, 'en');
+INSERT INTO ejemplar VALUES('62', '242', '3', '10', '35', '10', '232', '13', '45', 7, 47, 'fr');
+INSERT INTO ejemplar VALUES('34', '560', '9', '2', '5', '10', '440', '29', '83', 4, 343, 'ja');
+INSERT INTO ejemplar VALUES('56', '416', '27', '4', '17', '30', '449', '49', '21', 2, 271, 'en');
+INSERT INTO ejemplar VALUES('46', '205', '33', '4', '12', '13', '397', '27', '33', 7, 236, 'pt');
+INSERT INTO ejemplar VALUES('79', '339', '2', '1', '19', '3', '493', '34', '31', 6, 283, 'ja');
+INSERT INTO ejemplar VALUES('31', '224', '17', '4', '2', '11', '406', '41', '71', 7, 252, 'en');
+INSERT INTO ejemplar VALUES('23', '201', '34', '8', '13', '7', '153', '28', '36', 10, 153, 'ja');
+INSERT INTO ejemplar VALUES('43', '239', '34', '8', '22', '16', '153', '28', '36', 10, 255, 'fr');
+INSERT INTO ejemplar VALUES('63', '643', '26', '2', '3', '3', '473', '38', '14', 10, 246, 'ja');
+INSERT INTO ejemplar VALUES('79', '870', '35', '1', '34', '24', '440', '29', '83', 4, 68, 'ar');
+INSERT INTO ejemplar VALUES('15', '279', '1', '3', '27', '30', '383', '37', '86', 3, 4, 'es');
+INSERT INTO ejemplar VALUES('15', '805', '5', '3', '27', '30', '132', '24', '18', 1, 399, 'zh');
+INSERT INTO ejemplar VALUES('79', '329', '25', '5', '34', '24', '273', '17', '37', 9, 157, 'ar');
+INSERT INTO ejemplar VALUES('35', '867', '25', '5', '15', '4', '273', '17', '37', 9, 82, 'zh');
+INSERT INTO ejemplar VALUES('89', '924', '14', '9', '16', '8', '473', '38', '14', 2, 122, 'zh');
+INSERT INTO ejemplar VALUES('98', '504', '7', '2', '32', '10', '171', '5', '99', 8, 27, 'it');
+INSERT INTO ejemplar VALUES('77', '816', '12', '10', '24', '28', '202', '31', '53', 5, 296, 'zh');
+INSERT INTO ejemplar VALUES('97', '128', '34', '8', '6', '28', '153', '28', '36', 10, 219, 'it');
+INSERT INTO ejemplar VALUES('66', '989', '39', '4', '8', '5', '86', '39', '10', 10, 158, 'it');
+
+
+--
+-- Volcado de datos para la tabla lector
+--
+
+INSERT INTO lector VALUES('64', 'BÃ¡sico', DATE '2025-04-12');
+INSERT INTO lector VALUES('44', 'BÃ¡sico', DATE '2023-05-25');
+INSERT INTO lector VALUES('7', 'BÃ¡sico', DATE '2025-11-13');
+INSERT INTO lector VALUES('31', 'VIP', DATE '2025-09-01');
+INSERT INTO lector VALUES('57', 'VIP', DATE '2025-03-12');
+INSERT INTO lector VALUES('95', 'VIP', DATE '2025-05-01');
+INSERT INTO lector VALUES('48', 'BÃ¡sico', DATE '2025-10-10');
+INSERT INTO lector VALUES('37', 'VIP', DATE '2024-02-16');
+INSERT INTO lector VALUES('82', 'VIP', DATE '2025-03-02');
+INSERT INTO lector VALUES('1', 'VIP', DATE '2024-07-23');
+INSERT INTO lector VALUES('62', 'BÃ¡sico', DATE '2024-07-23');
+INSERT INTO lector VALUES('77', 'BÃ¡sico', DATE '2024-07-22');
+
+--
+-- Volcado de datos para la tabla prestamo
+--
+
+INSERT INTO prestamo VALUES('62', '1', '3', '10', '35', '10', '232', '13', '45', '242', 7, TO_DATE('2023-01-01 13:32:32', 'YYYY-MM-DD HH24:MI:SS'), TO_DATE('2023-02-26 23:14:13', 'YYYY-MM-DD HH24:MI:SS'), 'Venci');
+INSERT INTO prestamo VALUES('77', '2', '12', '10', '24', '28', '202', '31', '53', '816', 5, TO_DATE('2023-01-01 13:32:32', 'YYYY-MM-DD HH24:MI:SS'), TO_DATE('2023-02-26 23:14:13', 'YYYY-MM-DD HH24:MI:SS'), 'Venci');
+
+--
+-- Volcado de datos para la tabla multa
+--
+
+INSERT INTO multa VALUES('77', '1', '12', '10', '24', '28', '202', '31', '53', '4', '816', 6, '20', TO_DATE('2023-03-19 22:01:27', 'YYYY-MM-DD HH24:MI:SS'), 'Pendiente', TO_DATE('0000-00-00 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO multa VALUES('77', '2', '12', '10', '24', '28', '202', '31', '53', '4', '816', 1, '84', TO_DATE('2023-06-03 06:07:06', 'YYYY-MM-DD HH24:MI:SS'), 'Pendiente', TO_DATE('0000-00-00 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO multa VALUES('35', '3', '25', '5', '15', '4', '273', '17', '37', '7', '867', 10, '52', TO_DATE('2023-01-04 10:04:57', 'YYYY-MM-DD HH24:MI:SS'), 'Pagada', TO_DATE('2023-01-24 04:02:05', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO multa VALUES('63', '4', '26', '2', '3', '3', '473', '38', '14', '2', '643', 5, '5', TO_DATE('2023-05-11 14:22:23', 'YYYY-MM-DD HH24:MI:SS'), 'Pagada', TO_DATE('2023-06-07 14:43:21', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO multa VALUES('79', '5', '25', '5', '34', '24', '273', '17', '37', '9', '329', 4, '56', TO_DATE('2023-06-13 15:20:29', 'YYYY-MM-DD HH24:MI:SS'), 'Pagada', TO_DATE('2023-06-15 23:04:29', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO multa VALUES('79', '6', '25', '5', '34', '24', '273', '17', '37', '9', '329', 10, '28', TO_DATE('2023-03-29 16:34:01', 'YYYY-MM-DD HH24:MI:SS'), 'Pendiente', TO_DATE('0000-00-00 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO multa VALUES('63', '7', '26', '2', '3', '3', '473', '38', '14', '2', '643', 10, '59', TO_DATE('2023-01-13 23:06:40', 'YYYY-MM-DD HH24:MI:SS'), 'Pendiente', TO_DATE('0000-00-00 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO multa VALUES('79', '8', '25', '5', '34', '24', '273', '17', '37', '9', '329', 6, '50', TO_DATE('2023-01-01 14:28:42', 'YYYY-MM-DD HH24:MI:SS'), 'Pendiente', TO_DATE('0000-00-00 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO multa VALUES('79', '9', '2', '1', '19', '3', '493', '34', '31', '1', '339', 4, '56', TO_DATE('2023-06-13 08:44:11', 'YYYY-MM-DD HH24:MI:SS'), 'Pendiente', TO_DATE('0000-00-00 00:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO multa VALUES('35', '10', '25', '5', '15', '4', '273', '17', '37', '7', '867', 4, '61', TO_DATE('2023-04-19 13:03:14', 'YYYY-MM-DD HH24:MI:SS'), 'Pagada', TO_DATE('2023-05-18 14:33:30', 'YYYY-MM-DD HH24:MI:SS'));
+
+--
+-- Volcado de datos para la tabla estanteria_virtual
+--
+
+INSERT INTO estanteria_virtual VALUES('1', '57', 'Por Leer', '6iTidPN');
+INSERT INTO estanteria_virtual VALUES('2', '7', 'Favoritos', 'ei15Vbxh8x');
+INSERT INTO estanteria_virtual VALUES('3', '31', 'LeÃ­dos', '3oeGUWe8rx');
+INSERT INTO estanteria_virtual VALUES('4', '82', 'LeÃ­dos', 'TfuPNWJMNa');
+INSERT INTO estanteria_virtual VALUES('5', '44', 'Favoritos', '29nGeW3');
+INSERT INTO estanteria_virtual VALUES('6', '44', 'Recomendad', 'Ty75ILCBwU');
+INSERT INTO estanteria_virtual VALUES('7', '37', 'Recomendad', 'y7XD2u9yqy');
+INSERT INTO estanteria_virtual VALUES('8', '48', 'Recomendad', 'LrG3OK');
+INSERT INTO estanteria_virtual VALUES('9', '44', 'LeÃ­dos', 'DCg1lN');
+INSERT INTO estanteria_virtual VALUES('10', '95', 'Favoritos', 'Iz4cSe');
+
+
+--
+-- Volcado de datos para la tabla adiciona_estanteria
+--
+
+INSERT INTO adiciona_estanteria VALUES('1', '57', '27', '4', '449', '49', '21', 3);
+INSERT INTO adiciona_estanteria VALUES('1', '57', '32', '1', '124', '18', '9', 5);
+INSERT INTO adiciona_estanteria VALUES('1', '57', '37', '7', '383', '23', '86', 8);
+INSERT INTO adiciona_estanteria VALUES('10', '95', '13', '8', '86', '46', '10', 8);
+INSERT INTO adiciona_estanteria VALUES('10', '95', '26', '2', '473', '38', '14', 6);
+INSERT INTO adiciona_estanteria VALUES('2', '7', '40', '3', '273', '17', '37', 6);
+INSERT INTO adiciona_estanteria VALUES('4', '82', '20', '10', '445', '7', '62', 3);
+INSERT INTO adiciona_estanteria VALUES('5', '44', '12', '10', '202', '31', '53', 2);
+INSERT INTO adiciona_estanteria VALUES('5', '44', '29', '10', '225', '36', '89', 5);
+INSERT INTO adiciona_estanteria VALUES('5', '44', '6', '9', '449', '49', '21', 3);
+INSERT INTO adiciona_estanteria VALUES('5', '44', '8', '2', '406', '41', '71', 3);
+INSERT INTO adiciona_estanteria VALUES('6', '44', '40', '3', '273', '17', '37', 2);
+INSERT INTO adiciona_estanteria VALUES('7', '37', '23', '7', '473', '38', '14', 3);
+INSERT INTO adiciona_estanteria VALUES('8', '48', '17', '4', '406', '41', '71', 3);
+INSERT INTO adiciona_estanteria VALUES('8', '48', '29', '10', '225', '36', '89', 7);
+INSERT INTO adiciona_estanteria VALUES('8', '48', '3', '10', '232', '13', '45', 4);
+INSERT INTO adiciona_estanteria VALUES('8', '48', '40', '3', '273', '17', '37', 1);
+INSERT INTO adiciona_estanteria VALUES('9', '44', '19', '6', '359', '43', '85', 8);
+INSERT INTO adiciona_estanteria VALUES('9', '44', '22', '9', '359', '43', '85', 7);
+INSERT INTO adiciona_estanteria VALUES('9', '44', '23', '7', '473', '38', '14', 4);
+
+--
+-- Volcado de datos para la tabla categoria
+--
+
+INSERT INTO categoria VALUES(1, 'DescripciÃ³n 1', 'CategorÃ­a 1');
+INSERT INTO categoria VALUES(2, 'DescripciÃ³n 2', 'CategorÃ­a 2');
+INSERT INTO categoria VALUES(3, 'DescripciÃ³n 3', 'CategorÃ­a 3');
+
+
+--
+-- Volcado de datos para la tabla tiene_categoria
+--
+
+INSERT INTO tiene_categoria VALUES('1', '3', '383', '37', '86', 8, 8);
+INSERT INTO tiene_categoria VALUES('11', '1', '397', '27', '33', 10, 4);
+INSERT INTO tiene_categoria VALUES('18', '8', '133', '1', '29', 1, 2);
+INSERT INTO tiene_categoria VALUES('25', '5', '273', '17', '37', 5, 9);
+INSERT INTO tiene_categoria VALUES('26', '2', '473', '38', '14', 4, 7);
+INSERT INTO tiene_categoria VALUES('27', '4', '449', '49', '21', 9, 6);
+INSERT INTO tiene_categoria VALUES('3', '10', '232', '13', '45', 2, 10);
+INSERT INTO tiene_categoria VALUES('33', '4', '397', '27', '33', 7, 2);
+INSERT INTO tiene_categoria VALUES('34', '8', '153', '28', '36', 3, 10);
+INSERT INTO tiene_categoria VALUES('40', '3', '273', '17', '37', 6, 10);
+
+--
+-- Volcado de datos para la tabla autor
+--
+
+INSERT INTO autor VALUES('9055', 'Laura MartÃ­nez GarcÃ­a', 'PÃ©rez', 'RodrÃ­guez', 'Argentina', DATE '2004-06-22', 'M');
+INSERT INTO autor VALUES('7260', 'Pedro SÃ¡nchez LÃ³pez', 'RodrÃ­guez', 'GÃ³mez', 'Ecuatoriana', DATE '1986-09-01', 'M');
+INSERT INTO autor VALUES('6618', 'Pedro GÃ³mez GÃ³mez', 'MartÃ­nez', 'GonzÃ¡lez', 'Chilena', DATE '1979-07-06', 'M');
+INSERT INTO autor VALUES('3722', 'Ana GÃ³mez HernÃ¡ndez', 'GÃ³mez', 'GonzÃ¡lez', 'Colombiana', DATE '2002-08-19', 'F');
+INSERT INTO autor VALUES('8032', 'Ana RodrÃ­guez RodrÃ­guez', 'GarcÃ­a', 'LÃ³pez', 'Colombiana', DATE '1994-08-22', 'M');
+INSERT INTO autor VALUES('8970', 'SofÃ­a FernÃ¡ndez GÃ³mez', 'RodrÃ­guez', 'PÃ©rez', 'Peruana', DATE '1990-05-13', 'M');
+INSERT INTO autor VALUES('5002', 'Laura MartÃ­nez RodrÃ­guez', 'LÃ³pez', 'FernÃ¡ndez', 'Colombiana', DATE '1999-01-06', 'F');
+INSERT INTO autor VALUES('2788', 'SofÃ­a HernÃ¡ndez FernÃ¡ndez', 'RodrÃ­guez', 'GonzÃ¡lez', 'Uruguaya', DATE '1979-09-21', 'F');
+INSERT INTO autor VALUES('7265', 'Laura PÃ©rez FernÃ¡ndez', 'GonzÃ¡lez', 'HernÃ¡ndez', 'Ecuatoriana', DATE '1965-11-17', 'M');
+INSERT INTO autor VALUES('2029', 'MarÃ­a PÃ©rez LÃ³pez', 'SÃ¡nchez', 'RodrÃ­guez', 'Chilena', DATE '2001-05-16', 'F')
+
+--
+-- Volcado de datos para la tabla escrito_por
+--
+
+INSERT INTO escrito_por VALUES('13', '8', '7260', '86', '46', '10', 8);
+INSERT INTO escrito_por VALUES('14', '9', '7260', '473', '38', '14', 2);
+INSERT INTO escrito_por VALUES('17', '4', '7265', '406', '41', '71', 7);
+INSERT INTO escrito_por VALUES('2', '1', '6618', '493', '34', '31', 6);
+INSERT INTO escrito_por VALUES('21', '3', '3722', '225', '36', '89', 3);
+INSERT INTO escrito_por VALUES('22', '9', '7260', '359', '43', '85', 8);
+INSERT INTO escrito_por VALUES('26', '2', '2788', '473', '38', '14', 10);
+INSERT INTO escrito_por VALUES('26', '2', '9055', '473', '38', '14', 10);
+INSERT INTO escrito_por VALUES('31', '4', '7265', '338', '40', '54', 8);
+INSERT INTO escrito_por VALUES('36', '6', '6618', '445', '7', '62', 3);
+INSERT INTO escrito_por VALUES('39', '4', '2029', '86', '39', '10', 10);
+
+--
+-- Volcado de datos para la multa
+--
+
+
+INSERT INTO multa VALUES('77', '1', '12', '10', '24', '28', '202', '31', '53', '2', '816', 5, 20, TO_DATE('2023-03-19 22:01:27', 'YYYY-MM-DD HH24:MI:SS'), 'Pendiente', Null);
+
+COMMIT;
+
